@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csp-problem", "csp-problem\csp-problem.csproj", "{5AE04A7E-88BA-4D3B-848D-71B5E51378CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5AE04A7E-88BA-4D3B-848D-71B5E51378CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AE04A7E-88BA-4D3B-848D-71B5E51378CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AE04A7E-88BA-4D3B-848D-71B5E51378CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AE04A7E-88BA-4D3B-848D-71B5E51378CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
