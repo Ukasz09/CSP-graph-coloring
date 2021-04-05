@@ -1,6 +1,7 @@
 from typing import *
 import matplotlib.pyplot as plt
 import numpy as np
+import json
 
 
 def _draw_edge(fst_point: Tuple[int, int], snd_point: Tuple[int, int], edge_color='black'):
@@ -31,15 +32,36 @@ def _plot_graph(nodes: List[Tuple[int, int]], edges: List[Tuple[Tuple[int, int],
     _draw_edges(edges)
 
 
+def _read_graph(filepath: str):
+    """
+    @:return List[Tuple[Tuple[int, int], Tuple[int, int]]]
+    """
+    with open(filepath) as json_file:
+        data = json.load(json_file)
+        # Parsing list into tuples
+        tuple_data = [tuple([tuple(nodes_list[0]), tuple(nodes_list[1])]) for nodes_list in data]
+        return tuple_data
+
+
+def _read_colors(filepath: str) -> List[str]:
+    with open(filepath) as json_file:
+        data = json.load(json_file)
+        return data
+
+
+def _extract_unique_nodes_from_edges(edges):
+    points = []
+    for edge in edges:
+        points.append(edge[0])
+        points.append(edge[1])
+    nodes = list(set(points))
+    return nodes
+
+
 if __name__ == "__main__":
-    # Prepare data
-    _nodes = [(0, 3), (1, 3), (2, 1), (3, 4)]
-    _colors = ['red', 'green', 'blue', 'red']
-    _edges = [
-        (_nodes[0], _nodes[1]),
-        (_nodes[0], _nodes[2]),
-        (_nodes[0], _nodes[3]),
-    ]
+    _edges = _read_graph('graph.json')
+    _nodes = _extract_unique_nodes_from_edges(_edges)
+    _colors = _read_colors('solution.json')
 
     # Plot graph
     _plot_graph(_nodes, _edges, _colors)
