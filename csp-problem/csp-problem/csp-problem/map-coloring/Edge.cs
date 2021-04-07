@@ -15,7 +15,9 @@ namespace csp_problem
 
         private bool Equals(Edge other)
         {
-            return other.startNode.Equals(startNode) && other.endNode.Equals(endNode);
+            return
+                (other.startNode.Equals(startNode) && other.endNode.Equals(endNode)) ||
+                (other.startNode.Equals(endNode) && other.endNode.Equals(startNode));
         }
 
         public override bool Equals(object obj)

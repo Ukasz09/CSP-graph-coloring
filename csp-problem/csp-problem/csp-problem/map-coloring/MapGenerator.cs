@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace csp_problem
 {
@@ -12,14 +13,16 @@ namespace csp_problem
             randGen = new Random();
         }
 
-        public void GenerateMap(int nodesQty, int mapWidth, int mapHeight)
-            // public List<Edge> GenerateMap(int nodesQty, int mapWidth, int mapHeight)
+        public MapGraph GenerateMap(int nodesQty, int mapWidth, int mapHeight)
         {
             var nodes = DrawNodesWithoutRepeating(nodesQty, mapWidth, mapHeight);
-            Console.WriteLine(string.Join(",", nodes));
+            var nodesCopy = MapUtils.CloneNodes(nodes);
+            var edges = GenerateEdges(nodesCopy);
+            var map = new MapGraph(edges, nodes);
+            return map;
         }
 
-        private IEnumerable<Node> DrawNodesWithoutRepeating(int qty, int mapWidth, int mapHeight)
+        private List<Node> DrawNodesWithoutRepeating(int qty, int mapWidth, int mapHeight)
         {
             if (mapWidth < 0 || mapHeight < 0 || qty > mapWidth * mapWidth)
             {
@@ -45,6 +48,81 @@ namespace csp_problem
             } while (i < qty);
 
             return nodes;
+        }
+
+        private List<Edge> GenerateEdges(IList<Node> nodes)
+        {
+            var edges = new List<Edge>();
+            while (nodes.Count > 1)
+            {
+                var nodesCopy = MapUtils.CloneNodes(nodes);
+
+                // Choose started node
+                var startedNode = nodesCopy[randGen.Next(nodesCopy.Count)];
+                nodesCopy.Remove(startedNode);
+
+                var generatedEdge = GenerateNotIntersectedEdge(startedNode, nodesCopy, edges);
+                if (generatedEdge != null)
+                {
+                    edges.Add(generatedEdge);
+                }
+                else
+                {
+                    // Any node cannot be connected with that one - need to remove it
+                    nodes.Remove(startedNode);
+                }
+            }
+
+            // Not exist any not intersected edge
+            return edges;
+        }
+
+        private Edge GenerateNotIntersectedEdge(Node startedNode, ICollection<Node> availableNodes, List<Edge> edges)
+        {
+            while (availableNodes.Count > 0)
+            {
+                // Generate edge
+                var closestNode = GetClosestNode(startedNode, availableNodes);
+                availableNodes.Remove(closestNode);
+                var edge = new Edge(startedNode, closestNode);
+                var differentThanOthers = !edges.Exists(e => e.Equals(edge));
+                var intersectWithAnyEdge = IntersectWithAnyEdge(edge, edges);
+                if (!intersectWithAnyEdge && differentThanOthers)
+                {
+                    return edge;
+                }
+            }
+
+            // Any node can be connected with
+            return null;
+        }
+
+        private bool IntersectWithAnyEdge(Edge edge, List<Edge> edges)
+        {
+            // Check if intersect with any edge
+            return edges.Select(e => MapUtils.EgdesIntersect(edge, e)).Any(intersect => intersect);
+        }
+
+        private double SegmentWidth(Node a, Node b)
+        {
+            return Math.Sqrt(Math.Pow((b.X - a.X), 2) + Math.Pow(b.Y - a.Y, 2));
+        }
+
+        private Node GetClosestNode(Node node, IEnumerable<Node> nodes)
+        {
+            var minDistance = double.MaxValue;
+            Node closestNode = null;
+            foreach (var n in nodes)
+            {
+                var distance = SegmentWidth(node, n);
+                if (minDistance > distance)
+                {
+                    minDistance = distance;
+                    closestNode = n;
+                }
+            }
+
+            return closestNode;
         }
     }
 }
