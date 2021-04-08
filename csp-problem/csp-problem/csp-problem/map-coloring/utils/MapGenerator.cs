@@ -15,13 +15,12 @@ namespace csp_problem
 
         public Graph GenerateMap(int nodesQty, int mapWidth, int mapHeight)
         {
-            var nodes = GraphUtils.DrawNodesWithoutRepeating(nodesQty, mapWidth, mapHeight, _randGen);
+            var nodes = GraphUtils.GenerateUniqueNodes(nodesQty, mapWidth, mapHeight, _randGen);
             var nodesCopy = GraphUtils.CloneNodes(nodes);
             var edges = GenerateEdges(nodesCopy);
             var map = new Graph(edges, nodes);
             return map;
         }
-
 
         private List<Edge> GenerateEdges(ICollection<Node> nodes)
         {
