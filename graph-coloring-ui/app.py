@@ -21,6 +21,12 @@ def _draw_nodes(nodes: List[Tuple[int, int]], colors: List[str], node_size=150):
     for i in range(len(nodes)):
         point = nodes[i]
         plt.scatter(point[0], point[1], color=colors[i], s=node_size)
+        plt.annotate(f'({point[0]},{point[1]})',
+                     (point[0], point[1]),
+                     textcoords="offset points",
+                     xytext=(0, 20),
+                     bbox=dict(boxstyle="round", alpha=0.1),
+                     ha='center')
 
 
 def _plot_graph(nodes: List[Tuple[int, int]], edges: List[Tuple[Tuple[int, int], Tuple[int, int]]], colors: List[str]):
@@ -59,9 +65,10 @@ def _extract_unique_nodes_from_edges(edges):
 
 
 if __name__ == "__main__":
-    _edges = _read_graph('graph.json')
+    _edges = _read_graph('/home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json')
     _nodes = _extract_unique_nodes_from_edges(_edges)
-    _colors = _read_colors('solution.json')
+    _colors = _read_colors(
+        '/home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json')
 
     # Plot graph
     _plot_graph(_nodes, _edges, _colors)
