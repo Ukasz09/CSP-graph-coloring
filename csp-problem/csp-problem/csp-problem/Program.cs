@@ -7,7 +7,7 @@
 
         private static void Main(string[] args)
         {
-            var map = new MapGenerator().GenerateMap(6, 10, 10);
+            var map = new MapGenerator().GenerateMap(6, 20, 20);
             DataUtils.SaveMap(map, _graphFilePath);
         }
     }

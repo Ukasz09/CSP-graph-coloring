@@ -17,7 +17,7 @@ def _draw_edges(edges: List[Tuple[Tuple[int, int], Tuple[int, int]]]):
         _draw_edge(fst_point, snd_point)
 
 
-def _draw_nodes(nodes: List[Tuple[int, int]], colors: List[str], node_size=150):
+def _draw_nodes(nodes: List[Tuple[int, int]], colors: List[str], node_size=100):
     for i in range(len(nodes)):
         point = nodes[i]
         plt.scatter(point[0], point[1], color=colors[i], s=node_size)
@@ -33,7 +33,7 @@ def _plot_graph(nodes: List[Tuple[int, int]], edges: List[Tuple[Tuple[int, int],
     plot_title_scheme = 'NodesQty = {nodes_qty}, EdgesQty = {edgesQty}, ColorsQty = {colorsQty}'
     distinct_colors_qty = len(np.unique(colors))
     plot_title = plot_title_scheme.format(nodes_qty=len(nodes), edgesQty=len(edges), colorsQty=distinct_colors_qty)
-    plt.title(plot_title, pad=40)
+    plt.title(plot_title, pad=25)
     _draw_nodes(nodes, colors)
     _draw_edges(edges)
 
