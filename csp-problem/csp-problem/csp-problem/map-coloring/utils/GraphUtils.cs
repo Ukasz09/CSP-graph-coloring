@@ -8,9 +8,15 @@ namespace csp_problem
     {
         public static bool EgdesIntersect(Edge e1, Edge e2)
         {
-            if (EdgesHaveCommonNodeAndAreIntersected(e1, e2))
+            var nodes = new[] {e1.startNode, e1.endNode, e2.startNode, e2.endNode};
+            var distinctNodes = nodes.Distinct().ToArray();
+            var atLeastOneCommonNode = distinctNodes.Length != nodes.Length;
+            // Check intersection when two edges attached to one node  
+            if (atLeastOneCommonNode)
             {
-                return true;
+                // Are the same edges
+                var areTheSameEdge = distinctNodes.Length < 3;
+                return areTheSameEdge || AreCollinear(distinctNodes[0], distinctNodes[1], distinctNodes[2]);
             }
 
             var e1StartNode = e1.startNode;
@@ -49,21 +55,6 @@ namespace csp_problem
 
             // p2, q2 and q1 are collinear and q1 lies on segment p2q2
             return o4 == 0 && OnSegment(e2StartNode, e1EndNode, e2EndNode);
-        }
-
-        private static bool EdgesHaveCommonNodeAndAreIntersected(Edge e1, Edge e2)
-        {
-            var nodes = new[] {e1.startNode, e1.endNode, e2.startNode, e2.endNode};
-            var distinctNodes = nodes.Distinct().ToArray();
-            var atLeastOneCommonNode = distinctNodes.Length != nodes.Length;
-            if (atLeastOneCommonNode)
-            {
-                // Are the same edges
-                var areTheSameEdge = distinctNodes.Length < 3;
-                return areTheSameEdge || AreCollinear(distinctNodes[0], distinctNodes[1], distinctNodes[2]);
-            }
-
-            return false;
         }
 
         // Given three collinear points edgeStartNode, checkedNode, edgeEndNode, the function checks if point q lies on
