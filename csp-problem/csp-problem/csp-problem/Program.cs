@@ -2,7 +2,7 @@
 {
     internal static class Program
     {
-        private static string _graphFilePath =
+        private const string _graphFilePath =
             "/home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json";
 
         private static void Main(string[] args)
