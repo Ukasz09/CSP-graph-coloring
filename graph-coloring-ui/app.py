@@ -24,7 +24,7 @@ def _draw_nodes(nodes: List[Tuple[int, int]], colors: List[str], node_size=150):
         plt.annotate(f'({point[0]},{point[1]})',
                      (point[0], point[1]),
                      textcoords="offset points",
-                     xytext=(0, 20),
+                     xytext=(0, 15),
                      bbox=dict(boxstyle="round", alpha=0.1),
                      ha='center')
 

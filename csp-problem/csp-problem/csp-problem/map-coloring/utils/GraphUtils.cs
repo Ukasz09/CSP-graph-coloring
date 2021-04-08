@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace csp_problem
 {
-    public class MapUtils
+    public class GraphUtils
     {
         // The main function that returns true if line segment 'p1q1'
         // and 'p2q2' intersect.
@@ -96,6 +96,62 @@ namespace csp_problem
         public static List<Node> CloneNodes(IEnumerable<Node> nodes)
         {
             return nodes.Select(n => new Node(n.X, n.Y)).ToList();
+        }
+
+        public static List<Node> DrawNodesWithoutRepeating(int qty, int mapWidth, int mapHeight, Random randGen)
+        {
+            if (mapWidth < 0 || mapHeight < 0 || qty > mapWidth * mapWidth)
+            {
+                throw new ArgumentException(
+                    $"Given nodes qty = {qty} is bigger than max possible unique nodes (= {mapWidth * mapHeight})" +
+                    $" that can be created for this map (size = {mapWidth}x{mapHeight})");
+            }
+
+            var nodes = new List<Node>(qty);
+            var i = 0;
+            do
+            {
+                var randXIndex = randGen.Next(mapWidth);
+                var randYIndex = randGen.Next(mapHeight);
+                var node = new Node(randXIndex, randYIndex);
+
+                // if found unique then add
+                if (!nodes.Contains(node))
+                {
+                    nodes.Add(node);
+                    i++;
+                }
+            } while (i < qty);
+
+            return nodes;
+        }
+
+        public static bool IntersectWithAnyEdge(Edge edge, List<Edge> edges)
+        {
+            // Check if intersect with any edge
+            return edges.Select(e => GraphUtils.EgdesIntersect(edge, e)).Any(intersect => intersect);
+        }
+
+        public static double SegmentWidth(Node a, Node b)
+        {
+            return Math.Sqrt(Math.Pow((b.X - a.X), 2) + Math.Pow(b.Y - a.Y, 2));
+        }
+
+        public static Node GetClosestNode(Node node, IEnumerable<Node> nodes)
+        {
+            var minDistance = double.MaxValue;
+            Node closestNode = null;
+            foreach (var n in nodes)
+            {
+                var distance = SegmentWidth(node, n);
+                if (minDistance > distance)
+                {
+                    minDistance = distance;
+                    closestNode = n;
+                }
+            }
+
+            return closestNode;
         }
     }
 }

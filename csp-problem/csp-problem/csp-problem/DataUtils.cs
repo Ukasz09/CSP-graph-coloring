@@ -7,7 +7,7 @@ namespace csp_problem
     {
         private static readonly Logger _logger = LogManager.GetCurrentClassLogger();
 
-        public static void SaveMap(MapGraph map, string filePath)
+        public static void SaveMap(Graph map, string filePath)
         {
             var lines = new[] {"[", map.ToString(), "]"};
             File.WriteAllLines(filePath, lines);

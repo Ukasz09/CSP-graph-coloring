@@ -6,61 +6,35 @@ namespace csp_problem
 {
     public class MapGenerator
     {
-        private readonly Random randGen;
+        private readonly Random _randGen;
 
         public MapGenerator()
         {
-            randGen = new Random();
+            _randGen = new Random();
         }
 
-        public MapGraph GenerateMap(int nodesQty, int mapWidth, int mapHeight)
+        public Graph GenerateMap(int nodesQty, int mapWidth, int mapHeight)
         {
-            var nodes = DrawNodesWithoutRepeating(nodesQty, mapWidth, mapHeight);
-            var nodesCopy = MapUtils.CloneNodes(nodes);
+            var nodes = GraphUtils.DrawNodesWithoutRepeating(nodesQty, mapWidth, mapHeight, _randGen);
+            var nodesCopy = GraphUtils.CloneNodes(nodes);
             var edges = GenerateEdges(nodesCopy);
-            var map = new MapGraph(edges, nodes);
+            var map = new Graph(edges, nodes);
             return map;
         }
 
-        private List<Node> DrawNodesWithoutRepeating(int qty, int mapWidth, int mapHeight)
-        {
-            if (mapWidth < 0 || mapHeight < 0 || qty > mapWidth * mapWidth)
-            {
-                throw new ArgumentException(
-                    $"Given nodes qty = {qty} is bigger than max possible unique nodes (= {mapWidth * mapHeight})" +
-                    $" that can be created for this map (size = {mapWidth}x{mapHeight})");
-            }
 
-            var nodes = new List<Node>(qty);
-            var i = 0;
-            do
-            {
-                var randXIndex = randGen.Next(mapWidth);
-                var randYIndex = randGen.Next(mapHeight);
-                var node = new Node(randXIndex, randYIndex);
-
-                // if found unique then add
-                if (!nodes.Contains(node))
-                {
-                    nodes.Add(node);
-                    i++;
-                }
-            } while (i < qty);
-
-            return nodes;
-        }
-
-        private List<Edge> GenerateEdges(IList<Node> nodes)
+        private List<Edge> GenerateEdges(ICollection<Node> nodes)
         {
             var edges = new List<Edge>();
             while (nodes.Count > 1)
             {
-                var nodesCopy = MapUtils.CloneNodes(nodes);
+                var nodesCopy = GraphUtils.CloneNodes(nodes);
 
                 // Choose started node
-                var startedNode = nodesCopy[randGen.Next(nodesCopy.Count)];
+                var startedNode = nodesCopy[_randGen.Next(nodesCopy.Count)];
                 nodesCopy.Remove(startedNode);
 
+                // Generate not intersected edge
                 var generatedEdge = GenerateNotIntersectedEdge(startedNode, nodesCopy, edges);
                 if (generatedEdge != null)
                 {
@@ -73,20 +47,22 @@ namespace csp_problem
                 }
             }
 
-            // Not exist any not intersected edge
+            // No more edges to create
             return edges;
         }
 
-        private Edge GenerateNotIntersectedEdge(Node startedNode, ICollection<Node> availableNodes, List<Edge> edges)
+        private static Edge GenerateNotIntersectedEdge(Node startedNode, ICollection<Node> otherNodes, List<Edge> edges)
         {
-            while (availableNodes.Count > 0)
+            while (otherNodes.Count > 0)
             {
                 // Generate edge
-                var closestNode = GetClosestNode(startedNode, availableNodes);
-                availableNodes.Remove(closestNode);
+                var closestNode = GraphUtils.GetClosestNode(startedNode, otherNodes);
+                otherNodes.Remove(closestNode);
                 var edge = new Edge(startedNode, closestNode);
+
+                // Check edge correctness
                 var differentThanOthers = !edges.Exists(e => e.Equals(edge));
-                var intersectWithAnyEdge = IntersectWithAnyEdge(edge, edges);
+                var intersectWithAnyEdge = GraphUtils.IntersectWithAnyEdge(edge, edges);
                 if (!intersectWithAnyEdge && differentThanOthers)
                 {
                     return edge;
@@ -95,34 +71,6 @@ namespace csp_problem
 
             // Any node can be connected with
             return null;
-        }
-
-        private bool IntersectWithAnyEdge(Edge edge, List<Edge> edges)
-        {
-            // Check if intersect with any edge
-            return edges.Select(e => MapUtils.EgdesIntersect(edge, e)).Any(intersect => intersect);
-        }
-
-        private double SegmentWidth(Node a, Node b)
-        {
-            return Math.Sqrt(Math.Pow((b.X - a.X), 2) + Math.Pow(b.Y - a.Y, 2));
-        }
-
-        private Node GetClosestNode(Node node, IEnumerable<Node> nodes)
-        {
-            var minDistance = double.MaxValue;
-            Node closestNode = null;
-            foreach (var n in nodes)
-            {
-                var distance = SegmentWidth(node, n);
-                if (minDistance > distance)
-                {
-                    minDistance = distance;
-                    closestNode = n;
-                }
-            }
-
-            return closestNode;
         }
     }
 }
