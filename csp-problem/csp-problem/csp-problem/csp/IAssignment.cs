@@ -14,7 +14,7 @@ namespace csp_problem.csp
         void UnassignVariable(V variable);
         void AssignVariable(V variable, D value);
         D GetAssignedValue(V variable);
-        ISet<D> GetDomain(V variable);
+        ICollection<D> GetDomain(V variable);
 
         /**
          * Determine if given value satisfy all constraints for given variable
