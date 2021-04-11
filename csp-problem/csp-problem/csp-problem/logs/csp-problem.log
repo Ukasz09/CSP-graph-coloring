@@ -35,3 +35,52 @@
 2021-04-08 19:39:42.8671 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
 2021-04-08 19:39:53.6068 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
 2021-04-08 19:40:00.6803 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-11 09:47:01.6216 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-11 09:47:01.6659 | Info | --------------------------------- |  
+2021-04-11 09:47:01.6659 | Info | Found solution: System.String[] |  
+2021-04-11 09:47:01.6659 | Info | Search time: 0 |  
+2021-04-11 09:47:01.6659 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solutions.json |  
+2021-04-11 09:47:42.0004 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-11 09:47:42.0747 | Info | --------------------------------- |  
+2021-04-11 09:47:42.0747 | Info | Found solution: red,red,blue,blue,green,red |  
+2021-04-11 09:47:42.0747 | Info | Search time: 0 |  
+2021-04-11 09:47:42.0747 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solutions.json |  
+2021-04-11 09:48:08.9675 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-11 09:48:09.0051 | Info | --------------------------------- |  
+2021-04-11 09:48:09.0051 | Info | Found solution: red,red,blue,green,pink,red |  
+2021-04-11 09:48:09.0051 | Info | Search time: 0 |  
+2021-04-11 09:48:09.0051 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solutions.json |  
+2021-04-11 09:48:33.5606 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-11 09:48:33.6084 | Info | --------------------------------- |  
+2021-04-11 09:48:33.6084 | Info | Found solution: red,blue,green,red,pink,red |  
+2021-04-11 09:48:33.6084 | Info | Search time: 0 |  
+2021-04-11 09:48:33.6084 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solutions.json |  
+2021-04-11 09:48:38.4844 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-11 09:48:38.5224 | Info | --------------------------------- |  
+2021-04-11 09:48:38.5224 | Info | Found solution: red,blue,green,pink,green,red |  
+2021-04-11 09:48:38.5224 | Info | Search time: 0 |  
+2021-04-11 09:48:38.5224 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solutions.json |  
+2021-04-11 09:49:06.2604 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-11 09:49:06.3218 | Debug | System.Collections.Generic.Dictionary`2[System.String,System.String] |  
+2021-04-11 09:49:06.3272 | Info | --------------------------------- |  
+2021-04-11 09:49:06.3272 | Info | Found solution: red,red,blue,blue,green,red |  
+2021-04-11 09:49:06.3272 | Info | Search time: 0 |  
+2021-04-11 09:49:06.3272 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solutions.json |  
+2021-04-11 09:50:16.8324 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-11 09:50:16.8826 | Debug | [14,3]: red,[4,1]: blue,[14,7]: blue,[9,19]: red,[9,6]: green,[0,16]: red |  
+2021-04-11 09:50:16.8826 | Info | --------------------------------- |  
+2021-04-11 09:50:16.8826 | Info | Found solution: red,blue,blue,red,green,red |  
+2021-04-11 09:50:16.8826 | Info | Search time: 0 |  
+2021-04-11 09:50:16.8841 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solutions.json |  
+2021-04-11 09:50:26.5941 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-11 09:50:26.6327 | Debug | [1,0]: red,[10,18]: blue,[8,7]: blue,[5,1]: green,[7,10]: green,[10,14]: red |  
+2021-04-11 09:50:26.6327 | Info | --------------------------------- |  
+2021-04-11 09:50:26.6327 | Info | Found solution: red,blue,blue,green,green,red |  
+2021-04-11 09:50:26.6327 | Info | Search time: 0 |  
+2021-04-11 09:50:26.6327 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solutions.json |  
+2021-04-11 09:51:00.2910 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-11 09:51:00.3426 | Debug | [0,18]: red,[9,9]: blue,[12,18]: green,[15,4]: red,[17,13]: pink,[7,5]: red |  
+2021-04-11 09:51:00.3426 | Info | --------------------------------- |  
+2021-04-11 09:51:00.3426 | Info | Found solution: red,blue,green,red,pink,red |  
+2021-04-11 09:51:00.3426 | Info | Search time: 0 |  
+2021-04-11 09:51:00.3444 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solutions.json |  

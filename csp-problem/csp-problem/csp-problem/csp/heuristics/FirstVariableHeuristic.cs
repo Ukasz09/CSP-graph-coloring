@@ -6,7 +6,7 @@ namespace csp_problem.csp.heuristics
     {
         public V ChooseVariable(IAssignment<V, D> assignment, Csp<V, D> csp)
         {
-            return csp.Variables.FirstOrDefault(variable => !assignment.VariableIsAssigned(variable));
+            return csp.Variables.FirstOrDefault(variable => !assignment.IsAssigned(variable));
         }
     }
 }

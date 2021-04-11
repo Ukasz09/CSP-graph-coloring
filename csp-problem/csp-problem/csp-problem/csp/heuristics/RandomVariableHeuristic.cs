@@ -8,7 +8,7 @@ namespace csp_problem.csp.heuristics
         public V ChooseVariable(IAssignment<V, D> assignment, Csp<V, D> csp)
         {
             return csp.Variables
-                .Where(variable => !assignment.VariableIsAssigned(variable))
+                .Where(variable => !assignment.IsAssigned(variable))
                 .OrderBy(variable => Guid.NewGuid())
                 .FirstOrDefault();
         }

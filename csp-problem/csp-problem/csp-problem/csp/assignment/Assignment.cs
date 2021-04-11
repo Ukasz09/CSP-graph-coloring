@@ -16,10 +16,10 @@ namespace csp_problem.csp
 
         public bool AllVariablesAssigned()
         {
-            return _csp.Variables.All(VariableIsAssigned);
+            return _csp.Variables.All(IsAssigned);
         }
 
-        public bool VariableIsAssigned(V variable)
+        public bool IsAssigned(V variable)
         {
             return _variableValues.ContainsKey(variable);
         }
@@ -47,6 +47,11 @@ namespace csp_problem.csp
         public bool IsConsistent(V variable, D value)
         {
             return _csp.VariableConstraints[variable].All(constraint => constraint.IsSatisfied(value, this));
+        }
+
+        public IDictionary<V, D> GetAssignedValueForAll()
+        {
+            return _variableValues;
         }
     }
 }

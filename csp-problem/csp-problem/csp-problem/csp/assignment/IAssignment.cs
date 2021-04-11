@@ -10,7 +10,7 @@ namespace csp_problem.csp
     public interface IAssignment<V, D>
     {
         bool AllVariablesAssigned();
-        bool VariableIsAssigned(V variable);
+        bool IsAssigned(V variable);
         void UnassignVariable(V variable);
         void AssignVariable(V variable, D value);
         D GetAssignedValue(V variable);
@@ -20,5 +20,7 @@ namespace csp_problem.csp
          * Determine if given value satisfy all constraints for given variable
          */
         bool IsConsistent(V variable, D value);
+
+        IDictionary<V, D> GetAssignedValueForAll();
     }
 }
