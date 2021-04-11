@@ -184,3 +184,153 @@
 2021-04-11 15:17:32.1405 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
 2021-04-11 15:18:12.1298 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
 2021-04-11 15:20:27.3538 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-11 15:36:47.9481 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-11 15:36:48.0165 | Info | --------------------------------- |  
+2021-04-11 15:36:48.0165 | Info | Found solution: [16,13]: red,[12,5]: blue,[12,15]: green,[16,6]: green,[6,5]: red,[13,2]: pink |  
+2021-04-11 15:36:48.0165 | Info | Search time: 5 |  
+2021-04-11 15:36:48.0165 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-11 15:37:11.5428 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-11 15:37:11.5816 | Info | --------------------------------- |  
+2021-04-11 15:37:11.5816 | Info | Found solution: [5,7]: red,[14,4]: blue,[18,9]: red,[11,12]: green,[12,5]: pink,[1,17]: blue |  
+2021-04-11 15:37:11.5816 | Info | Search time: 3 |  
+2021-04-11 15:37:11.5833 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-11 15:37:24.5786 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-11 15:37:24.6169 | Info | --------------------------------- |  
+2021-04-11 15:37:24.6169 | Info | Found solution: [16,10]: red,[15,17]: blue,[15,10]: green,[10,15]: blue,[6,15]: pink,[11,16]: red |  
+2021-04-11 15:37:24.6169 | Info | Search time: 3 |  
+2021-04-11 15:37:24.6169 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-11 15:37:40.3541 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-11 15:37:40.3917 | Info | --------------------------------- |  
+2021-04-11 15:37:40.3917 | Info | Found solution: [17,1]: red,[14,10]: blue,[10,14]: red,[1,6]: green,[19,16]: green,[0,1]: blue |  
+2021-04-11 15:37:40.3917 | Info | Search time: 3 |  
+2021-04-11 15:37:40.3917 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-11 15:39:48.0541 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-11 15:40:18.1641 | Info | --------------------------------- |  
+2021-04-11 15:40:18.1641 | Info | Found solution: [12,17]: red,[0,18]: blue,[11,1]: blue,[7,10]: green,[9,9]: pink,[9,1]: red |  
+2021-04-11 15:40:18.1641 | Info | Search time: 9650 |  
+2021-04-11 15:40:18.1641 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-11 15:40:45.1745 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-11 15:40:45.2245 | Info | --------------------------------- |  
+2021-04-11 15:40:45.2245 | Info | Found solution: [19,9]: red,[1,18]: red,[14,8]: blue,[0,6]: green,[3,7]: pink,[17,13]: green |  
+2021-04-11 15:40:45.2245 | Info | Search time: 4 ms |  
+2021-04-11 15:40:45.2245 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-11 15:40:50.0937 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-11 15:40:50.1423 | Info | --------------------------------- |  
+2021-04-11 15:40:50.1423 | Info | Found solution: [16,5]: red,[12,12]: blue,[13,13]: green,[13,18]: pink,[19,4]: blue,[1,0]: green |  
+2021-04-11 15:40:50.1423 | Info | Search time: 5 ms |  
+2021-04-11 15:40:50.1444 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-11 15:41:00.9245 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-11 15:41:19.3946 | Info | --------------------------------- |  
+2021-04-11 15:41:19.3956 | Info | Found solution: [9,4]: red,[5,18]: blue,[0,6]: red,[6,10]: green,[6,8]: blue,[4,5]: pink |  
+2021-04-11 15:41:19.3956 | Info | Search time: 5 ms |  
+2021-04-11 15:41:19.3956 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-11 15:41:33.3466 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-11 15:41:33.3840 | Info | --------------------------------- |  
+2021-04-11 15:41:33.3840 | Info | Found solution: [15,4]: red,[12,10]: red,[17,9]: blue,[10,16]: green,[12,0]: pink,[16,4]: green |  
+2021-04-11 15:41:33.3840 | Info | Search time: 3 ms |  
+2021-04-11 15:41:33.3840 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-11 15:41:50.7004 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-11 15:41:50.7370 | Info | --------------------------------- |  
+2021-04-11 15:41:50.7370 | Info | Found solution: [5,0]: red,[18,7]: blue,[12,14]: red,[5,3]: blue,[13,12]: green,[7,7]: pink |  
+2021-04-11 15:41:50.7370 | Info | Search time: 3 ms |  
+2021-04-11 15:41:50.7370 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-11 15:41:58.1453 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-11 15:41:58.2024 | Info | --------------------------------- |  
+2021-04-11 15:41:58.2024 | Info | Found solution: [18,3]: red,[10,7]: blue,[2,6]: green,[0,1]: blue,[4,14]: red,[16,19]: pink |  
+2021-04-11 15:41:58.2024 | Info | Search time: 5 ms |  
+2021-04-11 15:41:58.2047 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-11 15:42:19.6389 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-11 15:42:19.6759 | Info | --------------------------------- |  
+2021-04-11 15:42:19.6759 | Info | Found solution: [15,9]: red,[17,4]: blue,[4,18]: red,[12,14]: blue,[9,14]: green,[8,1]: pink |  
+2021-04-11 15:42:19.6759 | Info | Search time: 3 ms |  
+2021-04-11 15:42:19.6759 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-11 15:43:02.6943 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-11 15:43:02.7324 | Info | --------------------------------- |  
+2021-04-11 15:43:02.7324 | Info | Found solution: [7,18]: red,[15,2]: red,[5,1]: blue,[13,14]: green,[11,17]: red,[9,19]: pink |  
+2021-04-11 15:43:02.7324 | Info | Search time: 3 ms |  
+2021-04-11 15:43:02.7324 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-11 15:43:07.2846 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-11 15:43:07.3404 | Info | --------------------------------- |  
+2021-04-11 15:43:07.3404 | Info | Found solution: [10,16]: red,[11,13]: blue,[11,3]: red,[7,13]: green,[1,4]: pink,[2,4]: green |  
+2021-04-11 15:43:07.3404 | Info | Search time: 5 ms |  
+2021-04-11 15:43:07.3404 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-11 15:43:16.3944 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-11 15:43:16.4346 | Info | --------------------------------- |  
+2021-04-11 15:43:16.4346 | Info | Found solution: [16,5]: red,[3,5]: red,[2,3]: blue,[17,16]: blue,[17,9]: green,[13,1]: green |  
+2021-04-11 15:43:16.4346 | Info | Search time: 4 ms |  
+2021-04-11 15:43:16.4369 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-11 15:43:23.5264 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-11 15:43:23.5641 | Info | --------------------------------- |  
+2021-04-11 15:43:23.5641 | Info | Found solution: [9,2]: red,[8,13]: red,[0,17]: blue,[12,16]: green,[11,9]: pink,[8,16]: pink |  
+2021-04-11 15:43:23.5641 | Info | Search time: 3 ms |  
+2021-04-11 15:43:23.5641 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-11 15:43:27.1277 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-11 15:43:27.1652 | Info | --------------------------------- |  
+2021-04-11 15:43:27.1652 | Info | Found solution: [7,13]: red,[9,18]: blue,[11,10]: green,[17,2]: red,[10,1]: blue,[2,11]: green |  
+2021-04-11 15:43:27.1652 | Info | Search time: 3 ms |  
+2021-04-11 15:43:27.1652 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-11 15:48:18.2573 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-11 15:48:18.2930 | Info | --------------------------------- |  
+2021-04-11 15:48:18.2930 | Info | Found solution: [16,9]: red,[3,6]: blue,[6,4]: red,[18,13]: green,[10,7]: green,[5,3]: pink |  
+2021-04-11 15:48:18.2930 | Info | Search time: 3 ms |  
+2021-04-11 15:48:18.2930 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-11 15:48:32.3225 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-11 15:48:32.3577 | Info | --------------------------------- |  
+2021-04-11 15:48:32.3577 | Info | Found solution: [7,19]: red,[0,6]: blue,[17,13]: green,[8,5]: red,[11,2]: pink,[19,3]: red |  
+2021-04-11 15:48:32.3577 | Info | Search time: 3 ms |  
+2021-04-11 15:48:32.3592 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-11 15:49:00.6801 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-11 15:49:00.7273 | Info | --------------------------------- |  
+2021-04-11 15:49:00.7273 | Info | Found solution: [5,3]: red,[10,6]: blue,[18,9]: red,[17,19]: blue,[4,0]: green,[9,14]: green |  
+2021-04-11 15:49:00.7273 | Info | Search time: 6 ms |  
+2021-04-11 15:49:00.7273 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-11 15:49:06.7862 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-11 15:49:06.8215 | Info | --------------------------------- |  
+2021-04-11 15:49:06.8215 | Info | Found solution: [16,0]: red,[7,13]: red,[6,10]: blue,[3,11]: green,[2,14]: blue,[14,9]: green |  
+2021-04-11 15:49:06.8215 | Info | Search time: 3 ms |  
+2021-04-11 15:49:06.8215 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-11 15:49:12.9763 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-11 15:49:13.0121 | Info | --------------------------------- |  
+2021-04-11 15:49:13.0121 | Info | Found solution: [6,5]: red,[5,3]: blue,[17,17]: blue,[12,10]: red,[18,16]: red,[11,10]: green |  
+2021-04-11 15:49:13.0121 | Info | Search time: 3 ms |  
+2021-04-11 15:49:13.0121 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-11 15:49:18.1204 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-11 15:49:18.1561 | Info | --------------------------------- |  
+2021-04-11 15:49:18.1561 | Info | Found solution: [10,10]: red,[19,0]: blue,[0,9]: blue,[18,16]: green,[16,3]: green,[0,0]: red |  
+2021-04-11 15:49:18.1561 | Info | Search time: 3 ms |  
+2021-04-11 15:49:18.1561 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-11 15:49:25.2106 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-11 15:49:25.2464 | Info | --------------------------------- |  
+2021-04-11 15:49:25.2464 | Info | Found solution: [0,3]: red,[17,8]: blue,[5,1]: green,[18,16]: red,[3,8]: green,[16,18]: purple |  
+2021-04-11 15:49:25.2464 | Info | Search time: 3 ms |  
+2021-04-11 15:49:25.2479 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-11 15:49:47.4984 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-11 15:49:47.5342 | Info | --------------------------------- |  
+2021-04-11 15:49:47.5342 | Info | Found solution: [2,11]: red,[1,8]: blue,[11,19]: blue,[19,7]: red,[7,1]: green,[8,9]: orange |  
+2021-04-11 15:49:47.5342 | Info | Search time: 3 ms |  
+2021-04-11 15:49:47.5357 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-11 15:57:31.3269 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-11 15:57:31.3620 | Info | --------------------------------- |  
+2021-04-11 15:57:31.3620 | Info | Found solution: [0,19]: red,[14,11]: blue,[19,9]: green,[4,4]: blue,[1,13]: green,[6,1]: orange |  
+2021-04-11 15:57:31.3620 | Info | Search time: 2 ms |  
+2021-04-11 15:57:31.3634 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-11 15:57:38.5279 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-11 15:57:38.5626 | Info | --------------------------------- |  
+2021-04-11 15:57:38.5626 | Info | Found solution: [4,14]: red,[1,4]: blue,[19,0]: red,[13,12]: blue,[14,10]: green,[8,11]: orange |  
+2021-04-11 15:57:38.5626 | Info | Search time: 3 ms |  
+2021-04-11 15:57:38.5640 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-11 15:57:44.5398 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-11 15:57:44.5745 | Info | --------------------------------- |  
+2021-04-11 15:57:44.5745 | Info | Found solution: [15,8]: red,[17,3]: blue,[10,11]: green,[2,2]: red,[0,18]: blue,[9,3]: orange |  
+2021-04-11 15:57:44.5745 | Info | Search time: 2 ms |  
+2021-04-11 15:57:44.5760 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-11 15:57:48.3136 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-11 15:57:48.3502 | Info | --------------------------------- |  
+2021-04-11 15:57:48.3502 | Info | Found solution: [3,7]: red,[13,17]: red,[5,9]: blue,[10,17]: green,[4,2]: green,[4,1]: blue |  
+2021-04-11 15:57:48.3502 | Info | Search time: 3 ms |  
+2021-04-11 15:57:48.3517 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-11 15:57:58.2764 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-11 15:57:58.3125 | Info | --------------------------------- |  
+2021-04-11 15:57:58.3125 | Info | Found solution: [14,4]: red,[1,18]: red,[15,19]: blue,[12,5]: blue,[17,17]: green,[4,1]: orange |  
+2021-04-11 15:57:58.3125 | Info | Search time: 3 ms |  
+2021-04-11 15:57:58.3125 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  

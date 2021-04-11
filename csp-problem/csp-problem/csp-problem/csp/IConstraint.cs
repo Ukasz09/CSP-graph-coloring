@@ -15,8 +15,8 @@ namespace csp_problem.csp
         bool Affects(V variable);
 
         /**
-         * Determine if constraint is satisfied on given value
+         * Determine if constraint is satisfied in given assignment
          */
-        bool IsSatisfied(D value, IAssignment<V, D> inAssignment);
+        bool IsSatisfied(IAssignment<V, D> inAssignment);
     }
 }

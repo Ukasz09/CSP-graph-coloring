@@ -27,13 +27,13 @@ namespace csp_problem.csp.cspSolver
             ExecutionTimeInMs = 0;
             var result = solveWithBacktracking(csp, assignment);
             _watch.Stop();
+            ExecutionTimeInMs = _watch.ElapsedMilliseconds;
             return result;
         }
 
         private IAssignment<V, D> solveWithBacktracking(Csp<V, D> csp, IAssignment<V, D> assignment)
         {
-            ExecutionTimeInMs = _watch.ElapsedMilliseconds;
-            if (ExecutionTimeInMs > TimeoutExecutionTimeMs)
+            if (_watch.ElapsedMilliseconds > TimeoutExecutionTimeMs)
             {
                 throw new Exception($"Timed out - set to {TimeoutExecutionTimeMs} ms.");
             }
@@ -47,17 +47,17 @@ namespace csp_problem.csp.cspSolver
             var orderedValues = ValuesOrderHeuristic.GetOrderedDomainValues(assignment, csp, variable);
             foreach (var value in orderedValues)
             {
+                assignment.AssignVariable(variable, value);
                 if (assignment.IsConsistent(variable, value))
                 {
-                    assignment.AssignVariable(variable, value);
                     var result = solveWithBacktracking(csp, assignment);
                     if (result != null)
                     {
                         return result;
                     }
-
-                    assignment.UnassignVariable(variable);
                 }
+                else
+                    assignment.UnassignVariable(variable);
             }
 
             return null;

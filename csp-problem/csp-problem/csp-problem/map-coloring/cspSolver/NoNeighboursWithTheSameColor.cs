@@ -20,14 +20,14 @@ namespace csp_problem
             return Variables.Contains(variable);
         }
 
-        public bool IsSatisfied(string value, IAssignment<string, string> inAssignment)
+        public bool IsSatisfied(IAssignment<string, string> inAssignment)
         {
             foreach (var variable in Variables)
             {
                 var isAssigned = inAssignment.IsAssigned(variable);
                 if (isAssigned)
                 {
-                    // var assignedValue = inAssignment.GetAssignedValue(variable);
+                    var assignedValue = inAssignment.GetAssignedValue(variable);
                     var neighbours = VariablesNeighbours[variable];
                     foreach (var neighbour in neighbours)
                     {
@@ -35,7 +35,7 @@ namespace csp_problem
                         if (neighbourIsAssigned)
                         {
                             var neighbourValue = inAssignment.GetAssignedValue(neighbour);
-                            if (neighbourValue.Equals(value))
+                            if (neighbourValue.Equals(assignedValue))
                             {
                                 return false;
                             }

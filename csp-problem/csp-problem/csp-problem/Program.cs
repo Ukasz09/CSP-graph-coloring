@@ -36,7 +36,7 @@ namespace csp_problem
 
             #region solutionSearching
 
-            var domains = new List<string>() {"red", "blue", "green", "pink"};
+            var domains = new List<string>() {"red", "blue", "green", "orange"};
             var result = Solve(mapColoringSolver, map, domains);
             var searchTimeInMs = mapColoringSolver.SearchTimeInMs();
             SaveGraphColoringSolution(result, searchTimeInMs);
@@ -55,7 +55,7 @@ namespace csp_problem
             var logResult = solution.Select(kvp => kvp.Key + ": " + kvp.Value.ToString()).ToArray();
             _logger.Info($"---------------------------------");
             _logger.Info($"Found solution: {string.Join(",", logResult)}");
-            _logger.Info($"Search time: {searchTimeInMs.ToString()}");
+            _logger.Info($"Search time: {searchTimeInMs.ToString()} ms");
             DataUtils.SaveSolution(solution, SolutionFilePath);
         }
     }

@@ -36,7 +36,7 @@ def _draw_nodes(nodes: List[Tuple[int, int]], colors: Dict[Tuple[int, int], str]
 def _plot_graph(nodes: List[Tuple[int, int]], edges: List[Tuple[Tuple[int, int], Tuple[int, int]]],
                 colors: Dict[Tuple[int, int], str]):
     plot_title_scheme = 'NodesQty = {nodes_qty}, EdgesQty = {edgesQty}, ColorsQty = {colorsQty}'
-    distinct_colors_qty = len(np.unique(colors.values()))
+    distinct_colors_qty = len(np.unique(list(colors.values())))
     plot_title = plot_title_scheme.format(nodes_qty=len(nodes), edgesQty=len(edges), colorsQty=distinct_colors_qty)
     plt.title(plot_title, pad=25)
     _draw_nodes(nodes, colors)

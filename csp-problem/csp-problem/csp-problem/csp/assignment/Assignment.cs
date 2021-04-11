@@ -46,7 +46,7 @@ namespace csp_problem.csp
 
         public bool IsConsistent(V variable, D value)
         {
-            return _csp.VariableConstraints[variable].All(constraint => constraint.IsSatisfied(value, this));
+            return _csp.VariableConstraints[variable].All(constraint => constraint.IsSatisfied(this));
         }
 
         public IDictionary<V, D> GetAssignedValueForAll()
