@@ -22,17 +22,29 @@ namespace csp_problem
 
         public bool IsSatisfied(string value, IAssignment<string, string> inAssignment)
         {
-            return !(from variable in Variables
-                let isAssigned = inAssignment.IsAssigned(variable)
-                where isAssigned
-                let assignedValue = inAssignment.GetAssignedValue(variable)
-                let neighbours = VariablesNeighbours[variable]
-                from neighbour in neighbours
-                let neighbourIsAssigned = inAssignment.IsAssigned(neighbour)
-                where neighbourIsAssigned
-                let neighbourValue = inAssignment.GetAssignedValue(neighbour)
-                where neighbourValue.Equals(assignedValue)
-                select assignedValue).Any();
+            foreach (var variable in Variables)
+            {
+                var isAssigned = inAssignment.IsAssigned(variable);
+                if (isAssigned)
+                {
+                    // var assignedValue = inAssignment.GetAssignedValue(variable);
+                    var neighbours = VariablesNeighbours[variable];
+                    foreach (var neighbour in neighbours)
+                    {
+                        var neighbourIsAssigned = inAssignment.IsAssigned(neighbour);
+                        if (neighbourIsAssigned)
+                        {
+                            var neighbourValue = inAssignment.GetAssignedValue(neighbour);
+                            if (neighbourValue.Equals(value))
+                            {
+                                return false;
+                            }
+                        }
+                    }
+                }
+            }
+
+            return true;
         }
     }
 }

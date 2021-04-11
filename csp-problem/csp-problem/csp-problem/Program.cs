@@ -12,7 +12,7 @@ namespace csp_problem
             "/home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/";
 
         private const string GraphFilePath = GraphColoringBasePath + "graph.json";
-        private const string SolutionFilePath = GraphColoringBasePath + "solutions.json";
+        private const string SolutionFilePath = GraphColoringBasePath + "solution.json";
         private static readonly Logger _logger = LogManager.GetCurrentClassLogger();
 
 
@@ -38,7 +38,6 @@ namespace csp_problem
 
             var domains = new List<string>() {"red", "blue", "green", "pink"};
             var result = Solve(mapColoringSolver, map, domains);
-            _logger.Debug(string.Join(",", result.Select(kvp => kvp.Key + ": " + kvp.Value.ToString())));
             var searchTimeInMs = mapColoringSolver.SearchTimeInMs();
             SaveGraphColoringSolution(result, searchTimeInMs);
 
@@ -53,11 +52,11 @@ namespace csp_problem
 
         private static void SaveGraphColoringSolution(IDictionary<string, string> solution, long searchTimeInMs)
         {
-            var resultDomains = solution.Values.ToArray();
+            var logResult = solution.Select(kvp => kvp.Key + ": " + kvp.Value.ToString()).ToArray();
             _logger.Info($"---------------------------------");
-            _logger.Info($"Found solution: {string.Join(",", resultDomains)}");
+            _logger.Info($"Found solution: {string.Join(",", logResult)}");
             _logger.Info($"Search time: {searchTimeInMs.ToString()}");
-            DataUtils.SaveSolution(resultDomains, SolutionFilePath);
+            DataUtils.SaveSolution(solution, SolutionFilePath);
         }
     }
 }

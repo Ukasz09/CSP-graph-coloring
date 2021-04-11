@@ -23,7 +23,7 @@ namespace csp_problem.csp.cspSolver
 
         public IAssignment<V, D> Solve(Csp<V, D> csp, IAssignment<V, D> assignment)
         {
-            _watch.Reset();
+            _watch.Start();
             ExecutionTimeInMs = 0;
             var result = solveWithBacktracking(csp, assignment);
             _watch.Stop();

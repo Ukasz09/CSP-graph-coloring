@@ -1,8 +1,8 @@
 [
-  "red",
-  "green",
-  "blue",
-  "red",
-  "yellow",
-  "pink"
+{"node":[8,3],"color":"red"},
+{"node":[5,0],"color":"blue"},
+{"node":[14,3],"color":"green"},
+{"node":[1,6],"color":"green"},
+{"node":[5,12],"color":"blue"},
+{"node":[8,9],"color":"red"}
 ]
