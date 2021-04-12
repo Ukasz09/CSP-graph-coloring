@@ -8,27 +8,40 @@ namespace csp_problem
 {
     internal static class Program
     {
-        private const string GraphColoringBasePath =
-            "/home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/";
-
+        private const string CspExerciseBasePath = "/home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/";
+        private const string GraphColoringBasePath = CspExerciseBasePath + "graph-coloring-ui/";
         private const string GraphFilePath = GraphColoringBasePath + "graph.json";
-        private const string SolutionFilePath = GraphColoringBasePath + "solution.json";
+        private const string GraphColoringSolutionFilePath = GraphColoringBasePath + "solution.json";
+        private const string ZebraPuzzleSolutionFilePath = CspExerciseBasePath + "zebra-puzzle-solution.json";
         private static readonly Logger _logger = LogManager.GetCurrentClassLogger();
 
 
         private static void Main(string[] args)
         {
-            // SolveGraphColoring();
-
+            SolveGraphColoring();
             SolveZebraPuzzles();
         }
 
         private static void SolveZebraPuzzles()
         {
+            #region initialization
+
             var valueOrderHeuristicZebra = new TrivialOrderValues<string, int>();
             var variableOrderHeuristicZebra = new FirstVariableHeuristic<string, int>();
-            new ZebraPuzzle(new BacktrackSolver<string, int>(valueOrderHeuristicZebra, variableOrderHeuristicZebra))
-                .Solve();
+            var solver = new BacktrackSolver<string, int>(valueOrderHeuristicZebra, variableOrderHeuristicZebra);
+            var zebraPuzzleSolver = new ZebraPuzzleSolver(solver);
+
+            #endregion
+
+            #region solutionSearching
+
+            _logger.Info("--------------------------------------------");
+            _logger.Info("Started solving Zebra Puzzle Problem");
+            var solution = zebraPuzzleSolver.Solve();
+            var searchTimeInMs = zebraPuzzleSolver.SearchTimeInMs();
+            SaveZebraPuzzleSolution(solution, searchTimeInMs);
+
+            #endregion
         }
 
         private static void SolveGraphColoring()
@@ -51,21 +64,35 @@ namespace csp_problem
 
             #region solutionSearching
 
+            _logger.Info("--------------------------------------------");
+            _logger.Info("Started solving Graph Coloring Problem");
             var domains = new List<string>() {"red", "blue", "green", "orange"};
             var result = mapColoringSolver.Solve(map, domains);
             var searchTimeInMs = mapColoringSolver.SearchTimeInMs();
-            SaveGraphColoringSolution(result, searchTimeInMs);
+            SaveMapColoringSolution(result, searchTimeInMs);
 
             #endregion
         }
 
-        private static void SaveGraphColoringSolution(IDictionary<string, string> solution, long searchTimeInMs)
+        private static void SaveMapColoringSolution(IDictionary<string, string> solution, long searchTimeInMs)
         {
-            var logResult = solution.Select(kvp => kvp.Key + ": " + kvp.Value.ToString()).ToArray();
+            var logMsg = solution.Select(kvp => kvp.Key + ": " + kvp.Value.ToString()).ToArray();
+            LogResult(logMsg, searchTimeInMs);
+            DataUtils.SaveGraphColoringSolution(solution, GraphColoringSolutionFilePath);
+        }
+
+        private static void SaveZebraPuzzleSolution(IDictionary<string, int> solution, long searchTimeInMs)
+        {
+            var logMsg = solution.Select(kvp => kvp.Key + ": " + kvp.Value).ToArray();
+            LogResult(logMsg, searchTimeInMs);
+            DataUtils.SaveZebraPuzzleSolution(solution, ZebraPuzzleSolutionFilePath);
+        }
+
+        private static void LogResult(string[] logMsg, long searchTimeInMs)
+        {
             _logger.Info($"---------------------------------");
-            _logger.Info($"Found solution: {string.Join(",", logResult)}");
+            _logger.Info($"Found solution: {string.Join(",", logMsg)}");
             _logger.Info($"Search time: {searchTimeInMs.ToString()} ms");
-            DataUtils.SaveSolution(solution, SolutionFilePath);
         }
     }
 }

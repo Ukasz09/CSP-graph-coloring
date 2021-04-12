@@ -16,7 +16,7 @@ namespace csp_problem
             _logger.Log(LogLevel.Info, $"Correct saved map graph in file: {filePath}");
         }
 
-        public static void SaveSolution(IDictionary<string, string> solution, string filePath)
+        public static void SaveGraphColoringSolution(IDictionary<string, string> solution, string filePath)
         {
             #region ParsingResultToCorrectJSONFormat
 
@@ -27,6 +27,26 @@ namespace csp_problem
             // Remove last comma
             lines[^1] = lines[^1].Remove(lines[^1].Length - 1);
             lines.Add("]");
+
+            #endregion
+
+            File.WriteAllLines(filePath, lines);
+            _logger.Log(LogLevel.Info, $"Correct saved solution in file: {filePath}");
+        }
+
+        public static void SaveZebraPuzzleSolution(IDictionary<string, int> solution, string filePath)
+        {
+            #region ParsingResultToCorrectJSONFormat
+
+            var lines = new List<string> {"{"};
+            // Parse to text lines
+            var resultData = solution
+                .Select(varHouseNumber => $"\"{varHouseNumber.Key}\":{varHouseNumber.Value.ToString()},")
+                .ToList();
+            lines.AddRange(resultData);
+            // Remove last comma
+            lines[^1] = lines[^1].Remove(lines[^1].Length - 1);
+            lines.Add("}");
 
             #endregion
 

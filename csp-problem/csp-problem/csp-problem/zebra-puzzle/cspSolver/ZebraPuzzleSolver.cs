@@ -9,7 +9,7 @@ using csp_problem.models;
 
 namespace csp_problem
 {
-    public class ZebraPuzzle
+    public class ZebraPuzzleSolver
     {
         private readonly ISolver<string, int> _solver;
         private readonly List<string> _cigaretteVars = GetStaticPropertyNames(typeof(Cigarette));
@@ -18,12 +18,12 @@ namespace csp_problem
         private readonly List<string> _nationalityVars = GetStaticPropertyNames(typeof(Nationality));
         private readonly List<string> _petVars = GetStaticPropertyNames(typeof(Pet));
 
-        public ZebraPuzzle(ISolver<string, int> solver)
+        public ZebraPuzzleSolver(ISolver<string, int> solver)
         {
             _solver = solver;
         }
 
-        public void Solve()
+        public IDictionary<string, int> Solve()
         {
             var csp = GetCsp();
             var assignment = new Assignment<string, int>(csp);
@@ -34,8 +34,7 @@ namespace csp_problem
             }
 
             var variableValues = resultAssignment.GetAssignedValueForAll();
-            // return variableValues;
-            Console.WriteLine(variableValues);
+            return variableValues;
         }
 
         private Csp<string, int> GetCsp()
@@ -91,6 +90,11 @@ namespace csp_problem
                 .Select(p => p.GetValue(null, null)?.ToString())
                 .ToList();
             return propertyNames;
+        }
+
+        public long SearchTimeInMs()
+        {
+            return _solver.ExecutionTimeInMs;
         }
     }
 }

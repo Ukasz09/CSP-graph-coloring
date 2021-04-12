@@ -359,3 +359,20 @@
 2021-04-11 23:56:40.7857 | Info | Found solution: [6,14]: red,[19,0]: red,[3,5]: blue,[19,14]: blue,[12,13]: green,[15,16]: orange |  
 2021-04-11 23:56:40.7857 | Info | Search time: 3 ms |  
 2021-04-11 23:56:40.7880 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-12 19:07:57.5073 | Info | --------------------------------- |  
+2021-04-12 19:07:57.5460 | Info | Found solution: Cigar: 1,Light: 2,Unfiltered: 3,Bong: 4,Menthol: 5,Yellow: 1,Blue: 2,Red: 3,Green: 4,White: 5,Water: 1,Tea: 2,Milk: 3,Coffee: 4,Beer: 5,Norwegian: 1,Dane: 2,English: 3,German: 4,Sweden: 5,Cat: 1,Horse: 2,Bird: 3,Fish: 4,Dog: 5 |  
+2021-04-12 19:07:57.5460 | Info | Search time: 7 ms |  
+2021-04-12 19:07:57.5495 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/zebra-puzzle-solution.json |  
+2021-04-12 19:10:37.6743 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-12 19:10:37.7026 | Info | -------------------------------------------- |  
+2021-04-12 19:10:37.7026 | Info | Started solving Graph Coloring Problem |  
+2021-04-12 19:10:37.7120 | Info | --------------------------------- |  
+2021-04-12 19:10:37.7120 | Info | Found solution: [5,2]: red,[18,16]: red,[10,17]: blue,[2,15]: green,[1,6]: blue,[15,4]: orange |  
+2021-04-12 19:10:37.7120 | Info | Search time: 3 ms |  
+2021-04-12 19:10:37.7135 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-12 19:10:37.7135 | Info | -------------------------------------------- |  
+2021-04-12 19:10:37.7135 | Info | Started solving Zebra Puzzles Problem |  
+2021-04-12 19:10:37.7287 | Info | --------------------------------- |  
+2021-04-12 19:10:37.7287 | Info | Found solution: Cigar: 1,Light: 2,Unfiltered: 3,Bong: 4,Menthol: 5,Yellow: 1,Blue: 2,Red: 3,Green: 4,White: 5,Water: 1,Tea: 2,Milk: 3,Coffee: 4,Beer: 5,Norwegian: 1,Dane: 2,English: 3,German: 4,Sweden: 5,Cat: 1,Horse: 2,Bird: 3,Fish: 4,Dog: 5 |  
+2021-04-12 19:10:37.7287 | Info | Search time: 6 ms |  
+2021-04-12 19:10:37.7287 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/zebra-puzzle-solution.json |  
