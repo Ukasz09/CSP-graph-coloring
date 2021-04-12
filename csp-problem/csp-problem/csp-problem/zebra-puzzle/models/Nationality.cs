@@ -1,11 +1,11 @@
 namespace csp_problem.models
 {
-    public enum Nationality
+    public static class Nationality
     {
-        NORWEGIAN,
-        DANE,
-        ENGLISH,
-        GERMAN,
-        SWEDE
+        public static string Norwegian { get; } = "Norwegian";
+        public static string Dane { get; } = "Dane";
+        public static string English { get; } = "English";
+        public static string German { get; } = "German";
+        public static string Sweden { get; } = "Sweden";
     }
 }

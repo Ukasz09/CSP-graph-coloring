@@ -18,6 +18,21 @@ namespace csp_problem
 
         private static void Main(string[] args)
         {
+            // SolveGraphColoring();
+
+            SolveZebraPuzzles();
+        }
+
+        private static void SolveZebraPuzzles()
+        {
+            var valueOrderHeuristicZebra = new TrivialOrderValues<string, int>();
+            var variableOrderHeuristicZebra = new FirstVariableHeuristic<string, int>();
+            new ZebraPuzzle(new BacktrackSolver<string, int>(valueOrderHeuristicZebra, variableOrderHeuristicZebra))
+                .Solve();
+        }
+
+        private static void SolveGraphColoring()
+        {
             #region mapInitialization
 
             var map = new MapGenerator().GenerateMap(6, 20, 20);
@@ -37,17 +52,11 @@ namespace csp_problem
             #region solutionSearching
 
             var domains = new List<string>() {"red", "blue", "green", "orange"};
-            var result = Solve(mapColoringSolver, map, domains);
+            var result = mapColoringSolver.Solve(map, domains);
             var searchTimeInMs = mapColoringSolver.SearchTimeInMs();
             SaveGraphColoringSolution(result, searchTimeInMs);
 
             #endregion
-        }
-
-        private static IDictionary<string, string> Solve(MapColoringSolver solver, Graph map,
-            ICollection<string> domains)
-        {
-            return solver.Solve(map, domains);
         }
 
         private static void SaveGraphColoringSolution(IDictionary<string, string> solution, long searchTimeInMs)
