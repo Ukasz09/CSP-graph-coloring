@@ -376,3 +376,22 @@
 2021-04-12 19:10:37.7287 | Info | Found solution: Cigar: 1,Light: 2,Unfiltered: 3,Bong: 4,Menthol: 5,Yellow: 1,Blue: 2,Red: 3,Green: 4,White: 5,Water: 1,Tea: 2,Milk: 3,Coffee: 4,Beer: 5,Norwegian: 1,Dane: 2,English: 3,German: 4,Sweden: 5,Cat: 1,Horse: 2,Bird: 3,Fish: 4,Dog: 5 |  
 2021-04-12 19:10:37.7287 | Info | Search time: 6 ms |  
 2021-04-12 19:10:37.7287 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/zebra-puzzle-solution.json |  
+2021-04-12 19:18:59.5016 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-12 19:18:59.5280 | Info | -------------------------------------------- |  
+2021-04-12 19:18:59.5280 | Info | Started solving Graph Coloring Problem |  
+2021-04-12 19:18:59.5366 | Info | --------------------------------- |  
+2021-04-12 19:18:59.5366 | Info | Found solution: [15,7]: red,[16,8]: blue,[16,19]: red,[18,15]: green,[11,16]: blue,[1,3]: green |  
+2021-04-12 19:18:59.5366 | Info | Search time: 2 ms |  
+2021-04-12 19:18:59.5366 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-12 19:19:21.8100 | Info | -------------------------------------------- |  
+2021-04-12 19:19:21.8365 | Info | Started solving Zebra Puzzle Problem |  
+2021-04-12 19:19:21.8505 | Info | --------------------------------- |  
+2021-04-12 19:19:21.8505 | Info | Found solution: Cigar: 1,Light: 2,Unfiltered: 3,Bong: 4,Menthol: 5,Yellow: 1,Blue: 2,Red: 3,Green: 4,White: 5,Water: 1,Tea: 2,Milk: 3,Coffee: 4,Beer: 5,Norwegian: 1,Dane: 2,English: 3,German: 4,Sweden: 5,Cat: 1,Horse: 2,Bird: 3,Fish: 4,Dog: 5 |  
+2021-04-12 19:19:21.8505 | Info | Search time: 6 ms |  
+2021-04-12 19:19:21.8532 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/zebra-puzzle-solution.json |  
+2021-04-12 19:19:47.9436 | Info | -------------------------------------------- |  
+2021-04-12 19:19:47.9701 | Info | Started solving Zebra Puzzle Problem |  
+2021-04-12 19:19:47.9838 | Info | --------------------------------- |  
+2021-04-12 19:19:47.9838 | Info | Found solution: Cigar: 1,Light: 2,Unfiltered: 3,Bong: 4,Menthol: 5,Yellow: 1,Blue: 2,Red: 3,Green: 4,White: 5,Water: 1,Tea: 2,Milk: 3,Coffee: 4,Beer: 5,Norwegian: 1,Dane: 2,English: 3,German: 4,Sweden: 5,Cat: 1,Horse: 2,Bird: 3,Fish: 4,Dog: 5 |  
+2021-04-12 19:19:47.9838 | Info | Search time: 6 ms |  
+2021-04-12 19:19:47.9869 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/zebra-puzzle-solution.json |  

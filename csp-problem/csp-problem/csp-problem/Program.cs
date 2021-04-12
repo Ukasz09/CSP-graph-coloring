@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using csp_problem.csp.cspSolver;
 using csp_problem.csp.heuristics;
@@ -15,11 +16,37 @@ namespace csp_problem
         private const string ZebraPuzzleSolutionFilePath = CspExerciseBasePath + "zebra-puzzle-solution.json";
         private static readonly Logger _logger = LogManager.GetCurrentClassLogger();
 
+        private const string zebraProblemArgName = "zebra";
+        private const string mapColoringProblemArgName = "map";
 
         private static void Main(string[] args)
         {
-            SolveGraphColoring();
-            SolveZebraPuzzles();
+            var passedAnyArg = args.Length > 0;
+            if (passedAnyArg)
+            {
+                var problemArgName = args[0];
+                switch (problemArgName)
+                {
+                    // map coloring
+                    case mapColoringProblemArgName:
+                        SolveMapColoring();
+                        break;
+                    // zebra puzzle
+                    case zebraProblemArgName:
+                        SolveZebraPuzzles();
+                        break;
+                    // incorrect arg name
+                    default:
+                        Console.WriteLine($"Incorrect arg name: {problemArgName}");
+                        break;
+                }
+            }
+            // Solve all problems
+            else
+            {
+                SolveMapColoring();
+                SolveZebraPuzzles();
+            }
         }
 
         private static void SolveZebraPuzzles()
@@ -44,7 +71,7 @@ namespace csp_problem
             #endregion
         }
 
-        private static void SolveGraphColoring()
+        private static void SolveMapColoring()
         {
             #region mapInitialization
 
