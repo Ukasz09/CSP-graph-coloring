@@ -9,6 +9,7 @@ namespace csp_problem.csp.cspSolver
         public IValueOrderHeuristic<V, D> ValuesOrderHeuristic { get; }
         public IVariableHeuristic<V, D> VariableHeuristic { get; }
         public long ExecutionTimeInMs { get; private set; }
+        public int VisitedNodesQty { get; private set; }
         private long TimeoutExecutionTimeMs { get; }
         private readonly Stopwatch _watch = new Stopwatch();
 
@@ -18,6 +19,7 @@ namespace csp_problem.csp.cspSolver
             ValuesOrderHeuristic = valueOrderHeuristic;
             VariableHeuristic = variableOrderHeuristic;
             ExecutionTimeInMs = 0;
+            VisitedNodesQty = 0;
             TimeoutExecutionTimeMs = timeoutExecutionTimeMs;
         }
 
@@ -25,6 +27,7 @@ namespace csp_problem.csp.cspSolver
         {
             _watch.Start();
             ExecutionTimeInMs = 0;
+            VisitedNodesQty = 0;
             var result = solveWithBacktracking(csp, assignment);
             _watch.Stop();
             ExecutionTimeInMs = _watch.ElapsedMilliseconds;
@@ -47,6 +50,7 @@ namespace csp_problem.csp.cspSolver
             var orderedValues = ValuesOrderHeuristic.GetOrderedDomainValues(assignment, csp, variable);
             foreach (var value in orderedValues)
             {
+                VisitedNodesQty++;
                 assignment.AssignVariable(variable, value);
                 if (assignment.IsConsistent(variable, value))
                 {

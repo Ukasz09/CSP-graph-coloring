@@ -9,21 +9,24 @@ namespace csp_problem
 {
     public class MapColoringSolver
     {
-        private ISolver<string, string> solver;
+        private readonly ISolver<string, string> _solver;
+
+        public long SearchTimeInMs => _solver.ExecutionTimeInMs;
+        public int VisitedNodesQty => _solver.VisitedNodesQty;
 
         public MapColoringSolver(ISolver<string, string> solver)
         {
-            this.solver = solver;
+            this._solver = solver;
         }
 
         public IDictionary<string, string> Solve(Graph graph, ICollection<string> domains)
         {
             var csp = GetCsp(graph, domains);
             var assignment = new Assignment<string, string>(csp);
-            var resultAssignment = solver.Solve(csp, assignment);
+            var resultAssignment = _solver.Solve(csp, assignment);
             if (resultAssignment == null)
             {
-                throw new Exception($"Couldn't find solution, time of executing: {solver.ExecutionTimeInMs} ms.");
+                throw new Exception($"Couldn't find solution, time of executing: {_solver.ExecutionTimeInMs} ms.");
             }
 
             var variableValues = resultAssignment.GetAssignedValueForAll();
@@ -63,11 +66,6 @@ namespace csp_problem
             }
 
             return varNeighbours;
-        }
-
-        public long SearchTimeInMs()
-        {
-            return solver.ExecutionTimeInMs;
         }
     }
 }

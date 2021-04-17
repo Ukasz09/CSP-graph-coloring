@@ -17,6 +17,9 @@ namespace csp_problem
         private readonly List<string> _drinksVars = GetStaticPropertyNames(typeof(Drink));
         private readonly List<string> _nationalityVars = GetStaticPropertyNames(typeof(Nationality));
         private readonly List<string> _petVars = GetStaticPropertyNames(typeof(Pet));
+        
+        public long SearchTimeInMs => _solver.ExecutionTimeInMs;
+        public int VisitedNodesQty => _solver.VisitedNodesQty;
 
         public ZebraPuzzleSolver(ISolver<string, int> solver)
         {
@@ -26,6 +29,7 @@ namespace csp_problem
         public IDictionary<string, int> Solve()
         {
             var csp = GetCsp();
+            Ac3<string, int>.ReduceDomains(csp);
             var assignment = new Assignment<string, int>(csp);
             var resultAssignment = _solver.Solve(csp, assignment);
             if (resultAssignment == null)
@@ -74,9 +78,6 @@ namespace csp_problem
                 new TheSameValueAssigned(Drink.Coffee, Color.Green),
             };
             var csp = new Csp<string, int>(variableDomains, constraints);
-
-            Ac3<string, int>.ReduceDomains(csp);
-
             return csp;
         }
 
@@ -99,9 +100,6 @@ namespace csp_problem
             return propertyNames;
         }
 
-        public long SearchTimeInMs()
-        {
-            return _solver.ExecutionTimeInMs;
-        }
+     
     }
 }

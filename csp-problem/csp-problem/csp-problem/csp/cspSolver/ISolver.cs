@@ -8,5 +8,6 @@ namespace csp_problem.csp.cspSolver
         IVariableHeuristic<V, D> VariableHeuristic { get; }
         IAssignment<V, D> Solve(Csp<V, D> csp, IAssignment<V, D> assignment);
         long ExecutionTimeInMs { get; }
+        int VisitedNodesQty { get; }
     }
 }

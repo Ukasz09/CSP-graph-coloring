@@ -65,8 +65,9 @@ namespace csp_problem
             _logger.Info("--------------------------------------------");
             _logger.Info("Started solving Zebra Puzzle Problem");
             var solution = zebraPuzzleSolver.Solve();
-            var searchTimeInMs = zebraPuzzleSolver.SearchTimeInMs();
-            SaveZebraPuzzleSolution(solution, searchTimeInMs);
+            var searchTimeInMs = zebraPuzzleSolver.SearchTimeInMs;
+            var visitedNodesQty = zebraPuzzleSolver.VisitedNodesQty;
+            SaveZebraPuzzleSolution(solution, searchTimeInMs, visitedNodesQty);
 
             #endregion
         }
@@ -95,31 +96,35 @@ namespace csp_problem
             _logger.Info("Started solving Graph Coloring Problem");
             var domains = new List<string>() {"red", "blue", "green", "orange"};
             var result = mapColoringSolver.Solve(map, domains);
-            var searchTimeInMs = mapColoringSolver.SearchTimeInMs();
-            SaveMapColoringSolution(result, searchTimeInMs);
+            var searchTimeInMs = mapColoringSolver.SearchTimeInMs;
+            var visitedNodesQty = mapColoringSolver.VisitedNodesQty;
+            SaveMapColoringSolution(result, searchTimeInMs, visitedNodesQty);
 
             #endregion
         }
 
-        private static void SaveMapColoringSolution(IDictionary<string, string> solution, long searchTimeInMs)
+        private static void SaveMapColoringSolution(IDictionary<string, string> solution, long searchTimeInMs,
+            int visitedNodesQty)
         {
             var logMsg = solution.Select(kvp => kvp.Key + ": " + kvp.Value.ToString()).ToArray();
-            LogResult(logMsg, searchTimeInMs);
+            LogResult(logMsg, searchTimeInMs, visitedNodesQty);
             DataUtils.SaveGraphColoringSolution(solution, GraphColoringSolutionFilePath);
         }
 
-        private static void SaveZebraPuzzleSolution(IDictionary<string, int> solution, long searchTimeInMs)
+        private static void SaveZebraPuzzleSolution(IDictionary<string, int> solution, long searchTimeInMs,
+            int visitedNodesQty)
         {
             var logMsg = solution.Select(kvp => kvp.Key + ": " + kvp.Value).ToArray();
-            LogResult(logMsg, searchTimeInMs);
+            LogResult(logMsg, searchTimeInMs, visitedNodesQty);
             DataUtils.SaveZebraPuzzleSolution(solution, ZebraPuzzleSolutionFilePath);
         }
 
-        private static void LogResult(string[] logMsg, long searchTimeInMs)
+        private static void LogResult(string[] logMsg, long searchTimeInMs, int visitedNodesQty)
         {
             _logger.Info("---------------------------------");
             _logger.Info($"Found solution: {string.Join(",", logMsg)}");
             _logger.Info($"Search time: {searchTimeInMs.ToString()} ms");
+            _logger.Info($"Visited nodes: {visitedNodesQty.ToString()}");
         }
     }
 }
