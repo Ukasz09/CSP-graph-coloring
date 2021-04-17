@@ -5,7 +5,7 @@ using csp_problem.csp.constraints;
 
 namespace csp_problem.cspSolver.constraints
 {
-    public class NextToThe : IConstraint<string, int>, IBinaryConstraint<string>
+    public class NextToThe : IBinaryConstraint<string, int>
     {
         public ICollection<string> Variables { get; }
         public string GetVarA { get; }
@@ -19,9 +19,14 @@ namespace csp_problem.cspSolver.constraints
             GetVarB = varB;
         }
 
-        public IBinaryConstraint<string> Reverse()
+        public IBinaryConstraint<string, int> Reverse()
         {
             return new NextToThe(GetVarB, GetVarA);
+        }
+
+        public bool IsEqualToVarB(string otherVar)
+        {
+            return GetVarB.Equals(otherVar);
         }
 
         public bool Affects(string variable)
@@ -40,7 +45,12 @@ namespace csp_problem.cspSolver.constraints
 
             var varAHouseNumber = inAssignment.GetAssignedValue(GetVarA);
             var varBHouseNumber = inAssignment.GetAssignedValue(GetVarB);
-            return Math.Abs(varAHouseNumber - varBHouseNumber) == 1;
+            return IsSatisfied(varAHouseNumber, varBHouseNumber);
+        }
+
+        public bool IsSatisfied(int domainValueForVarA, int domainValueForVarB)
+        {
+            return Math.Abs(domainValueForVarA - domainValueForVarB) == 1;
         }
     }
 }

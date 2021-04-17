@@ -4,7 +4,7 @@ using csp_problem.csp.constraints;
 
 namespace csp_problem.cspSolver.constraints
 {
-    public class TheSameValueAssigned : IConstraint<string, int>, IBinaryConstraint<string>
+    public class TheSameValueAssigned : IBinaryConstraint<string, int>
     {
         public ICollection<string> Variables { get; }
         public string GetVarA { get; }
@@ -18,9 +18,14 @@ namespace csp_problem.cspSolver.constraints
             GetVarB = varB;
         }
 
-        public IBinaryConstraint<string> Reverse()
+        public IBinaryConstraint<string, int> Reverse()
         {
             return new TheSameValueAssigned(GetVarB, GetVarA);
+        }
+
+        public bool IsEqualToVarB(string otherVar)
+        {
+            return GetVarB.Equals(otherVar);
         }
 
         public bool Affects(string variable)
@@ -39,7 +44,12 @@ namespace csp_problem.cspSolver.constraints
 
             var varAHouseNumber = inAssignment.GetAssignedValue(GetVarA);
             var varBHouseNumber = inAssignment.GetAssignedValue(GetVarB);
-            return varAHouseNumber == varBHouseNumber;
+            return IsSatisfied(varAHouseNumber, varBHouseNumber);
+        }
+
+        public bool IsSatisfied(int domainValueForVarA, int domainValueForVarB)
+        {
+            return domainValueForVarA == domainValueForVarB;
         }
     }
 }

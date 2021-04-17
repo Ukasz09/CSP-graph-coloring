@@ -559,3 +559,16 @@ Dog: 5 |
 2021-04-17 15:17:03.9377 | Info | Found solution: Cigar: 1,Light: 2,Unfiltered: 3,Bong: 4,Menthol: 5,Yellow: 1,Blue: 2,Red: 3,Green: 4,White: 5,Water: 1,Tea: 2,Milk: 3,Coffee: 4,Beer: 5,Norwegian: 1,Dane: 2,English: 3,German: 4,Sweden: 5,Cat: 1,Horse: 2,Bird: 3,Fish: 4,Dog: 5 |  
 2021-04-17 15:17:03.9377 | Info | Search time: 11 ms |  
 2021-04-17 15:17:03.9408 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/zebra-puzzle-solution.json |  
+2021-04-17 16:48:01.2653 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-17 16:48:01.3142 | Info | -------------------------------------------- |  
+2021-04-17 16:48:01.3142 | Info | Started solving Graph Coloring Problem |  
+2021-04-17 16:48:01.3303 | Info | --------------------------------- |  
+2021-04-17 16:48:01.3303 | Info | Found solution: [19,11]: red,[11,1]: blue,[14,12]: green,[9,10]: red,[9,1]: red,[2,2]: green |  
+2021-04-17 16:48:01.3303 | Info | Search time: 5 ms |  
+2021-04-17 16:48:01.3328 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-17 16:48:01.3385 | Info | -------------------------------------------- |  
+2021-04-17 16:48:01.3385 | Info | Started solving Zebra Puzzle Problem |  
+2021-04-17 16:48:01.3703 | Info | --------------------------------- |  
+2021-04-17 16:48:01.3703 | Info | Found solution: Cigar: 1,Light: 2,Unfiltered: 3,Bong: 4,Menthol: 5,Yellow: 1,Blue: 2,Red: 3,Green: 4,White: 5,Water: 1,Tea: 2,Milk: 3,Coffee: 4,Beer: 5,Norwegian: 1,Dane: 2,English: 3,German: 4,Sweden: 5,Cat: 1,Horse: 2,Bird: 3,Fish: 4,Dog: 5 |  
+2021-04-17 16:48:01.3703 | Info | Search time: 15 ms |  
+2021-04-17 16:48:01.3741 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/zebra-puzzle-solution.json |  

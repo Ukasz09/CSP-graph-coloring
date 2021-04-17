@@ -1,8 +1,8 @@
 [
-{"node":[19,5],"color":"red"},
-{"node":[3,5],"color":"red"},
-{"node":[17,5],"color":"blue"},
-{"node":[6,1],"color":"blue"},
-{"node":[16,14],"color":"green"},
-{"node":[15,4],"color":"orange"}
+{"node":[19,11],"color":"red"},
+{"node":[11,1],"color":"blue"},
+{"node":[14,12],"color":"green"},
+{"node":[9,10],"color":"red"},
+{"node":[9,1],"color":"red"},
+{"node":[2,2],"color":"green"}
 ]

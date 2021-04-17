@@ -4,16 +4,21 @@ using csp_problem.csp.constraints;
 
 namespace csp_problem.cspSolver.constraints
 {
-    public class ToTheLeftOf : IConstraint<string, int>, IBinaryConstraint<string>
+    public class ToTheLeftOf : IBinaryConstraint<string, int>
     {
         public ICollection<string> Variables { get; }
         public string GetVarA { get; }
 
         public string GetVarB { get; }
 
-        public IBinaryConstraint<string> Reverse()
+        public IBinaryConstraint<string, int> Reverse()
         {
             return new ToTheLeftOf(GetVarB, GetVarA);
+        }
+
+        public bool IsEqualToVarB(string otherVar)
+        {
+            return GetVarB.Equals(otherVar);
         }
 
         public ToTheLeftOf(string varA, string varB)
@@ -39,7 +44,12 @@ namespace csp_problem.cspSolver.constraints
 
             var varAHouseNumber = inAssignment.GetAssignedValue(GetVarA);
             var varBHouseNumber = inAssignment.GetAssignedValue(GetVarB);
-            return varAHouseNumber == varBHouseNumber - 1;
+            return IsSatisfied(varAHouseNumber, varBHouseNumber);
+        }
+
+        public bool IsSatisfied(int domainValueForVarA, int domainValueForVarB)
+        {
+            return domainValueForVarA == domainValueForVarB - 1;
         }
     }
 }

@@ -17,6 +17,6 @@ namespace csp_problem.csp
         /**
          * Determine if constraint is satisfied in given assignment
          */
-        bool IsSatisfied(IAssignment<V, D> inAssignment);
+        bool IsSatisfied(IAssignment<V, D> inAssignment);  
     }
 }
