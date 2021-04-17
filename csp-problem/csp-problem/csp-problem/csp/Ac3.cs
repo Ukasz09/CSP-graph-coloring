@@ -19,17 +19,20 @@ namespace csp_problem.csp
             return arcs;
         }
 
-        public static void ReduceDomains(IEnumerable<IBinaryConstraint<V, D>> constraints, Csp<V, D> csp)
+        public static void ReduceDomains(Csp<V, D> csp)
         {
-            var arcsList = GenerateArcs(constraints).ToList();
-            var agenda = GenerateArcs(constraints);
+            var binaryConstraints = csp.Constraints
+                .FindAll(c => c is IBinaryConstraint<V, D>)
+                .Select(c => (IBinaryConstraint<V, D>) c);
+            var arcsList = GenerateArcs(binaryConstraints).ToList();
+            var agenda = GenerateArcs(binaryConstraints);
             while (agenda.Count > 0)
             {
                 var checkedArc = agenda.Dequeue();
                 RemoveInconsistent(checkedArc, csp, out var atLeastOneRemoved);
                 if (atLeastOneRemoved)
                 {
-                    var affectedArcs = arcsList.FindAll(arc => arc.IsEqualToVarB(arc.GetVarA));
+                    var affectedArcs = arcsList.FindAll(arc => arc.IsEqualToVarB(checkedArc.GetVarA));
                     affectedArcs.ForEach(arc => agenda.Enqueue(arc));
                 }
             }
@@ -38,19 +41,25 @@ namespace csp_problem.csp
         /**
          * Remove inconsistent domain values from csp variables 
          */
-        public static void RemoveInconsistent(IBinaryConstraint<V, D> arc, Csp<V, D> csp, out bool atLeastOneRemoved)
+        private static void RemoveInconsistent(IBinaryConstraint<V, D> arc, Csp<V, D> csp, out bool atLeastOneRemoved)
         {
             atLeastOneRemoved = false;
             var domainsA = csp.Domains[arc.GetVarA];
             var domainsB = csp.Domains[arc.GetVarB];
+            var newDomainsA = new List<D>();
             foreach (var domainValueA in domainsA)
             {
-                if (CheckInconsistent(domainValueA, domainsB, arc))
+                if (!CheckInconsistent(domainValueA, domainsB, arc))
                 {
-                    domainsA.Remove(domainValueA);
+                    newDomainsA.Add(domainValueA);
+                }
+                else
+                {
                     atLeastOneRemoved = true;
                 }
             }
+
+            csp.Domains[arc.GetVarA] = newDomainsA;
         }
 
         private static bool CheckInconsistent(D domainValueA, IEnumerable<D> domainsB,

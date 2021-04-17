@@ -47,6 +47,10 @@ namespace csp_problem
                 variableDomains[variable] = domains;
             }
 
+            // Fix domain for norwegian's house
+            const int norwegianHouse = 1;
+            variableDomains[Nationality.Norwegian] = new List<int> {norwegianHouse};
+
             var constraints = new List<IConstraint<string, int>>
             {
                 new AllDifferentConstraint<string, int>(_cigaretteVars),
@@ -54,7 +58,7 @@ namespace csp_problem
                 new AllDifferentConstraint<string, int>(_drinksVars),
                 new AllDifferentConstraint<string, int>(_nationalityVars),
                 new AllDifferentConstraint<string, int>(_petVars),
-                new ValueEqualToGiven(Nationality.Norwegian, 1),
+                new ValueEqualToGiven(Nationality.Norwegian, norwegianHouse),
                 new TheSameValueAssigned(Nationality.English, Color.Red),
                 new ToTheLeftOf(Color.Green, Color.White),
                 new TheSameValueAssigned(Nationality.Dane, Drink.Tea),
@@ -70,6 +74,9 @@ namespace csp_problem
                 new TheSameValueAssigned(Drink.Coffee, Color.Green),
             };
             var csp = new Csp<string, int>(variableDomains, constraints);
+
+            Ac3<string, int>.ReduceDomains(csp);
+
             return csp;
         }
 

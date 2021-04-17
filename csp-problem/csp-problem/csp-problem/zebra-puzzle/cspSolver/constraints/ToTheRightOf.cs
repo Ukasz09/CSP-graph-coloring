@@ -4,14 +4,14 @@ using csp_problem.csp.constraints;
 
 namespace csp_problem.cspSolver.constraints
 {
-    public class ToTheLeftOf : IBinaryConstraint<string, int>
+    public class ToTheRightOf : IBinaryConstraint<string, int>
     {
         public ICollection<string> Variables { get; }
         public string GetVarA { get; }
 
         public string GetVarB { get; }
 
-        public ToTheLeftOf(string varA, string varB)
+        public ToTheRightOf(string varA, string varB)
         {
             Variables = new List<string> {varA, varB};
             GetVarA = varA;
@@ -20,7 +20,7 @@ namespace csp_problem.cspSolver.constraints
 
         public IBinaryConstraint<string, int> Reverse()
         {
-            return new ToTheRightOf(GetVarB, GetVarA);
+            return new ToTheLeftOf(GetVarB, GetVarA);
         }
 
         public bool IsEqualToVarB(string otherVar)
@@ -49,7 +49,7 @@ namespace csp_problem.cspSolver.constraints
 
         public bool IsSatisfied(int domainValueForVarA, int domainValueForVarB)
         {
-            return domainValueForVarA == domainValueForVarB - 1;
+            return domainValueForVarA == domainValueForVarB + 1;
         }
     }
 }
