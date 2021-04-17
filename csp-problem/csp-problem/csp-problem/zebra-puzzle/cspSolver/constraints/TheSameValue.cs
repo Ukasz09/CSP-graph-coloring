@@ -1,19 +1,21 @@
 using System.Collections.Generic;
 using csp_problem.csp;
+using csp_problem.csp.constraints;
 
 namespace csp_problem.cspSolver.constraints
 {
-    public class TheSameValueAssigned : IConstraint<string, int>
+    public class TheSameValueAssigned : IConstraint<string, int>, IBinaryConstraint<string>
     {
         public ICollection<string> Variables { get; }
-        private readonly string _varA;
-        private readonly string _varB;
+        public string GetVarA { get; }
+
+        public string GetVarB { get; }
 
         public TheSameValueAssigned(string varA, string varB)
         {
             Variables = new List<string> {varA, varB};
-            _varA = varA;
-            _varB = varB;
+            GetVarA = varA;
+            GetVarB = varB;
         }
 
         public bool Affects(string variable)
@@ -23,15 +25,15 @@ namespace csp_problem.cspSolver.constraints
 
         public bool IsSatisfied(IAssignment<string, int> inAssignment)
         {
-            var varAIsAssigned = inAssignment.IsAssigned(_varA);
-            var varBIsAssigned = inAssignment.IsAssigned(_varB);
+            var varAIsAssigned = inAssignment.IsAssigned(GetVarA);
+            var varBIsAssigned = inAssignment.IsAssigned(GetVarB);
             if (!varAIsAssigned || !varBIsAssigned)
             {
                 return true;
             }
 
-            var varAHouseNumber = inAssignment.GetAssignedValue(_varA);
-            var varBHouseNumber = inAssignment.GetAssignedValue(_varB);
+            var varAHouseNumber = inAssignment.GetAssignedValue(GetVarA);
+            var varBHouseNumber = inAssignment.GetAssignedValue(GetVarB);
             return varAHouseNumber == varBHouseNumber;
         }
     }
