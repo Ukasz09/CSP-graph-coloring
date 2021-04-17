@@ -11,6 +11,11 @@ namespace csp_problem.cspSolver.constraints
 
         public string GetVarB { get; }
 
+        public IBinaryConstraint<string> Reverse()
+        {
+            return new ToTheLeftOf(GetVarB, GetVarA);
+        }
+
         public ToTheLeftOf(string varA, string varB)
         {
             Variables = new List<string> {varA, varB};

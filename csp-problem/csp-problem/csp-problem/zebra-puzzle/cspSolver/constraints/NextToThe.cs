@@ -19,6 +19,11 @@ namespace csp_problem.cspSolver.constraints
             GetVarB = varB;
         }
 
+        public IBinaryConstraint<string> Reverse()
+        {
+            return new NextToThe(GetVarB, GetVarA);
+        }
+
         public bool Affects(string variable)
         {
             return Variables.Contains(variable);

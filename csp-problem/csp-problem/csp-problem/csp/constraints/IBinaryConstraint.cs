@@ -4,5 +4,6 @@ namespace csp_problem.csp.constraints
     {
         V GetVarA { get; }
         V GetVarB { get; }
+        IBinaryConstraint<V> Reverse();
     }
 }
