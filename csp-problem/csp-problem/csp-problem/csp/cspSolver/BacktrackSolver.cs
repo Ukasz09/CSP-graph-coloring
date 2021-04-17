@@ -14,7 +14,7 @@ namespace csp_problem.csp.cspSolver
         private long TimeoutExecutionTimeMs { get; }
 
         private readonly Stopwatch _watch = new Stopwatch();
-        private IList<IAssignment<V, D>> solutions = new List<IAssignment<V, D>>();
+        private readonly IList<IDictionary<V, D>> _solutions = new List<IDictionary<V, D>>();
 
         public BacktrackSolver(IValueOrderHeuristic<V, D> valueOrderHeuristic,
             IVariableHeuristic<V, D> variableOrderHeuristic, long timeoutExecutionTimeMs = 300000)
@@ -26,7 +26,7 @@ namespace csp_problem.csp.cspSolver
             TimeoutExecutionTimeMs = timeoutExecutionTimeMs;
         }
 
-        public IAssignment<V, D> Solve(Csp<V, D> csp, IAssignment<V, D> assignment)
+        public IDictionary<V, D> Solve(Csp<V, D> csp, IAssignment<V, D> assignment)
         {
             _watch.Start();
             ExecutionTimeInMs = 0;
@@ -34,19 +34,19 @@ namespace csp_problem.csp.cspSolver
             var result = solveWithBacktracking(csp, assignment, false);
             _watch.Stop();
             ExecutionTimeInMs = _watch.ElapsedMilliseconds;
-            return result;
+            return result.GetAssignedValueForAll();
         }
 
-        public IList<IAssignment<V, D>> SolveAll(Csp<V, D> csp, IAssignment<V, D> assignment)
+        public IList<IDictionary<V, D>> SolveAll(Csp<V, D> csp, IAssignment<V, D> assignment)
         {
             _watch.Start();
             ExecutionTimeInMs = 0;
             VisitedNodesQty = 0;
-            solutions.Clear();
+            _solutions.Clear();
             solveWithBacktracking(csp, assignment, true);
             _watch.Stop();
             ExecutionTimeInMs = _watch.ElapsedMilliseconds;
-            return solutions;
+            return _solutions;
         }
 
         private IAssignment<V, D> solveWithBacktracking(Csp<V, D> csp, IAssignment<V, D> assignment,
@@ -78,7 +78,15 @@ namespace csp_problem.csp.cspSolver
                             return result;
                         }
 
-                        solutions.Add(result);
+                        // Store result
+                        var assignedValuesCopy = new Dictionary<V, D>();
+                        var assignedValues = result.GetAssignedValueForAll();
+                        foreach (var (assignedVariable, assignedDomainValue) in assignedValues)
+                        {
+                            assignedValuesCopy[assignedVariable] = assignedDomainValue;
+                        }
+
+                        _solutions.Add(assignedValuesCopy);
                     }
                 }
                 else

@@ -29,8 +29,20 @@ namespace csp_problem
                 throw new Exception($"Couldn't find solution, time of executing: {_solver.ExecutionTimeInMs} ms.");
             }
 
-            var variableValues = resultAssignment.GetAssignedValueForAll();
-            return variableValues;
+            return resultAssignment;
+        }
+
+        public IList<IDictionary<string, string>> SolveAll(Graph graph, ICollection<string> domains)
+        {
+            var csp = GetCsp(graph, domains);
+            var assignment = new Assignment<string, string>(csp);
+            var resultAssignment = _solver.SolveAll(csp, assignment);
+            if (resultAssignment.Count == 0)
+            {
+                throw new Exception($"Couldn't find solution, time of executing: {_solver.ExecutionTimeInMs} ms.");
+            }
+
+            return resultAssignment;
         }
 
         private static Csp<string, string> GetCsp(Graph graph, ICollection<string> domains)

@@ -18,8 +18,36 @@ namespace csp_problem
 
         public static void SaveGraphColoringSolution(IDictionary<string, string> solution, string filePath)
         {
-            #region ParsingResultToCorrectJSONFormat
+            var lines = GetMapColoringSolutionContent(solution);
+            File.WriteAllLines(filePath, lines);
+            _logger.Log(LogLevel.Info, $"Correct saved solution in file: {filePath}");
+        }
 
+        public static void SaveGraphColoringAllSolutions(IEnumerable<IDictionary<string, string>> solutions,
+            string filePath)
+        {
+            var lines = GetMapColoringAllSolutionsContent(solutions);
+            File.WriteAllLines(filePath, lines);
+            _logger.Log(LogLevel.Info, $"Correct saved solutions in file: {filePath}");
+        }
+
+        public static List<string> GetMapColoringAllSolutionsContent(IEnumerable<IDictionary<string, string>> solutions)
+        {
+            var lines = new List<string> {"["};
+            foreach (var solution in solutions)
+            {
+                var content = GetMapColoringSolutionContent(solution);
+                content.Add(",");
+                lines.AddRange(content);
+            }
+            // Remove last comma
+            lines[^1] = lines[^1].Remove(lines[^1].Length - 1);
+            lines.Add("]");
+            return lines;
+        }
+
+        private static List<string> GetMapColoringSolutionContent(IDictionary<string, string> solution)
+        {
             var lines = new List<string> {"["};
             // Add quotes and comma
             lines.AddRange(solution.Select(varColor =>
@@ -27,11 +55,7 @@ namespace csp_problem
             // Remove last comma
             lines[^1] = lines[^1].Remove(lines[^1].Length - 1);
             lines.Add("]");
-
-            #endregion
-
-            File.WriteAllLines(filePath, lines);
-            _logger.Log(LogLevel.Info, $"Correct saved solution in file: {filePath}");
+            return lines;
         }
 
         public static void SaveZebraPuzzleSolution(IDictionary<string, int> solution, string filePath)

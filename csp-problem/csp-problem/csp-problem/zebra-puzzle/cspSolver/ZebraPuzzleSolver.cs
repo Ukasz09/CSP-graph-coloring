@@ -37,8 +37,7 @@ namespace csp_problem
                 throw new Exception($"Couldn't find solution, time of executing: {_solver.ExecutionTimeInMs} ms.");
             }
 
-            var variableValues = resultAssignment.GetAssignedValueForAll();
-            return variableValues;
+            return resultAssignment;
         }
 
         public IEnumerable<IDictionary<string, int>> SolveAllSolutions()
@@ -46,13 +45,12 @@ namespace csp_problem
             var csp = GetCsp();
             Ac3<string, int>.ReduceDomains(csp);
             var assignment = new Assignment<string, int>(csp);
-            var listOfResultAssignments = _solver.SolveAll(csp, assignment);
-            if (listOfResultAssignments.Count == 0)
+            var listOfVariableValues = _solver.SolveAll(csp, assignment);
+            if (listOfVariableValues.Count == 0)
             {
                 throw new Exception($"Couldn't find solution, time of executing: {_solver.ExecutionTimeInMs} ms.");
             }
 
-            var listOfVariableValues = listOfResultAssignments.Select(a => a.GetAssignedValueForAll());
             return listOfVariableValues;
         }
 

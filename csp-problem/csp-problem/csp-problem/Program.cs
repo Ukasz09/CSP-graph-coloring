@@ -64,9 +64,10 @@ namespace csp_problem
 
             _logger.Info("--------------------------------------------");
             _logger.Info("Started solving Zebra Puzzle Problem");
-            var allSolutions = zebraPuzzleSolver.SolveAllSolutions();
+            var allSolutions = zebraPuzzleSolver.SolveAllSolutions().ToList();
             var searchTimeInMs = zebraPuzzleSolver.SearchTimeInMs;
             var visitedNodesQty = zebraPuzzleSolver.VisitedNodesQty;
+            SaveZebraPuzzleSolution(allSolutions[0], searchTimeInMs, visitedNodesQty);
 
             #endregion
         }
@@ -94,10 +95,10 @@ namespace csp_problem
             _logger.Info("--------------------------------------------");
             _logger.Info("Started solving Graph Coloring Problem");
             var domains = new List<string>() {"red", "blue", "green", "orange"};
-            var result = mapColoringSolver.Solve(map, domains);
+            var result = mapColoringSolver.SolveAll(map, domains);
             var searchTimeInMs = mapColoringSolver.SearchTimeInMs;
             var visitedNodesQty = mapColoringSolver.VisitedNodesQty;
-            SaveMapColoringSolution(result, searchTimeInMs, visitedNodesQty);
+            SaveMapColoringAllSolutions(result, searchTimeInMs, visitedNodesQty);
 
             #endregion
         }
@@ -108,6 +109,16 @@ namespace csp_problem
             var logMsg = solution.Select(kvp => kvp.Key + ": " + kvp.Value.ToString()).ToArray();
             LogResult(logMsg, searchTimeInMs, visitedNodesQty);
             DataUtils.SaveGraphColoringSolution(solution, GraphColoringSolutionFilePath);
+        }
+
+        private static void SaveMapColoringAllSolutions(
+            IList<IDictionary<string, string>> solutions,
+            long searchTimeInMs,
+            int visitedNodesQty)
+        {
+            var logMsg = DataUtils.GetMapColoringAllSolutionsContent(solutions);
+            LogResult(logMsg.ToArray(), searchTimeInMs, visitedNodesQty);
+            DataUtils.SaveGraphColoringAllSolutions(solutions, GraphColoringSolutionFilePath);
         }
 
         private static void SaveZebraPuzzleSolution(IDictionary<string, int> solution, long searchTimeInMs,
