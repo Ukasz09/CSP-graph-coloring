@@ -16,8 +16,8 @@ namespace csp_problem
         private const string ZebraPuzzleSolutionFilePath = CspExerciseBasePath + "zebra-puzzle-solution.json";
         private static readonly Logger _logger = LogManager.GetCurrentClassLogger();
 
-        private const string zebraProblemArgName = "zebra";
-        private const string mapColoringProblemArgName = "map";
+        private const string ZebraProblemArgName = "zebra";
+        private const string MapColoringProblemArgName = "map";
 
         private static void Main(string[] args)
         {
@@ -28,11 +28,11 @@ namespace csp_problem
                 switch (problemArgName)
                 {
                     // map coloring
-                    case mapColoringProblemArgName:
+                    case MapColoringProblemArgName:
                         SolveMapColoring();
                         break;
                     // zebra puzzle
-                    case zebraProblemArgName:
+                    case ZebraProblemArgName:
                         SolveZebraPuzzles();
                         break;
                     // incorrect arg name
@@ -117,7 +117,7 @@ namespace csp_problem
 
         private static void LogResult(string[] logMsg, long searchTimeInMs)
         {
-            _logger.Info($"---------------------------------");
+            _logger.Info("---------------------------------");
             _logger.Info($"Found solution: {string.Join(",", logMsg)}");
             _logger.Info($"Search time: {searchTimeInMs.ToString()} ms");
         }

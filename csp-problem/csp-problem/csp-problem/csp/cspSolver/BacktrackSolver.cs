@@ -9,7 +9,7 @@ namespace csp_problem.csp.cspSolver
         public IValueOrderHeuristic<V, D> ValuesOrderHeuristic { get; }
         public IVariableHeuristic<V, D> VariableHeuristic { get; }
         public long ExecutionTimeInMs { get; private set; }
-        public long TimeoutExecutionTimeMs { get; }
+        private long TimeoutExecutionTimeMs { get; }
         private readonly Stopwatch _watch = new Stopwatch();
 
         public BacktrackSolver(IValueOrderHeuristic<V, D> valueOrderHeuristic,

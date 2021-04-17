@@ -4,20 +4,20 @@ namespace csp_problem
 {
     public class Edge
     {
-        public Node startNode { get; }
-        public Node endNode { get; }
+        public Node StartNode { get; }
+        public Node EndNode { get; }
 
         public Edge(Node startNode, Node endNode)
         {
-            this.startNode = startNode;
-            this.endNode = endNode;
+            StartNode = startNode;
+            EndNode = endNode;
         }
 
         private bool Equals(Edge other)
         {
             return
-                (other.startNode.Equals(startNode) && other.endNode.Equals(endNode)) ||
-                (other.startNode.Equals(endNode) && other.endNode.Equals(startNode));
+                other.StartNode.Equals(StartNode) && other.EndNode.Equals(EndNode) ||
+                other.StartNode.Equals(EndNode) && other.EndNode.Equals(StartNode);
         }
 
         public override bool Equals(object obj)
@@ -29,12 +29,12 @@ namespace csp_problem
 
         public override int GetHashCode()
         {
-            return HashCode.Combine(startNode, endNode);
+            return HashCode.Combine(StartNode, EndNode);
         }
 
         public override string ToString()
         {
-            return $"[{startNode},{endNode}]";
+            return $"[{StartNode},{EndNode}]";
         }
     }
 }

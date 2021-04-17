@@ -6,9 +6,9 @@ namespace csp_problem
 {
     public static class GraphUtils
     {
-        public static bool EgdesIntersect(Edge e1, Edge e2)
+        private static bool EdgesIntersect(Edge e1, Edge e2)
         {
-            var nodes = new[] {e1.startNode, e1.endNode, e2.startNode, e2.endNode};
+            var nodes = new[] {e1.StartNode, e1.EndNode, e2.StartNode, e2.EndNode};
             var distinctNodes = nodes.Distinct().ToArray();
             var atLeastOneCommonNode = distinctNodes.Length != nodes.Length;
             // Check intersection when two edges attached to one node  
@@ -19,10 +19,10 @@ namespace csp_problem
                 return areTheSameEdge || AreCollinear(distinctNodes[0], distinctNodes[1], distinctNodes[2]);
             }
 
-            var e1StartNode = e1.startNode;
-            var e1EndNode = e1.endNode;
-            var e2StartNode = e2.startNode;
-            var e2EndNode = e2.endNode;
+            var e1StartNode = e1.StartNode;
+            var e1EndNode = e1.EndNode;
+            var e2StartNode = e2.StartNode;
+            var e2EndNode = e2.EndNode;
 
             // Find the four orientations needed for general and special cases
             var o1 = Orientation(e1StartNode, e1EndNode, e2StartNode);
@@ -132,10 +132,10 @@ namespace csp_problem
 
         public static bool IntersectWithAnyEdge(Edge edge, IEnumerable<Edge> edges)
         {
-            return edges.Select(e => EgdesIntersect(edge, e)).Any(intersect => intersect);
+            return edges.Select(e => EdgesIntersect(edge, e)).Any(intersect => intersect);
         }
 
-        public static double SegmentWidth(Node a, Node b)
+        private static double SegmentWidth(Node a, Node b)
         {
             return Math.Sqrt(Math.Pow((b.X - a.X), 2) + Math.Pow(b.Y - a.Y, 2));
         }
