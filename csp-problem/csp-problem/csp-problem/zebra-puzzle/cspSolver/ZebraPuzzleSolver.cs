@@ -17,7 +17,7 @@ namespace csp_problem
         private readonly List<string> _drinksVars = GetStaticPropertyNames(typeof(Drink));
         private readonly List<string> _nationalityVars = GetStaticPropertyNames(typeof(Nationality));
         private readonly List<string> _petVars = GetStaticPropertyNames(typeof(Pet));
-        
+
         public long SearchTimeInMs => _solver.ExecutionTimeInMs;
         public int VisitedNodesQty => _solver.VisitedNodesQty;
 
@@ -39,6 +39,21 @@ namespace csp_problem
 
             var variableValues = resultAssignment.GetAssignedValueForAll();
             return variableValues;
+        }
+
+        public IEnumerable<IDictionary<string, int>> SolveAllSolutions()
+        {
+            var csp = GetCsp();
+            Ac3<string, int>.ReduceDomains(csp);
+            var assignment = new Assignment<string, int>(csp);
+            var listOfResultAssignments = _solver.SolveAll(csp, assignment);
+            if (listOfResultAssignments.Count == 0)
+            {
+                throw new Exception($"Couldn't find solution, time of executing: {_solver.ExecutionTimeInMs} ms.");
+            }
+
+            var listOfVariableValues = listOfResultAssignments.Select(a => a.GetAssignedValueForAll());
+            return listOfVariableValues;
         }
 
         private Csp<string, int> GetCsp()
@@ -99,7 +114,5 @@ namespace csp_problem
                 .ToList();
             return propertyNames;
         }
-
-     
     }
 }

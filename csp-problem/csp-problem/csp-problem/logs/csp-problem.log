@@ -998,3 +998,70 @@ Dog: 5 |
 2021-04-17 19:13:26.0097 | Info | Search time: 14 ms |  
 2021-04-17 19:13:26.0097 | Info | Visited nodes: 74 |  
 2021-04-17 19:13:26.0128 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/zebra-puzzle-solution.json |  
+2021-04-17 21:23:37.6314 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-17 21:23:37.6827 | Info | -------------------------------------------- |  
+2021-04-17 21:23:37.6827 | Info | Started solving Graph Coloring Problem |  
+2021-04-17 21:24:57.0736 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-17 21:24:57.1370 | Info | -------------------------------------------- |  
+2021-04-17 21:24:57.1370 | Info | Started solving Graph Coloring Problem |  
+2021-04-17 21:25:04.5944 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-17 21:25:04.6300 | Info | -------------------------------------------- |  
+2021-04-17 21:25:04.6300 | Info | Started solving Graph Coloring Problem |  
+2021-04-17 21:26:33.2996 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-17 21:26:33.3369 | Info | -------------------------------------------- |  
+2021-04-17 21:26:33.3369 | Info | Started solving Graph Coloring Problem |  
+2021-04-17 21:26:33.3549 | Info | --------------------------------- |  
+2021-04-17 21:26:33.3549 | Info | Found solution: [12,15]: red,[19,13]: blue,[19,8]: blue,[19,18]: green,[0,8]: green,[4,18]: blue |  
+2021-04-17 21:26:33.3549 | Info | Search time: 8 ms |  
+2021-04-17 21:26:33.3549 | Info | Visited nodes: 13 |  
+2021-04-17 21:26:33.3578 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-17 21:26:45.3842 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-17 21:26:45.4244 | Info | -------------------------------------------- |  
+2021-04-17 21:26:45.4244 | Info | Started solving Graph Coloring Problem |  
+2021-04-17 21:29:22.2213 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-17 21:29:22.2556 | Info | -------------------------------------------- |  
+2021-04-17 21:29:22.2560 | Info | Started solving Graph Coloring Problem |  
+2021-04-17 21:30:45.1645 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-17 21:30:45.2025 | Info | -------------------------------------------- |  
+2021-04-17 21:30:45.2025 | Info | Started solving Graph Coloring Problem |  
+2021-04-17 21:31:53.1341 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-17 21:31:53.1654 | Info | -------------------------------------------- |  
+2021-04-17 21:31:53.1654 | Info | Started solving Graph Coloring Problem |  
+2021-04-17 21:33:13.9372 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-17 21:33:13.9692 | Info | -------------------------------------------- |  
+2021-04-17 21:33:13.9692 | Info | Started solving Graph Coloring Problem |  
+2021-04-17 21:33:50.5336 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-17 21:33:50.5672 | Info | -------------------------------------------- |  
+2021-04-17 21:33:50.5672 | Info | Started solving Graph Coloring Problem |  
+2021-04-17 21:35:49.4511 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-17 21:35:49.4848 | Info | -------------------------------------------- |  
+2021-04-17 21:35:49.4848 | Info | Started solving Graph Coloring Problem |  
+2021-04-17 21:35:49.4966 | Info | --------------------------------- |  
+2021-04-17 21:35:49.4966 | Info | Found solution: [1,1]: red,[1,18]: blue,[11,11]: green,[6,10]: orange,[4,14]: red,[18,9]: orange |  
+2021-04-17 21:35:49.4966 | Info | Search time: 3 ms |  
+2021-04-17 21:35:49.4966 | Info | Visited nodes: 15 |  
+2021-04-17 21:35:49.4966 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-17 22:01:56.3785 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-17 22:01:56.4117 | Info | -------------------------------------------- |  
+2021-04-17 22:01:56.4119 | Info | Started solving Graph Coloring Problem |  
+2021-04-17 22:04:23.4522 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-17 22:04:23.4857 | Info | -------------------------------------------- |  
+2021-04-17 22:04:23.4857 | Info | Started solving Graph Coloring Problem |  
+2021-04-17 22:05:13.7594 | Info | -------------------------------------------- |  
+2021-04-17 22:05:13.7982 | Info | Started solving Zebra Puzzle Problem |  
+2021-04-17 22:05:25.4456 | Info | -------------------------------------------- |  
+2021-04-17 22:05:25.4804 | Info | Started solving Zebra Puzzle Problem |  
+2021-04-17 22:07:05.5124 | Info | -------------------------------------------- |  
+2021-04-17 22:07:05.5411 | Info | Started solving Zebra Puzzle Problem |  
+2021-04-17 22:09:26.5556 | Info | -------------------------------------------- |  
+2021-04-17 22:09:26.5907 | Info | Started solving Zebra Puzzle Problem |  
+2021-04-17 22:10:33.7211 | Info | -------------------------------------------- |  
+2021-04-17 22:10:33.7547 | Info | Started solving Zebra Puzzle Problem |  
+2021-04-17 22:11:19.4636 | Info | -------------------------------------------- |  
+2021-04-17 22:11:19.5065 | Info | Started solving Zebra Puzzle Problem |  
+2021-04-17 22:12:50.6844 | Info | -------------------------------------------- |  
+2021-04-17 22:12:50.7170 | Info | Started solving Zebra Puzzle Problem |  
+2021-04-17 22:33:04.9124 | Info | -------------------------------------------- |  
+2021-04-17 22:33:04.9408 | Info | Started solving Zebra Puzzle Problem |  
+2021-04-17 22:33:27.1888 | Info | -------------------------------------------- |  
+2021-04-17 22:33:27.2238 | Info | Started solving Zebra Puzzle Problem |  

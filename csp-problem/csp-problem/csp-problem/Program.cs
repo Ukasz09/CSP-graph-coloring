@@ -64,10 +64,9 @@ namespace csp_problem
 
             _logger.Info("--------------------------------------------");
             _logger.Info("Started solving Zebra Puzzle Problem");
-            var solution = zebraPuzzleSolver.Solve();
+            var allSolutions = zebraPuzzleSolver.SolveAllSolutions();
             var searchTimeInMs = zebraPuzzleSolver.SearchTimeInMs;
             var visitedNodesQty = zebraPuzzleSolver.VisitedNodesQty;
-            SaveZebraPuzzleSolution(solution, searchTimeInMs, visitedNodesQty);
 
             #endregion
         }

@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using csp_problem.csp.heuristics;
 
@@ -11,7 +12,9 @@ namespace csp_problem.csp.cspSolver
         public long ExecutionTimeInMs { get; private set; }
         public int VisitedNodesQty { get; private set; }
         private long TimeoutExecutionTimeMs { get; }
+
         private readonly Stopwatch _watch = new Stopwatch();
+        private IList<IAssignment<V, D>> solutions = new List<IAssignment<V, D>>();
 
         public BacktrackSolver(IValueOrderHeuristic<V, D> valueOrderHeuristic,
             IVariableHeuristic<V, D> variableOrderHeuristic, long timeoutExecutionTimeMs = 300000)
@@ -28,13 +31,26 @@ namespace csp_problem.csp.cspSolver
             _watch.Start();
             ExecutionTimeInMs = 0;
             VisitedNodesQty = 0;
-            var result = solveWithBacktracking(csp, assignment);
+            var result = solveWithBacktracking(csp, assignment, false);
             _watch.Stop();
             ExecutionTimeInMs = _watch.ElapsedMilliseconds;
             return result;
         }
 
-        private IAssignment<V, D> solveWithBacktracking(Csp<V, D> csp, IAssignment<V, D> assignment)
+        public IList<IAssignment<V, D>> SolveAll(Csp<V, D> csp, IAssignment<V, D> assignment)
+        {
+            _watch.Start();
+            ExecutionTimeInMs = 0;
+            VisitedNodesQty = 0;
+            solutions.Clear();
+            solveWithBacktracking(csp, assignment, true);
+            _watch.Stop();
+            ExecutionTimeInMs = _watch.ElapsedMilliseconds;
+            return solutions;
+        }
+
+        private IAssignment<V, D> solveWithBacktracking(Csp<V, D> csp, IAssignment<V, D> assignment,
+            bool allSolutions)
         {
             if (_watch.ElapsedMilliseconds > TimeoutExecutionTimeMs)
             {
@@ -54,10 +70,15 @@ namespace csp_problem.csp.cspSolver
                 assignment.AssignVariable(variable, value);
                 if (assignment.IsConsistent(variable, value))
                 {
-                    var result = solveWithBacktracking(csp, assignment);
+                    var result = solveWithBacktracking(csp, assignment, allSolutions);
                     if (result != null)
                     {
-                        return result;
+                        if (!allSolutions)
+                        {
+                            return result;
+                        }
+
+                        solutions.Add(result);
                     }
                 }
                 else
