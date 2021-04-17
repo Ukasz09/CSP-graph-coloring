@@ -1,50 +1,8 @@
 [
-  [
-    { "node": [5, 11], "color": "red" },
-    { "node": [9, 1], "color": "blue" },
-    { "node": [11, 16], "color": "green" },
-    { "node": [11, 5], "color": "red" },
-    { "node": [2, 15], "color": "orange" },
-    { "node": [15, 1], "color": "orange" }
-  ],
-  [
-    { "node": [5, 11], "color": "red" },
-    { "node": [9, 1], "color": "green" },
-    { "node": [11, 16], "color": "blue" },
-    { "node": [11, 5], "color": "red" },
-    { "node": [2, 15], "color": "orange" },
-    { "node": [15, 1], "color": "orange" }
-  ],
-  [
-    { "node": [5, 11], "color": "blue" },
-    { "node": [9, 1], "color": "red" },
-    { "node": [11, 16], "color": "green" },
-    { "node": [11, 5], "color": "blue" },
-    { "node": [2, 15], "color": "orange" },
-    { "node": [15, 1], "color": "orange" }
-  ],
-  [
-    { "node": [5, 11], "color": "blue" },
-    { "node": [9, 1], "color": "green" },
-    { "node": [11, 16], "color": "red" },
-    { "node": [11, 5], "color": "blue" },
-    { "node": [2, 15], "color": "orange" },
-    { "node": [15, 1], "color": "orange" }
-  ],
-  [
-    { "node": [5, 11], "color": "green" },
-    { "node": [9, 1], "color": "red" },
-    { "node": [11, 16], "color": "blue" },
-    { "node": [11, 5], "color": "green" },
-    { "node": [2, 15], "color": "orange" },
-    { "node": [15, 1], "color": "orange" }
-  ],
-  [
-    { "node": [5, 11], "color": "green" },
-    { "node": [9, 1], "color": "blue" },
-    { "node": [11, 16], "color": "red" },
-    { "node": [11, 5], "color": "green" },
-    { "node": [2, 15], "color": "orange" },
-    { "node": [15, 1], "color": "orange" }
-  ]
+{"node":[18,5],"color":"red"},
+{"node":[11,17],"color":"blue"},
+{"node":[19,19],"color":"green"},
+{"node":[8,19],"color":"red"},
+{"node":[3,1],"color":"green"},
+{"node":[17,15],"color":"orange"}
 ]

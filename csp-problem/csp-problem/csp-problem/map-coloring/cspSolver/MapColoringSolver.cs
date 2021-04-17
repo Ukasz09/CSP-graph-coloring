@@ -16,7 +16,7 @@ namespace csp_problem
 
         public MapColoringSolver(ISolver<string, string> solver)
         {
-            this._solver = solver;
+            _solver = solver;
         }
 
         public IDictionary<string, string> Solve(Graph graph, ICollection<string> domains)

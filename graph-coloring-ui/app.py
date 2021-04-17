@@ -1,3 +1,4 @@
+import sys
 from typing import *
 import matplotlib.pyplot as plt
 import numpy as np
@@ -69,19 +70,26 @@ def _extract_unique_nodes_from_edges(edges):
     return nodes
 
 
-if __name__ == "__main__":
-    _edges = _read_graph('/home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json')
-    _nodes = _extract_unique_nodes_from_edges(_edges)
-    _colors_raw = _read_colors(
-        '/home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json')
-    # init colors dict
+def _plot_result(_nodes: List[Tuple[int, int]], _edges: List[Tuple[Tuple[int, int], Tuple[int, int]]], _colors_raw):
     colors = {}
     for obj in _colors_raw:
         node = (obj["node"][0], obj["node"][1])
         color = obj["color"]
         colors[node] = color
-
     # Plot graph
     _plot_graph(_nodes, _edges, colors)
     plt.show()
+
+
+if __name__ == "__main__":
+    _edges = _read_graph('/home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json')
+    _nodes = _extract_unique_nodes_from_edges(_edges)
+    _colors_raw = _read_colors(
+        '/home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json')
+    allSolutionsFlag = "all"
+    if len(sys.argv) > 1 and sys.argv[1] == allSolutionsFlag:
+        for _colors_data in _colors_raw:
+            _plot_result(_nodes, _edges, _colors_data)
+    else:
+        _plot_result(_nodes, _edges, _colors_raw)
     exit(0)

@@ -18,6 +18,7 @@ namespace csp_problem
 
         private const string ZebraProblemArgName = "zebra";
         private const string MapColoringProblemArgName = "map";
+        private const string allSolutionsArgName = "all";
 
         private static void Main(string[] args)
         {
@@ -25,15 +26,16 @@ namespace csp_problem
             if (passedAnyArg)
             {
                 var problemArgName = args[0];
+                var allSolutions = args.Length > 1 && args[1] == allSolutionsArgName;
                 switch (problemArgName)
                 {
                     // map coloring
                     case MapColoringProblemArgName:
-                        SolveMapColoring();
+                        SolveMapColoring(allSolutions);
                         break;
                     // zebra puzzle
                     case ZebraProblemArgName:
-                        SolveZebraPuzzles();
+                        SolveZebraPuzzles(allSolutions);
                         break;
                     // incorrect arg name
                     default:
@@ -44,12 +46,12 @@ namespace csp_problem
             // Solve all problems
             else
             {
-                SolveMapColoring();
-                SolveZebraPuzzles();
+                SolveMapColoring(false);
+                SolveZebraPuzzles(false);
             }
         }
 
-        private static void SolveZebraPuzzles()
+        private static void SolveZebraPuzzles(bool allSolutions)
         {
             #region initialization
 
@@ -64,15 +66,26 @@ namespace csp_problem
 
             _logger.Info("--------------------------------------------");
             _logger.Info("Started solving Zebra Puzzle Problem");
-            var allSolutions = zebraPuzzleSolver.SolveAllSolutions().ToList();
-            var searchTimeInMs = zebraPuzzleSolver.SearchTimeInMs;
-            var visitedNodesQty = zebraPuzzleSolver.VisitedNodesQty;
-            SaveZebraPuzzleSolution(allSolutions[0], searchTimeInMs, visitedNodesQty);
+
+            if (allSolutions)
+            {
+                var solutions = zebraPuzzleSolver.SolveAllSolutions().ToList();
+                var searchTimeInMs = zebraPuzzleSolver.SearchTimeInMs;
+                var visitedNodesQty = zebraPuzzleSolver.VisitedNodesQty;
+                SaveZebraPuzzleSolution(solutions[0], searchTimeInMs, visitedNodesQty);
+            }
+            else
+            {
+                var solution = zebraPuzzleSolver.Solve();
+                var searchTimeInMs = zebraPuzzleSolver.SearchTimeInMs;
+                var visitedNodesQty = zebraPuzzleSolver.VisitedNodesQty;
+                SaveZebraPuzzleSolution(solution, searchTimeInMs, visitedNodesQty);
+            }
 
             #endregion
         }
 
-        private static void SolveMapColoring()
+        private static void SolveMapColoring(bool allSolutions)
         {
             #region mapInitialization
 
@@ -95,10 +108,21 @@ namespace csp_problem
             _logger.Info("--------------------------------------------");
             _logger.Info("Started solving Graph Coloring Problem");
             var domains = new List<string>() {"red", "blue", "green", "orange"};
-            var result = mapColoringSolver.SolveAll(map, domains);
-            var searchTimeInMs = mapColoringSolver.SearchTimeInMs;
-            var visitedNodesQty = mapColoringSolver.VisitedNodesQty;
-            SaveMapColoringAllSolutions(result, searchTimeInMs, visitedNodesQty);
+
+            if (allSolutions)
+            {
+                var result = mapColoringSolver.SolveAll(map, domains);
+                var searchTimeInMs = mapColoringSolver.SearchTimeInMs;
+                var visitedNodesQty = mapColoringSolver.VisitedNodesQty;
+                SaveMapColoringAllSolutions(result, searchTimeInMs, visitedNodesQty);
+            }
+            else
+            {
+                var result = mapColoringSolver.Solve(map, domains);
+                var searchTimeInMs = mapColoringSolver.SearchTimeInMs;
+                var visitedNodesQty = mapColoringSolver.VisitedNodesQty;
+                SaveMapColoringSolution(result, searchTimeInMs, visitedNodesQty);
+            }
 
             #endregion
         }
