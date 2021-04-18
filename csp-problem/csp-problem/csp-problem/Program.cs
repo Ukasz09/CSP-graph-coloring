@@ -13,29 +13,40 @@ namespace csp_problem
         private const string GraphColoringBasePath = CspExerciseBasePath + "graph-coloring-ui/";
         private const string GraphFilePath = GraphColoringBasePath + "graph.json";
         private const string GraphColoringSolutionFilePath = GraphColoringBasePath + "solution.json";
-        private const string ZebraPuzzleSolutionFilePath = CspExerciseBasePath + "zebra-puzzle-solution.json";
+
+        private const string GraphColoringSolutionForwardCheckingFilePath =
+            GraphColoringBasePath + "solution-forward-checking.json";
+
+        private const string ZebraPuzzleSolutionFilePath = CspExerciseBasePath + "zebra-solution.json";
+
+        private const string ZebraPuzzleSolutionForwardCheckingFilePath =
+            CspExerciseBasePath + "zebra-solution-forward-checking.json";
+
         private static readonly Logger _logger = LogManager.GetCurrentClassLogger();
 
         private const string ZebraProblemArgName = "zebra";
         private const string MapColoringProblemArgName = "map";
-        private const string allSolutionsArgName = "all";
+        private static List<string> defaultMapDomains = new List<string> {"red", "blue", "green", "purple"};
 
         private static void Main(string[] args)
         {
             var passedAnyArg = args.Length > 0;
+            // Solve chosen problem
             if (passedAnyArg)
             {
                 var problemArgName = args[0];
-                var allSolutions = args.Length > 1 && args[1] == allSolutionsArgName;
                 switch (problemArgName)
                 {
                     // map coloring
                     case MapColoringProblemArgName:
-                        SolveMapColoring(allSolutions);
+                    {
+                        var map = GenerateRandomDefaultMap();
+                        SolveMapColoring(map);
                         break;
+                    }
                     // zebra puzzle
                     case ZebraProblemArgName:
-                        SolveZebraPuzzles(allSolutions);
+                        SolveZebraPuzzles();
                         break;
                     // incorrect arg name
                     default:
@@ -46,12 +57,22 @@ namespace csp_problem
             // Solve all problems
             else
             {
-                SolveMapColoring(false);
-                SolveZebraPuzzles(false);
+                var map = GenerateRandomDefaultMap();
+                SolveMapColoring(map);
+                SolveZebraPuzzles();
             }
         }
 
-        private static void SolveZebraPuzzles(bool allSolutions)
+        private static Graph GenerateRandomDefaultMap()
+        {
+            var map = new MapGenerator().GenerateMap(7, 20, 20);
+            DataUtils.SaveMap(map, GraphFilePath);
+            return map;
+        }
+
+        #region Solvers
+
+        private static void SolveZebraPuzzles()
         {
             #region initialization
 
@@ -67,35 +88,27 @@ namespace csp_problem
             _logger.Info("--------------------------------------------");
             _logger.Info("Started solving Zebra Puzzle Problem");
 
-            if (allSolutions)
-            {
-                // TODO: tmp without forward checking
-                var solutions = zebraPuzzleSolver.SolveAllSolutions(true).ToList();
-                var searchTimeInMs = zebraPuzzleSolver.SearchTimeInMs;
-                var visitedNodesQty = zebraPuzzleSolver.VisitedNodesQty;
-                SaveZebraPuzzleSolution(solutions[0], searchTimeInMs, visitedNodesQty, zebraPuzzleSolver.SolutionsQty);
-            }
-            else
-            {
-                // TODO: tmp without forward checking
-                var solution = zebraPuzzleSolver.Solve(true);
-                var searchTimeInMs = zebraPuzzleSolver.SearchTimeInMs;
-                var visitedNodesQty = zebraPuzzleSolver.VisitedNodesQty;
-                SaveZebraPuzzleSolution(solution, searchTimeInMs, visitedNodesQty,zebraPuzzleSolver.SolutionsQty);
-            }
+            // No forward checking
+            var solutionsNoForwardChecking = zebraPuzzleSolver.SolveAllSolutions(false).ToList();
+            SaveZebraPuzzleSolution(
+                solutionsNoForwardChecking[0], zebraPuzzleSolver.SearchTimeInMs,
+                zebraPuzzleSolver.VisitedNodesQty, zebraPuzzleSolver.SolutionsQty, ZebraPuzzleSolutionFilePath, false,
+                false
+            );
+
+            // With forward checking
+            var solutionsForwardChecking = zebraPuzzleSolver.SolveAllSolutions(true).ToList();
+            SaveZebraPuzzleSolution(
+                solutionsForwardChecking[0], zebraPuzzleSolver.SearchTimeInMs,
+                zebraPuzzleSolver.VisitedNodesQty, zebraPuzzleSolver.SolutionsQty,
+                ZebraPuzzleSolutionForwardCheckingFilePath, false, true
+            );
 
             #endregion
         }
 
-        private static void SolveMapColoring(bool allSolutions)
+        private static void SolveMapColoring(Graph map)
         {
-            #region mapInitialization
-
-            var map = new MapGenerator().GenerateMap(6, 20, 20);
-            DataUtils.SaveMap(map, GraphFilePath);
-
-            #endregion
-
             #region solverInitialization
 
             var valueOrderHeuristic = new TrivialOrderValues<string, string>();
@@ -109,74 +122,67 @@ namespace csp_problem
 
             _logger.Info("--------------------------------------------");
             _logger.Info("Started solving Graph Coloring Problem");
-           
 
-            if (allSolutions)
-            {
-        
-              
-                
-                var domains= new List<string>() {"red", "blue", "green","purple"};
-                var resultNoForwardChecking = mapColoringSolver.SolveAll(map, domains, false);
-                SaveMapColoringAllSolutions(resultNoForwardChecking, mapColoringSolver.SearchTimeInMs,
-                    mapColoringSolver.VisitedNodesQty,mapColoringSolver.FoundSolutionsQty);
-                
-                domains = new List<string>() {"red", "blue", "green","purple"};
-                var resultForwardChecking = mapColoringSolver.SolveAll(map, domains, true);
-                SaveMapColoringAllSolutions(resultForwardChecking, mapColoringSolver.SearchTimeInMs,
-                    mapColoringSolver.VisitedNodesQty, mapColoringSolver.FoundSolutionsQty);
-            }
-            else
-            {
-                var domains = new List<string>() {"red", "blue", "green", "orange"};
-                var resultForwardChecking = mapColoringSolver.Solve(map, domains, true);
-                SaveMapColoringSolution(resultForwardChecking, mapColoringSolver.SearchTimeInMs,
-                    mapColoringSolver.VisitedNodesQty,mapColoringSolver.FoundSolutionsQty);
-                
-                domains = new List<string>() {"red", "blue", "green", "orange"};
-                var resultNotForwardChecking = mapColoringSolver.Solve(map, domains, false);
-                SaveMapColoringSolution(resultNotForwardChecking, mapColoringSolver.SearchTimeInMs,
-                    mapColoringSolver.VisitedNodesQty,mapColoringSolver.FoundSolutionsQty);
-            }
+            // No forward checking
+            var resultNoForwardChecking = mapColoringSolver.SolveAll(map, defaultMapDomains.ToList(), false);
+            SaveMapColoringAllSolutions(resultNoForwardChecking, mapColoringSolver.SearchTimeInMs,
+                mapColoringSolver.VisitedNodesQty, mapColoringSolver.FoundSolutionsQty, false, false);
+
+            // With forward checking
+
+            var resultForwardChecking = mapColoringSolver.SolveAll(map, defaultMapDomains.ToList(), true);
+            SaveMapColoringAllSolutions(resultForwardChecking, mapColoringSolver.SearchTimeInMs,
+                mapColoringSolver.VisitedNodesQty, mapColoringSolver.FoundSolutionsQty, false, true);
 
             #endregion
         }
 
-        private static void SaveMapColoringSolution(IDictionary<string, string> solution, long searchTimeInMs,
-            int visitedNodesQty, int solutionsQty)
-        {
-            var logMsg = solution.Select(kvp => kvp.Key + ": " + kvp.Value.ToString()).ToArray();
-            LogResult(logMsg, searchTimeInMs, visitedNodesQty, solutionsQty);
-            DataUtils.SaveGraphColoringSolution(solution, GraphColoringSolutionFilePath);
-        }
+        #endregion
+
+
+        #region Result saving and logging
 
         private static void SaveMapColoringAllSolutions(
             IList<IDictionary<string, string>> solutions,
             long searchTimeInMs,
             int visitedNodesQty,
-            int solutionsQty
+            int solutionsQty,
+            bool withSolutionLogging,
+            bool withForwardChecking
         )
         {
             var logMsg = DataUtils.GetMapColoringAllSolutionsContent(solutions);
-            LogResult(logMsg.ToArray(), searchTimeInMs, visitedNodesQty, solutionsQty);
+            LogResult(logMsg.ToArray(), searchTimeInMs, visitedNodesQty, solutionsQty, withSolutionLogging,
+                withForwardChecking);
             DataUtils.SaveGraphColoringAllSolutions(solutions, GraphColoringSolutionFilePath);
         }
 
         private static void SaveZebraPuzzleSolution(IDictionary<string, int> solution, long searchTimeInMs,
-            int visitedNodesQty,int solutionsQty)
+            int visitedNodesQty, int solutionsQty, string filePath, bool withSolutionLogging,
+            bool withForwardChecking)
         {
             var logMsg = solution.Select(kvp => kvp.Key + ": " + kvp.Value).ToArray();
-            LogResult(logMsg, searchTimeInMs, visitedNodesQty, solutionsQty);
-            DataUtils.SaveZebraPuzzleSolution(solution, ZebraPuzzleSolutionFilePath);
+            LogResult(logMsg, searchTimeInMs, visitedNodesQty, solutionsQty, withSolutionLogging, withForwardChecking);
+            DataUtils.SaveZebraPuzzleSolution(solution, filePath);
         }
 
-        private static void LogResult(string[] logMsg, long searchTimeInMs, int visitedNodesQty, int solutionsQty)
+        private static void LogResult(
+            string[] logMsg, long searchTimeInMs, int visitedNodesQty, int solutionsQty, bool withSolutionLogging,
+            bool withForwardChecking)
         {
             _logger.Info("---------------------------------");
-            _logger.Info($"Found solution: {string.Join(",", logMsg)}");
+            _logger.Info($"Forward checking: {withForwardChecking.ToString()}");
+            if (withSolutionLogging)
+            {
+                _logger.Info($"Found solution: {string.Join(",", logMsg)}");
+            }
+
             _logger.Info($"Search time: {searchTimeInMs.ToString()} ms");
             _logger.Info($"Visited nodes: {visitedNodesQty.ToString()}");
             _logger.Info($"Amount of found solutions: {solutionsQty.ToString()}");
+            _logger.Info("---------------------------------\n");
         }
+
+        #endregion
     }
 }
