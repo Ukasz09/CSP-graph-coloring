@@ -22,35 +22,27 @@ namespace csp_problem
 
         public long SearchTimeInMs => _solver.ExecutionTimeInMs;
         public int VisitedNodesQty => _solver.VisitedNodesQty;
+        public int SolutionsQty => _solver.FoundSolutionsQty;
 
         public ZebraPuzzleSolver(ISolver<string, int> solver)
         {
             _solver = solver;
         }
 
-        public IDictionary<string, int> Solve()
+        public IDictionary<string, int> Solve(bool withForwardChecking)
         {
-            var csp = GetCsp();
-            Ac3<string, int>.ReduceDomains(csp);
-            var assignment = new Assignment<string, int>(csp);
-            var resultAssignment = _solver.Solve(csp, assignment);
-            if (resultAssignment == null)
-            {
-                throw new Exception(
-                    $"Couldn't find solution, time of executing: {_solver.ExecutionTimeInMs} ms. Visited nodes: {_solver.VisitedNodesQty}");
-            }
-
-            return resultAssignment;
+            var resultAssignment = SolveAllSolutions(withForwardChecking);
+            return resultAssignment[0];
         }
 
-        public IEnumerable<IDictionary<string, int>> SolveAllSolutions()
+        public IList<IDictionary<string, int>> SolveAllSolutions(bool withForwardChecking)
         {
             var csp = GetCsp();
             Ac3<string, int>.ReduceDomains(csp);
             LogAc3Results(csp);
 
             var assignment = new Assignment<string, int>(csp);
-            var listOfVariableValues = _solver.SolveAll(csp, assignment);
+            var listOfVariableValues = _solver.SolveAll(csp, assignment, withForwardChecking);
             if (listOfVariableValues.Count == 0)
             {
                 throw new Exception(
@@ -80,7 +72,7 @@ namespace csp_problem
                 new AllDifferentConstraint<string, int>(_drinksVars),
                 new AllDifferentConstraint<string, int>(_nationalityVars),
                 new AllDifferentConstraint<string, int>(_petVars),
-                
+
                 new ValueEqualToGiven(Nationality.Norwegian, norwegianHouse),
                 new TheSameValueAssigned(Nationality.English, Color.Red),
                 new ToTheLeftOf(Color.Green, Color.White),
@@ -103,15 +95,14 @@ namespace csp_problem
                 new OtherThenGivenValue(Nationality.English, norwegianHouse),
                 new OtherThenGivenValue(Nationality.German, norwegianHouse),
                 new OtherThenGivenValue(Nationality.Sweden, norwegianHouse),
-                
+
                 // Each drink other than milk cannot be assigned to house {milkHouse}
                 new OtherThenGivenValue(Drink.Beer, milkHouse),
                 new OtherThenGivenValue(Drink.Coffee, milkHouse),
                 new OtherThenGivenValue(Drink.Tea, milkHouse),
                 new OtherThenGivenValue(Drink.Water, milkHouse),
             };
-            var csp = new Csp<string, int>(variableDomains, constraints);
-            return csp;
+            return new Csp<string, int>(variableDomains, constraints);
         }
 
         private IEnumerable<string> GetVariables()

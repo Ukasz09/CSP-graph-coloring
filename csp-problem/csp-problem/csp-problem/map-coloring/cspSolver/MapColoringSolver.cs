@@ -13,17 +13,18 @@ namespace csp_problem
 
         public long SearchTimeInMs => _solver.ExecutionTimeInMs;
         public int VisitedNodesQty => _solver.VisitedNodesQty;
+        public int FoundSolutionsQty => _solver.FoundSolutionsQty;
 
         public MapColoringSolver(ISolver<string, string> solver)
         {
             _solver = solver;
         }
 
-        public IDictionary<string, string> Solve(Graph graph, ICollection<string> domains)
+        public IDictionary<string, string> Solve(Graph graph, ICollection<string> domains, bool withForwardChecking)
         {
             var csp = GetCsp(graph, domains);
             var assignment = new Assignment<string, string>(csp);
-            var resultAssignment = _solver.Solve(csp, assignment);
+            var resultAssignment = _solver.Solve(csp, assignment, withForwardChecking);
             if (resultAssignment == null)
             {
                 throw new Exception($"Couldn't find solution, time of executing: {_solver.ExecutionTimeInMs} ms.");
@@ -32,14 +33,16 @@ namespace csp_problem
             return resultAssignment;
         }
 
-        public IList<IDictionary<string, string>> SolveAll(Graph graph, ICollection<string> domains)
+        public IList<IDictionary<string, string>> SolveAll(Graph graph, ICollection<string> domains,
+            bool withForwardChecking)
         {
             var csp = GetCsp(graph, domains);
             var assignment = new Assignment<string, string>(csp);
-            var resultAssignment = _solver.SolveAll(csp, assignment);
+            var resultAssignment = _solver.SolveAll(csp, assignment, withForwardChecking);
             if (resultAssignment.Count == 0)
             {
                 throw new Exception($"Couldn't find solution, time of executing: {_solver.ExecutionTimeInMs} ms.");
+                
             }
 
             return resultAssignment;
@@ -50,10 +53,26 @@ namespace csp_problem
             var variableNeighbours = GetVariableNeighbours(graph);
             var variables = variableNeighbours.Keys;
             var variableDomains = GetVariablesDomain(variables, domains);
-            var noNeighboursWithTheSameColorConstraint = new NoNeighboursWithTheSameColor(variableNeighbours);
-            var constraints = new List<IConstraint<string, string>> {noNeighboursWithTheSameColorConstraint};
-            var csp = new Csp<string, string>(variableDomains, constraints);
+
+            var (varConstraints, allConstraints) = GetConstraints(variableNeighbours);
+            var csp = new Csp<string, string>(variableDomains, allConstraints, varConstraints);
             return csp;
+        }
+
+        private static (Dictionary<string, IList<IConstraint<string, string>>>, List<IConstraint<string, string>>)
+            GetConstraints(IDictionary<string, ICollection<string>> variableNeighbours)
+        {
+            var constraintsDict = new Dictionary<string, IList<IConstraint<string, string>>>(variableNeighbours.Count);
+            var allConstraints = new List<IConstraint<string, string>>(variableNeighbours.Count);
+            foreach (var variable in variableNeighbours.Keys)
+            {
+                var neighbours = variableNeighbours[variable];
+                var constraint = new NoNeighboursWithTheSameColor(variable, neighbours);
+                constraintsDict[variable] = new List<IConstraint<string, string>> {constraint};
+                allConstraints.Add(constraint);
+            }
+
+            return (constraintsDict, allConstraints);
         }
 
         private static Dictionary<string, ICollection<string>> GetVariablesDomain(IEnumerable<string> variables,

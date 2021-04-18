@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 
 namespace csp_problem.csp
 {
@@ -19,7 +20,15 @@ namespace csp_problem.csp
             VariableConstraints = GetVariableConstraints(constraints);
         }
 
-        private IDictionary<V, IList<IConstraint<V, D>>> GetVariableConstraints(
+        public Csp(IDictionary<V, ICollection<D>> domains, List<IConstraint<V, D>> constraints,
+            IDictionary<V, IList<IConstraint<V, D>>> variableConstraints)
+        {
+            Domains = domains;
+            Constraints = constraints;
+            VariableConstraints = variableConstraints;
+        }
+
+        private static IDictionary<V, IList<IConstraint<V, D>>> GetVariableConstraints(
             IEnumerable<IConstraint<V, D>> constraints)
         {
             var variableConstraints = new Dictionary<V, IList<IConstraint<V, D>>>();

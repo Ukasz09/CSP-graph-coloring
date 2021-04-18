@@ -1,18 +1,17 @@
 using System.Collections.Generic;
-using System.Linq;
 using csp_problem.csp;
 
 namespace csp_problem
 {
     public class NoNeighboursWithTheSameColor : IConstraint<string, string>
     {
-        public readonly IDictionary<string, ICollection<string>> VariablesNeighbours;
+        public ICollection<string> Variables { get; }
+        private readonly string _variable;
 
-        public ICollection<string> Variables => VariablesNeighbours.Keys;
-
-        public NoNeighboursWithTheSameColor(IDictionary<string, ICollection<string>> variablesNeighbours)
+        public NoNeighboursWithTheSameColor(string variable, ICollection<string> neighbours)
         {
-            VariablesNeighbours = variablesNeighbours;
+            _variable = variable;
+            Variables = neighbours;
         }
 
         public bool Affects(string variable)
@@ -22,27 +21,26 @@ namespace csp_problem
 
         public bool IsSatisfied(IAssignment<string, string> inAssignment)
         {
-            foreach (var variable in Variables)
+            // foreach (var variable in Variables)
+            // {
+            var isAssigned = inAssignment.IsAssigned(_variable);
+            if (isAssigned)
             {
-                var isAssigned = inAssignment.IsAssigned(variable);
-                if (isAssigned)
+                var assignedValue = inAssignment.GetAssignedValue(_variable);
+                foreach (var neighbour in Variables)
                 {
-                    var assignedValue = inAssignment.GetAssignedValue(variable);
-                    var neighbours = VariablesNeighbours[variable];
-                    foreach (var neighbour in neighbours)
+                    var neighbourIsAssigned = inAssignment.IsAssigned(neighbour);
+                    if (neighbourIsAssigned)
                     {
-                        var neighbourIsAssigned = inAssignment.IsAssigned(neighbour);
-                        if (neighbourIsAssigned)
+                        var neighbourValue = inAssignment.GetAssignedValue(neighbour);
+                        if (neighbourValue.Equals(assignedValue))
                         {
-                            var neighbourValue = inAssignment.GetAssignedValue(neighbour);
-                            if (neighbourValue.Equals(assignedValue))
-                            {
-                                return false;
-                            }
+                            return false;
                         }
                     }
                 }
             }
+            // }
 
             return true;
         }

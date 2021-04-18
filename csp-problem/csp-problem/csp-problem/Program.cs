@@ -69,17 +69,19 @@ namespace csp_problem
 
             if (allSolutions)
             {
-                var solutions = zebraPuzzleSolver.SolveAllSolutions().ToList();
+                // TODO: tmp without forward checking
+                var solutions = zebraPuzzleSolver.SolveAllSolutions(true).ToList();
                 var searchTimeInMs = zebraPuzzleSolver.SearchTimeInMs;
                 var visitedNodesQty = zebraPuzzleSolver.VisitedNodesQty;
-                SaveZebraPuzzleSolution(solutions[0], searchTimeInMs, visitedNodesQty);
+                SaveZebraPuzzleSolution(solutions[0], searchTimeInMs, visitedNodesQty, zebraPuzzleSolver.SolutionsQty);
             }
             else
             {
-                var solution = zebraPuzzleSolver.Solve();
+                // TODO: tmp without forward checking
+                var solution = zebraPuzzleSolver.Solve(true);
                 var searchTimeInMs = zebraPuzzleSolver.SearchTimeInMs;
                 var visitedNodesQty = zebraPuzzleSolver.VisitedNodesQty;
-                SaveZebraPuzzleSolution(solution, searchTimeInMs, visitedNodesQty);
+                SaveZebraPuzzleSolution(solution, searchTimeInMs, visitedNodesQty,zebraPuzzleSolver.SolutionsQty);
             }
 
             #endregion
@@ -107,58 +109,74 @@ namespace csp_problem
 
             _logger.Info("--------------------------------------------");
             _logger.Info("Started solving Graph Coloring Problem");
-            var domains = new List<string>() {"red", "blue", "green", "pink"};
+           
 
             if (allSolutions)
             {
-                var result = mapColoringSolver.SolveAll(map, domains);
-                var searchTimeInMs = mapColoringSolver.SearchTimeInMs;
-                var visitedNodesQty = mapColoringSolver.VisitedNodesQty;
-                SaveMapColoringAllSolutions(result, searchTimeInMs, visitedNodesQty);
+        
+              
+                
+                var domains= new List<string>() {"red", "blue", "green","purple"};
+                var resultNoForwardChecking = mapColoringSolver.SolveAll(map, domains, false);
+                SaveMapColoringAllSolutions(resultNoForwardChecking, mapColoringSolver.SearchTimeInMs,
+                    mapColoringSolver.VisitedNodesQty,mapColoringSolver.FoundSolutionsQty);
+                
+                domains = new List<string>() {"red", "blue", "green","purple"};
+                var resultForwardChecking = mapColoringSolver.SolveAll(map, domains, true);
+                SaveMapColoringAllSolutions(resultForwardChecking, mapColoringSolver.SearchTimeInMs,
+                    mapColoringSolver.VisitedNodesQty, mapColoringSolver.FoundSolutionsQty);
             }
             else
             {
-                var result = mapColoringSolver.Solve(map, domains);
-                var searchTimeInMs = mapColoringSolver.SearchTimeInMs;
-                var visitedNodesQty = mapColoringSolver.VisitedNodesQty;
-                SaveMapColoringSolution(result, searchTimeInMs, visitedNodesQty);
+                var domains = new List<string>() {"red", "blue", "green", "orange"};
+                var resultForwardChecking = mapColoringSolver.Solve(map, domains, true);
+                SaveMapColoringSolution(resultForwardChecking, mapColoringSolver.SearchTimeInMs,
+                    mapColoringSolver.VisitedNodesQty,mapColoringSolver.FoundSolutionsQty);
+                
+                domains = new List<string>() {"red", "blue", "green", "orange"};
+                var resultNotForwardChecking = mapColoringSolver.Solve(map, domains, false);
+                SaveMapColoringSolution(resultNotForwardChecking, mapColoringSolver.SearchTimeInMs,
+                    mapColoringSolver.VisitedNodesQty,mapColoringSolver.FoundSolutionsQty);
             }
 
             #endregion
         }
 
         private static void SaveMapColoringSolution(IDictionary<string, string> solution, long searchTimeInMs,
-            int visitedNodesQty)
+            int visitedNodesQty, int solutionsQty)
         {
             var logMsg = solution.Select(kvp => kvp.Key + ": " + kvp.Value.ToString()).ToArray();
-            LogResult(logMsg, searchTimeInMs, visitedNodesQty);
+            LogResult(logMsg, searchTimeInMs, visitedNodesQty, solutionsQty);
             DataUtils.SaveGraphColoringSolution(solution, GraphColoringSolutionFilePath);
         }
 
         private static void SaveMapColoringAllSolutions(
             IList<IDictionary<string, string>> solutions,
             long searchTimeInMs,
-            int visitedNodesQty)
+            int visitedNodesQty,
+            int solutionsQty
+        )
         {
             var logMsg = DataUtils.GetMapColoringAllSolutionsContent(solutions);
-            LogResult(logMsg.ToArray(), searchTimeInMs, visitedNodesQty);
+            LogResult(logMsg.ToArray(), searchTimeInMs, visitedNodesQty, solutionsQty);
             DataUtils.SaveGraphColoringAllSolutions(solutions, GraphColoringSolutionFilePath);
         }
 
         private static void SaveZebraPuzzleSolution(IDictionary<string, int> solution, long searchTimeInMs,
-            int visitedNodesQty)
+            int visitedNodesQty,int solutionsQty)
         {
             var logMsg = solution.Select(kvp => kvp.Key + ": " + kvp.Value).ToArray();
-            LogResult(logMsg, searchTimeInMs, visitedNodesQty);
+            LogResult(logMsg, searchTimeInMs, visitedNodesQty, solutionsQty);
             DataUtils.SaveZebraPuzzleSolution(solution, ZebraPuzzleSolutionFilePath);
         }
 
-        private static void LogResult(string[] logMsg, long searchTimeInMs, int visitedNodesQty)
+        private static void LogResult(string[] logMsg, long searchTimeInMs, int visitedNodesQty, int solutionsQty)
         {
             _logger.Info("---------------------------------");
             _logger.Info($"Found solution: {string.Join(",", logMsg)}");
             _logger.Info($"Search time: {searchTimeInMs.ToString()} ms");
             _logger.Info($"Visited nodes: {visitedNodesQty.ToString()}");
+            _logger.Info($"Amount of found solutions: {solutionsQty.ToString()}");
         }
     }
 }

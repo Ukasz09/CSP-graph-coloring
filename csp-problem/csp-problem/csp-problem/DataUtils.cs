@@ -14,8 +14,8 @@ namespace csp_problem
             var lines = new[] {"[", map.ToString(), "]"};
             File.WriteAllLines(filePath, lines);
             _logger.Log(LogLevel.Info, $"Correct saved map graph in file: {filePath}");
-        }
-
+        } 
+        
         public static void SaveGraphColoringSolution(IDictionary<string, string> solution, string filePath)
         {
             var lines = GetMapColoringSolutionContent(solution);

@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Sockets;
 
 namespace csp_problem.csp
 {
@@ -39,21 +40,31 @@ namespace csp_problem.csp
             return _variableValues[variable];
         }
 
-        public ICollection<D> GetDomain(V variable)
-        {
-            return _csp.Domains[variable];
-        }
-
-        public bool IsConsistent(V variable, D value)
+        public bool IsConsistent(V variable)
         {
             return _csp.VariableConstraints[variable].All(constraint => constraint.IsSatisfied(this));
+        }
+
+        public bool WillBeConsistent(V variable, D value)
+        {
+            AssignVariable(variable, value);
+            var isConsistent = IsConsistent(variable);
+            UnassignVariable(variable);
+            return isConsistent;
         }
 
         public IDictionary<V, D> GetAssignedValueForAll()
         {
             return _variableValues;
         }
-        
-        // public void GetAffectedVariablesByAnyConstraint()
+
+        public List<V> GetConnectedVariables(V variable)
+        {
+            var constraints = _csp.VariableConstraints[variable];
+            var connectedVariables = constraints
+                .SelectMany(c => c.Variables).ToList()
+                .FindAll(v => !IsAssigned(v));
+            return connectedVariables;
+        }
     }
 }

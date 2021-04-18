@@ -14,13 +14,15 @@ namespace csp_problem.csp
         void UnassignVariable(V variable);
         void AssignVariable(V variable, D value);
         D GetAssignedValue(V variable);
-        ICollection<D> GetDomain(V variable);
+        IDictionary<V, D> GetAssignedValueForAll();
 
         /**
          * Determine if given value satisfy all constraints for given variable
          */
-        bool IsConsistent(V variable, D value);
+        bool IsConsistent(V variable);
 
-        IDictionary<V, D> GetAssignedValueForAll();
+        bool WillBeConsistent(V variable, D value);
+
+        List<V> GetConnectedVariables(V variable);
     }
 }

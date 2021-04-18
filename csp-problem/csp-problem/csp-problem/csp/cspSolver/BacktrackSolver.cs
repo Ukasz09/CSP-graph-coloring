@@ -11,9 +11,11 @@ namespace csp_problem.csp.cspSolver
         public IVariableHeuristic<V, D> VariableHeuristic { get; }
         public long ExecutionTimeInMs { get; private set; }
         public int VisitedNodesQty { get; private set; }
+        public int FoundSolutionsQty { get; private set; }
         private long TimeoutExecutionTimeMs { get; }
 
         private readonly Stopwatch _watch = new Stopwatch();
+
         private readonly IList<IDictionary<V, D>> _solutions = new List<IDictionary<V, D>>();
 
         public BacktrackSolver(IValueOrderHeuristic<V, D> valueOrderHeuristic,
@@ -21,36 +23,29 @@ namespace csp_problem.csp.cspSolver
         {
             ValuesOrderHeuristic = valueOrderHeuristic;
             VariableHeuristic = variableOrderHeuristic;
-            ExecutionTimeInMs = 0;
-            VisitedNodesQty = 0;
             TimeoutExecutionTimeMs = timeoutExecutionTimeMs;
+            ResetCalcStatistics();
         }
 
-        public IDictionary<V, D> Solve(Csp<V, D> csp, IAssignment<V, D> assignment)
+        public IDictionary<V, D> Solve(Csp<V, D> csp, IAssignment<V, D> assignment, bool withForwardChecking)
         {
-            _watch.Start();
-            ExecutionTimeInMs = 0;
-            VisitedNodesQty = 0;
-            var result = solveWithBacktracking(csp, assignment, false);
-            _watch.Stop();
-            ExecutionTimeInMs = _watch.ElapsedMilliseconds;
-            return result?.GetAssignedValueForAll();
+            var solutions = SolveAll(csp, assignment, withForwardChecking);
+            return solutions.Count > 0 ? solutions[0] : null;
         }
 
-        public IList<IDictionary<V, D>> SolveAll(Csp<V, D> csp, IAssignment<V, D> assignment)
+        public IList<IDictionary<V, D>> SolveAll(Csp<V, D> csp, IAssignment<V, D> assignment, bool withForwardChecking)
         {
             _watch.Start();
-            ExecutionTimeInMs = 0;
-            VisitedNodesQty = 0;
-            _solutions.Clear();
-            solveWithBacktracking(csp, assignment, true);
+            ResetCalcStatistics();
+            solveWithBacktracking(csp.Domains, csp, assignment, true, withForwardChecking);
             _watch.Stop();
             ExecutionTimeInMs = _watch.ElapsedMilliseconds;
             return _solutions;
         }
 
-        private IAssignment<V, D> solveWithBacktracking(Csp<V, D> csp, IAssignment<V, D> assignment,
-            bool allSolutions)
+        private IAssignment<V, D> solveWithBacktracking(IDictionary<V, ICollection<D>> domains,
+            Csp<V, D> csp, IAssignment<V, D> assignment, bool allSolutions, bool withForwardChecking
+        )
         {
             if (_watch.ElapsedMilliseconds > TimeoutExecutionTimeMs)
             {
@@ -63,37 +58,56 @@ namespace csp_problem.csp.cspSolver
             }
 
             var variable = VariableHeuristic.ChooseVariable(assignment, csp);
-            var orderedValues = ValuesOrderHeuristic.GetOrderedDomainValues(assignment, csp, variable);
+            var orderedValues = ValuesOrderHeuristic.GetOrderedDomainValues(domains[variable], assignment);
             foreach (var value in orderedValues)
             {
                 VisitedNodesQty++;
                 assignment.AssignVariable(variable, value);
-                if (assignment.IsConsistent(variable, value))
+                if (assignment.IsConsistent(variable))
                 {
-                    var result = solveWithBacktracking(csp, assignment, allSolutions);
+                    var newVarDomains = withForwardChecking
+                        ? ForwardChecking<V, D>.ReduceDomains(domains, value, variable, assignment)
+                        : domains;
+                    var result = solveWithBacktracking
+                        (newVarDomains, csp, assignment, allSolutions, withForwardChecking);
                     if (result != null)
                     {
+                        FoundSolutionsQty++;
                         if (!allSolutions)
                         {
                             return result;
                         }
 
-                        // Store result
-                        var assignedValuesCopy = new Dictionary<V, D>();
-                        var assignedValues = result.GetAssignedValueForAll();
-                        foreach (var (assignedVariable, assignedDomainValue) in assignedValues)
-                        {
-                            assignedValuesCopy[assignedVariable] = assignedDomainValue;
-                        }
-
-                        _solutions.Add(assignedValuesCopy);
+                        StoreResult(result);
                     }
                 }
                 else
+                {
                     assignment.UnassignVariable(variable);
+                }
             }
 
             return null;
+        }
+
+        private void StoreResult(IAssignment<V, D> result)
+        {
+            var assignedValuesCopy = new Dictionary<V, D>();
+            var assignedValues = result.GetAssignedValueForAll();
+            foreach (var (assignedVariable, assignedDomainValue) in assignedValues)
+            {
+                assignedValuesCopy[assignedVariable] = assignedDomainValue;
+            }
+
+            _solutions.Add(assignedValuesCopy);
+        }
+
+        private void ResetCalcStatistics()
+        {
+            ExecutionTimeInMs = 0;
+            VisitedNodesQty = 0;
+            FoundSolutionsQty = 0;
+            _solutions.Clear();
         }
     }
 }

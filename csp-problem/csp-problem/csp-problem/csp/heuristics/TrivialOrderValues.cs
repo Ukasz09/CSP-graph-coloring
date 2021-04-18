@@ -1,12 +1,13 @@
 using System.Collections.Generic;
+using System.Linq;
 
 namespace csp_problem.csp.heuristics
 {
     public class TrivialOrderValues<V, D> : IValueOrderHeuristic<V, D>
     {
-        public IEnumerable<D> GetOrderedDomainValues(IAssignment<V, D> assignment, Csp<V, D> csp, V variable)
+        public List<D> GetOrderedDomainValues(IEnumerable<D> domains, IAssignment<V, D> assignment)
         {
-            return assignment.GetDomain(variable);
+            return domains.ToList();
         }
     }
 }

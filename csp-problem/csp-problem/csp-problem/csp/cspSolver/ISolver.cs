@@ -7,9 +7,10 @@ namespace csp_problem.csp.cspSolver
     {
         IValueOrderHeuristic<V, D> ValuesOrderHeuristic { get; }
         IVariableHeuristic<V, D> VariableHeuristic { get; }
-        IDictionary<V, D> Solve(Csp<V, D> csp, IAssignment<V, D> assignment);
-        IList<IDictionary<V, D>> SolveAll(Csp<V, D> csp, IAssignment<V, D> assignment);
+        IDictionary<V, D> Solve(Csp<V, D> csp, IAssignment<V, D> assignment, bool withForwardChecking);
+        IList<IDictionary<V, D>> SolveAll(Csp<V, D> csp, IAssignment<V, D> assignment, bool withForwardChecking);
         long ExecutionTimeInMs { get; }
         int VisitedNodesQty { get; }
+        int FoundSolutionsQty { get; }
     }
 }
