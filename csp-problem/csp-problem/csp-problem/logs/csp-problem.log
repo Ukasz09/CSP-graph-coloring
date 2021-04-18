@@ -4591,3 +4591,69 @@ Dog: 5 |
 2021-04-18 22:41:38.0651 | Info | Visited nodes: 89 |  
 2021-04-18 22:41:38.0651 | Info | Amount of found solutions: 26 |  
 2021-04-18 22:41:38.0651 | Info | Correct saved solutions in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-18 23:01:50.3830 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-18 23:01:50.4362 | Info | -------------------------------------------- |  
+2021-04-18 23:01:50.4362 | Info | Started solving Graph Coloring Problem |  
+2021-04-18 23:01:50.4568 | Info | --------------------------------- |  
+2021-04-18 23:01:50.4568 | Info | Found solution: [,[,{"node":[4,15],"color":"red"},,{"node":[17,18],"color":"blue"},,{"node":[12,12],"color":"green"},,{"node":[1,14],"color":"green"},,{"node":[3,0],"color":"purple"},,{"node":[11,16],"color":"red"},],,,[,{"node":[4,15],"color":"red"},,{"node":[17,18],"color":"green"},,{"node":[12,12],"color":"blue"},,{"node":[1,14],"color":"blue"},,{"node":[3,0],"color":"purple"},,{"node":[11,16],"color":"red"},],,,[,{"node":[4,15],"color":"blue"},,{"node":[17,18],"color":"red"},,{"node":[12,12],"color":"green"},,{"node":[1,14],"color":"green"},,{"node":[3,0],"color":"purple"},,{"node":[11,16],"color":"blue"},],,,[,{"node":[4,15],"color":"blue"},,{"node":[17,18],"color":"green"},,{"node":[12,12],"color":"red"},,{"node":[1,14],"color":"red"},,{"node":[3,0],"color":"purple"},,{"node":[11,16],"color":"blue"},],,,[,{"node":[4,15],"color":"green"},,{"node":[17,18],"color":"red"},,{"node":[12,12],"color":"blue"},,{"node":[1,14],"color":"blue"},,{"node":[3,0],"color":"purple"},,{"node":[11,16],"color":"green"},],,,[,{"node":[4,15],"color":"green"},,{"node":[17,18],"color":"blue"},,{"node":[12,12],"color":"red"},,{"node":[1,14],"color":"red"},,{"node":[3,0],"color":"purple"},,{"node":[11,16],"color":"green"},],,,[,{"node":[4,15],"color":"purple"},,{"node":[17,18],"color":"red"},,{"node":[12,12],"color":"blue"},,{"node":[1,14],"color":"blue"},,{"node":[3,0],"color":"purple"},,{"node":[11,16],"color":"green"},],,,[,{"node":[4,15],"color":"purple"},,{"node":[17,18],"color":"red"},,{"node":[12,12],"color":"green"},,{"node":[1,14],"color":"green"},,{"node":[3,0],"color":"purple"},,{"node":[11,16],"color":"blue"},],,,[,{"node":[4,15],"color":"purple"},,{"node":[17,18],"color":"blue"},,{"node":[12,12],"color":"red"},,{"node":[1,14],"color":"red"},,{"node":[3,0],"color":"purple"},,{"node":[11,16],"color":"green"},],,,[,{"node":[4,15],"color":"purple"},,{"node":[17,18],"color":"blue"},,{"node":[12,12],"color":"green"},,{"node":[1,14],"color":"green"},,{"node":[3,0],"color":"purple"},,{"node":[11,16],"color":"red"},],,,[,{"node":[4,15],"color":"purple"},,{"node":[17,18],"color":"green"},,{"node":[12,12],"color":"red"},,{"node":[1,14],"color":"red"},,{"node":[3,0],"color":"purple"},,{"node":[11,16],"color":"blue"},],,,[,{"node":[4,15],"color":"purple"},,{"node":[17,18],"color":"green"},,{"node":[12,12],"color":"blue"},,{"node":[1,14],"color":"blue"},,{"node":[3,0],"color":"purple"},,{"node":[11,16],"color":"red"},],,] |  
+2021-04-18 23:01:50.4568 | Info | Search time: 9 ms |  
+2021-04-18 23:01:50.4568 | Info | Visited nodes: 228 |  
+2021-04-18 23:01:50.4568 | Info | Amount of found solutions: 12 |  
+2021-04-18 23:01:50.4568 | Info | Correct saved solutions in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-18 23:01:50.4642 | Info | --------------------------------- |  
+2021-04-18 23:01:50.4642 | Info | Found solution: [,[,{"node":[4,15],"color":"red"},,{"node":[17,18],"color":"blue"},,{"node":[12,12],"color":"green"},,{"node":[1,14],"color":"green"},,{"node":[3,0],"color":"purple"},,{"node":[11,16],"color":"red"},],,,[,{"node":[4,15],"color":"red"},,{"node":[17,18],"color":"green"},,{"node":[12,12],"color":"blue"},,{"node":[1,14],"color":"blue"},,{"node":[3,0],"color":"purple"},,{"node":[11,16],"color":"red"},],,,[,{"node":[4,15],"color":"blue"},,{"node":[17,18],"color":"red"},,{"node":[12,12],"color":"green"},,{"node":[1,14],"color":"green"},,{"node":[3,0],"color":"purple"},,{"node":[11,16],"color":"blue"},],,,[,{"node":[4,15],"color":"blue"},,{"node":[17,18],"color":"green"},,{"node":[12,12],"color":"red"},,{"node":[1,14],"color":"red"},,{"node":[3,0],"color":"purple"},,{"node":[11,16],"color":"blue"},],,,[,{"node":[4,15],"color":"green"},,{"node":[17,18],"color":"red"},,{"node":[12,12],"color":"blue"},,{"node":[1,14],"color":"blue"},,{"node":[3,0],"color":"purple"},,{"node":[11,16],"color":"green"},],,,[,{"node":[4,15],"color":"green"},,{"node":[17,18],"color":"blue"},,{"node":[12,12],"color":"red"},,{"node":[1,14],"color":"red"},,{"node":[3,0],"color":"purple"},,{"node":[11,16],"color":"green"},],,,[,{"node":[4,15],"color":"purple"},,{"node":[17,18],"color":"red"},,{"node":[12,12],"color":"blue"},,{"node":[1,14],"color":"blue"},,{"node":[3,0],"color":"purple"},,{"node":[11,16],"color":"green"},],,,[,{"node":[4,15],"color":"purple"},,{"node":[17,18],"color":"red"},,{"node":[12,12],"color":"green"},,{"node":[1,14],"color":"green"},,{"node":[3,0],"color":"purple"},,{"node":[11,16],"color":"blue"},],,,[,{"node":[4,15],"color":"purple"},,{"node":[17,18],"color":"blue"},,{"node":[12,12],"color":"green"},,{"node":[1,14],"color":"green"},,{"node":[3,0],"color":"purple"},,{"node":[11,16],"color":"red"},],,] |  
+2021-04-18 23:01:50.4642 | Info | Search time: 14 ms |  
+2021-04-18 23:01:50.4642 | Info | Visited nodes: 93 |  
+2021-04-18 23:01:50.4642 | Info | Amount of found solutions: 9 |  
+2021-04-18 23:01:50.4642 | Info | Correct saved solutions in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-18 23:02:01.6305 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-18 23:02:01.6658 | Info | -------------------------------------------- |  
+2021-04-18 23:02:01.6658 | Info | Started solving Graph Coloring Problem |  
+2021-04-18 23:02:01.6793 | Info | --------------------------------- |  
+2021-04-18 23:02:01.6793 | Info | Found solution: [,[,{"node":[7,11],"color":"red"},,{"node":[2,11],"color":"blue"},,{"node":[17,10],"color":"blue"},,{"node":[15,13],"color":"green"},,{"node":[3,6],"color":"green"},,{"node":[12,19],"color":"red"},],,,[,{"node":[7,11],"color":"red"},,{"node":[2,11],"color":"blue"},,{"node":[17,10],"color":"blue"},,{"node":[15,13],"color":"green"},,{"node":[3,6],"color":"green"},,{"node":[12,19],"color":"purple"},],,,[,{"node":[7,11],"color":"red"},,{"node":[2,11],"color":"blue"},,{"node":[17,10],"color":"blue"},,{"node":[15,13],"color":"green"},,{"node":[3,6],"color":"purple"},,{"node":[12,19],"color":"purple"},],,,[,{"node":[7,11],"color":"red"},,{"node":[2,11],"color":"green"},,{"node":[17,10],"color":"green"},,{"node":[15,13],"color":"blue"},,{"node":[3,6],"color":"purple"},,{"node":[12,19],"color":"purple"},],,,[,{"node":[7,11],"color":"blue"},,{"node":[2,11],"color":"red"},,{"node":[17,10],"color":"red"},,{"node":[15,13],"color":"green"},,{"node":[3,6],"color":"purple"},,{"node":[12,19],"color":"purple"},],,,[,{"node":[7,11],"color":"blue"},,{"node":[2,11],"color":"green"},,{"node":[17,10],"color":"green"},,{"node":[15,13],"color":"red"},,{"node":[3,6],"color":"purple"},,{"node":[12,19],"color":"purple"},],,,[,{"node":[7,11],"color":"green"},,{"node":[2,11],"color":"red"},,{"node":[17,10],"color":"red"},,{"node":[15,13],"color":"blue"},,{"node":[3,6],"color":"purple"},,{"node":[12,19],"color":"purple"},],,,[,{"node":[7,11],"color":"green"},,{"node":[2,11],"color":"blue"},,{"node":[17,10],"color":"blue"},,{"node":[15,13],"color":"red"},,{"node":[3,6],"color":"purple"},,{"node":[12,19],"color":"purple"},],,] |  
+2021-04-18 23:02:01.6793 | Info | Search time: 5 ms |  
+2021-04-18 23:02:01.6793 | Info | Visited nodes: 96 |  
+2021-04-18 23:02:01.6793 | Info | Amount of found solutions: 8 |  
+2021-04-18 23:02:01.6793 | Info | Correct saved solutions in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-18 23:02:01.6844 | Info | --------------------------------- |  
+2021-04-18 23:02:01.6844 | Info | Found solution: [,[,{"node":[7,11],"color":"red"},,{"node":[2,11],"color":"blue"},,{"node":[17,10],"color":"blue"},,{"node":[15,13],"color":"green"},,{"node":[3,6],"color":"green"},,{"node":[12,19],"color":"red"},],,,[,{"node":[7,11],"color":"red"},,{"node":[2,11],"color":"blue"},,{"node":[17,10],"color":"blue"},,{"node":[15,13],"color":"green"},,{"node":[3,6],"color":"green"},,{"node":[12,19],"color":"purple"},],,,[,{"node":[7,11],"color":"red"},,{"node":[2,11],"color":"blue"},,{"node":[17,10],"color":"blue"},,{"node":[15,13],"color":"green"},,{"node":[3,6],"color":"purple"},,{"node":[12,19],"color":"purple"},],,,[,{"node":[7,11],"color":"red"},,{"node":[2,11],"color":"green"},,{"node":[17,10],"color":"green"},,{"node":[15,13],"color":"blue"},,{"node":[3,6],"color":"purple"},,{"node":[12,19],"color":"purple"},],,,[,{"node":[7,11],"color":"blue"},,{"node":[2,11],"color":"red"},,{"node":[17,10],"color":"red"},,{"node":[15,13],"color":"green"},,{"node":[3,6],"color":"purple"},,{"node":[12,19],"color":"purple"},],,,[,{"node":[7,11],"color":"blue"},,{"node":[2,11],"color":"green"},,{"node":[17,10],"color":"green"},,{"node":[15,13],"color":"red"},,{"node":[3,6],"color":"purple"},,{"node":[12,19],"color":"purple"},],,,[,{"node":[7,11],"color":"green"},,{"node":[2,11],"color":"red"},,{"node":[17,10],"color":"red"},,{"node":[15,13],"color":"blue"},,{"node":[3,6],"color":"purple"},,{"node":[12,19],"color":"purple"},],,,[,{"node":[7,11],"color":"green"},,{"node":[2,11],"color":"blue"},,{"node":[17,10],"color":"blue"},,{"node":[15,13],"color":"red"},,{"node":[3,6],"color":"purple"},,{"node":[12,19],"color":"purple"},],,] |  
+2021-04-18 23:02:01.6844 | Info | Search time: 9 ms |  
+2021-04-18 23:02:01.6844 | Info | Visited nodes: 53 |  
+2021-04-18 23:02:01.6844 | Info | Amount of found solutions: 8 |  
+2021-04-18 23:02:01.6844 | Info | Correct saved solutions in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-18 23:02:13.2885 | Info | -------------------------------------------- |  
+2021-04-18 23:02:13.3214 | Info | Started solving Zebra Puzzle Problem |  
+2021-04-18 23:02:13.3401 | Debug | ----------------------------------------- |  
+2021-04-18 23:02:13.3401 | Debug | --------------- After AC3 --------------- |  
+2021-04-18 23:02:13.3401 | Debug | ----------------------------------------- |  
+2021-04-18 23:02:13.3401 | Debug | Cigar      : [1,2,3,4,5] |  
+2021-04-18 23:02:13.3401 | Debug | Light      : [1,2,3,4,5] |  
+2021-04-18 23:02:13.3433 | Debug | Unfiltered : [1,2,3,4,5] |  
+2021-04-18 23:02:13.3433 | Debug | Bong       : [2,3,4,5] |  
+2021-04-18 23:02:13.3433 | Debug | Menthol    : [1,2,4,5] |  
+2021-04-18 23:02:13.3433 | Debug | Yellow     : [1,2,3,4,5] |  
+2021-04-18 23:02:13.3433 | Debug | Blue       : [1,2,3,4,5] |  
+2021-04-18 23:02:13.3433 | Debug | Red        : [2,3,4,5] |  
+2021-04-18 23:02:13.3433 | Debug | Green      : [1,2,4] |  
+2021-04-18 23:02:13.3433 | Debug | White      : [2,3,5] |  
+2021-04-18 23:02:13.3433 | Debug | Water      : [1,2,4,5] |  
+2021-04-18 23:02:13.3433 | Debug | Tea        : [2,4,5] |  
+2021-04-18 23:02:13.3433 | Debug | Milk       : [3] |  
+2021-04-18 23:02:13.3433 | Debug | Coffee     : [1,2,4] |  
+2021-04-18 23:02:13.3433 | Debug | Beer       : [1,2,4,5] |  
+2021-04-18 23:02:13.3433 | Debug | Norwegian  : [1] |  
+2021-04-18 23:02:13.3433 | Debug | Dane       : [2,4,5] |  
+2021-04-18 23:02:13.3433 | Debug | English    : [2,3,4,5] |  
+2021-04-18 23:02:13.3433 | Debug | German     : [2,3,4,5] |  
+2021-04-18 23:02:13.3433 | Debug | Sweden     : [2,3,4,5] |  
+2021-04-18 23:02:13.3433 | Debug | Cat        : [1,2,3,4,5] |  
+2021-04-18 23:02:13.3433 | Debug | Horse      : [1,2,3,4,5] |  
+2021-04-18 23:02:13.3433 | Debug | Bird       : [1,2,3,4,5] |  
+2021-04-18 23:02:13.3433 | Debug | Fish       : [1,2,3,4,5] |  
+2021-04-18 23:02:13.3433 | Debug | Dog        : [2,3,4,5] |  
+2021-04-18 23:02:13.3692 | Info | --------------------------------- |  
+2021-04-18 23:02:13.3692 | Info | Found solution: Cigar: 1,Light: 2,Unfiltered: 3,Bong: 4,Menthol: 5,Yellow: 1,Blue: 2,Red: 3,Green: 4,White: 5,Water: 1,Tea: 2,Milk: 3,Coffee: 4,Beer: 5,Norwegian: 1,Dane: 2,English: 3,German: 4,Sweden: 5,Cat: 1,Horse: 2,Bird: 3,Fish: 4,Dog: 5 |  
+2021-04-18 23:02:13.3692 | Info | Search time: 18 ms |  
+2021-04-18 23:02:13.3692 | Info | Visited nodes: 477 |  
+2021-04-18 23:02:13.3692 | Info | Amount of found solutions: 1 |  
+2021-04-18 23:02:13.3728 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/zebra-puzzle-solution.json |  

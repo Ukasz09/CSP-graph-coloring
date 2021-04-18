@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using csp_problem.csp;
 using csp_problem.csp.cspSolver;
@@ -10,7 +9,6 @@ namespace csp_problem
     public class MapColoringSolver
     {
         private readonly ISolver<string, string> _solver;
-
         public long SearchTimeInMs => _solver.ExecutionTimeInMs;
         public int VisitedNodesQty => _solver.VisitedNodesQty;
         public int FoundSolutionsQty => _solver.FoundSolutionsQty;
@@ -22,15 +20,8 @@ namespace csp_problem
 
         public IDictionary<string, string> Solve(Graph graph, ICollection<string> domains, bool withForwardChecking)
         {
-            var csp = GetCsp(graph, domains);
-            var assignment = new Assignment<string, string>(csp);
-            var resultAssignment = _solver.Solve(csp, assignment, withForwardChecking);
-            if (resultAssignment == null)
-            {
-                throw new Exception($"Couldn't find solution, time of executing: {_solver.ExecutionTimeInMs} ms.");
-            }
-
-            return resultAssignment;
+            var resultAssignment = SolveAll(graph, domains, withForwardChecking);
+            return resultAssignment[0];
         }
 
         public IList<IDictionary<string, string>> SolveAll(Graph graph, ICollection<string> domains,
@@ -42,7 +33,6 @@ namespace csp_problem
             if (resultAssignment.Count == 0)
             {
                 throw new Exception($"Couldn't find solution, time of executing: {_solver.ExecutionTimeInMs} ms.");
-                
             }
 
             return resultAssignment;
