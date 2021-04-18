@@ -4,6 +4,6 @@ namespace csp_problem.csp.heuristics
 {
     public interface IValueOrderHeuristic<V, D>
     {
-        List<D> GetOrderedDomainValues(IEnumerable<D> domains, IAssignment<V, D> assignment);
+        List<D> GetOrderedDomainValues(V variable, IEnumerable<D> domains, IAssignment<V, D> assignment);
     }
 }

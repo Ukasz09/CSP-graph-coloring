@@ -43,7 +43,7 @@ namespace csp_problem.csp.cspSolver
             return _solutions;
         }
 
-        private IAssignment<V, D> solveWithBacktracking(IDictionary<V, ICollection<D>> domains,
+        private IAssignment<V, D> solveWithBacktracking(IDictionary<V, ICollection<D>> varDomains,
             Csp<V, D> csp, IAssignment<V, D> assignment, bool allSolutions, bool withForwardChecking
         )
         {
@@ -57,8 +57,8 @@ namespace csp_problem.csp.cspSolver
                 return assignment;
             }
 
-            var variable = VariableHeuristic.ChooseVariable(assignment, csp);
-            var orderedValues = ValuesOrderHeuristic.GetOrderedDomainValues(domains[variable], assignment);
+            var variable = VariableHeuristic.ChooseVariable(assignment, csp, varDomains);
+            var orderedValues = ValuesOrderHeuristic.GetOrderedDomainValues(variable, varDomains[variable], assignment);
             foreach (var value in orderedValues)
             {
                 VisitedNodesQty++;
@@ -66,8 +66,8 @@ namespace csp_problem.csp.cspSolver
                 if (assignment.IsConsistent(variable))
                 {
                     var newVarDomains = withForwardChecking
-                        ? ForwardChecking<V, D>.ReduceDomains(domains, value, variable, assignment)
-                        : domains;
+                        ? ForwardChecking<V, D>.ReduceDomains(varDomains, value, variable, assignment)
+                        : varDomains;
                     var result = solveWithBacktracking
                         (newVarDomains, csp, assignment, allSolutions, withForwardChecking);
                     if (result != null)

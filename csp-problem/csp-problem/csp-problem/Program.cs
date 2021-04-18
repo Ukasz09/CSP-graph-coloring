@@ -111,8 +111,10 @@ namespace csp_problem
         {
             #region solverInitialization
 
-            var valueOrderHeuristic = new TrivialOrderValues<string, string>();
-            var variableOrderHeuristic = new FirstVariableHeuristic<string, string>();
+            var valueOrderHeuristic = new Lcv<string, string>();
+            // var valueOrderHeuristic = new TrivialOrderValues<string, string>();
+            var variableOrderHeuristic = new Mrv<string, string>();
+            // var variableOrderHeuristic = new FirstVariableHeuristic<string, string>();
             var backtrackSolver = new BacktrackSolver<string, string>(valueOrderHeuristic, variableOrderHeuristic);
             var mapColoringSolver = new MapColoringSolver(backtrackSolver);
 
