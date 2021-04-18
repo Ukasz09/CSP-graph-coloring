@@ -53,5 +53,7 @@ namespace csp_problem.csp
         {
             return _variableValues;
         }
+        
+        // public void GetAffectedVariablesByAnyConstraint()
     }
 }

@@ -1426,3 +1426,1127 @@ Dog: 5 |
 2021-04-18 09:15:30.4080 | Info | Search time: 7 ms |  
 2021-04-18 09:15:30.4080 | Info | Visited nodes: 96 |  
 2021-04-18 09:15:30.4080 | Info | Correct saved solutions in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-18 09:20:33.1427 | Info | -------------------------------------------- |  
+2021-04-18 09:20:33.1838 | Info | Started solving Zebra Puzzle Problem |  
+2021-04-18 09:20:33.2181 | Info | --------------------------------- |  
+2021-04-18 09:20:33.2181 | Info | Found solution: Cigar: 1,Light: 2,Unfiltered: 3,Bong: 4,Menthol: 5,Yellow: 1,Blue: 2,Red: 3,Green: 4,White: 5,Water: 1,Tea: 2,Milk: 3,Coffee: 4,Beer: 5,Norwegian: 1,Dane: 2,English: 3,German: 4,Sweden: 5,Cat: 1,Horse: 2,Bird: 3,Fish: 4,Dog: 5 |  
+2021-04-18 09:20:33.2181 | Info | Search time: 15 ms |  
+2021-04-18 09:20:33.2181 | Info | Visited nodes: 1668 |  
+2021-04-18 09:20:33.2214 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/zebra-puzzle-solution.json |  
+2021-04-18 09:20:47.5684 | Info | -------------------------------------------- |  
+2021-04-18 09:20:47.6008 | Info | Started solving Zebra Puzzle Problem |  
+2021-04-18 09:20:47.6367 | Info | --------------------------------- |  
+2021-04-18 09:20:47.6367 | Info | Found solution: Cigar: 1,Light: 2,Unfiltered: 3,Bong: 4,Menthol: 5,Yellow: 1,Blue: 2,Red: 3,Green: 4,White: 5,Water: 1,Tea: 2,Milk: 3,Coffee: 4,Beer: 5,Norwegian: 1,Dane: 2,English: 3,German: 4,Sweden: 5,Cat: 1,Horse: 2,Bird: 3,Fish: 4,Dog: 5 |  
+2021-04-18 09:20:47.6367 | Info | Search time: 24 ms |  
+2021-04-18 09:20:47.6367 | Info | Visited nodes: 3291 |  
+2021-04-18 09:20:47.6400 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/zebra-puzzle-solution.json |  
+2021-04-18 10:03:38.7986 | Info | -------------------------------------------- |  
+2021-04-18 10:03:38.8352 | Info | Started solving Zebra Puzzle Problem |  
+2021-04-18 10:03:38.8642 | Info | --------------------------------- |  
+2021-04-18 10:03:38.8642 | Info | Found solution: Cigar: 1,Light: 2,Unfiltered: 3,Bong: 4,Menthol: 5,Yellow: 1,Blue: 2,Red: 3,Green: 4,White: 5,Water: 1,Tea: 2,Milk: 3,Coffee: 4,Beer: 5,Norwegian: 1,Dane: 2,English: 3,German: 4,Sweden: 5,Cat: 1,Horse: 2,Bird: 3,Fish: 4,Dog: 5 |  
+2021-04-18 10:03:38.8642 | Info | Search time: 13 ms |  
+2021-04-18 10:03:38.8642 | Info | Visited nodes: 1668 |  
+2021-04-18 10:03:38.8672 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/zebra-puzzle-solution.json |  
+2021-04-18 10:04:13.3635 | Info | -------------------------------------------- |  
+2021-04-18 10:04:13.4014 | Info | Started solving Zebra Puzzle Problem |  
+2021-04-18 10:04:13.4337 | Info | --------------------------------- |  
+2021-04-18 10:04:13.4337 | Info | Found solution: Cigar: 1,Light: 2,Unfiltered: 3,Bong: 4,Menthol: 5,Yellow: 1,Blue: 2,Red: 3,Green: 4,White: 5,Water: 1,Tea: 2,Milk: 3,Coffee: 4,Beer: 5,Norwegian: 1,Dane: 2,English: 3,German: 4,Sweden: 5,Cat: 1,Horse: 2,Bird: 3,Fish: 4,Dog: 5 |  
+2021-04-18 10:04:13.4337 | Info | Search time: 16 ms |  
+2021-04-18 10:04:13.4337 | Info | Visited nodes: 1668 |  
+2021-04-18 10:04:13.4365 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/zebra-puzzle-solution.json |  
+2021-04-18 10:04:33.0132 | Info | -------------------------------------------- |  
+2021-04-18 10:04:33.0887 | Info | Started solving Zebra Puzzle Problem |  
+2021-04-18 10:04:33.1099 | Debug | aia[Cigar, System.Collections.Generic.List`1[System.Int32]]
+,[Light, System.Collections.Generic.List`1[System.Int32]]
+,[Unfiltered, System.Collections.Generic.List`1[System.Int32]]
+,[Bong, System.Collections.Generic.List`1[System.Int32]]
+,[Menthol, System.Collections.Generic.List`1[System.Int32]]
+,[Yellow, System.Collections.Generic.List`1[System.Int32]]
+,[Blue, System.Collections.Generic.List`1[System.Int32]]
+,[Red, System.Collections.Generic.List`1[System.Int32]]
+,[Green, System.Collections.Generic.List`1[System.Int32]]
+,[White, System.Collections.Generic.List`1[System.Int32]]
+,[Water, System.Collections.Generic.List`1[System.Int32]]
+,[Tea, System.Collections.Generic.List`1[System.Int32]]
+,[Milk, System.Collections.Generic.List`1[System.Int32]]
+,[Coffee, System.Collections.Generic.List`1[System.Int32]]
+,[Beer, System.Collections.Generic.List`1[System.Int32]]
+,[Norwegian, System.Collections.Generic.List`1[System.Int32]]
+,[Dane, System.Collections.Generic.List`1[System.Int32]]
+,[English, System.Collections.Generic.List`1[System.Int32]]
+,[German, System.Collections.Generic.List`1[System.Int32]]
+,[Sweden, System.Collections.Generic.List`1[System.Int32]]
+,[Cat, System.Collections.Generic.List`1[System.Int32]]
+,[Horse, System.Collections.Generic.List`1[System.Int32]]
+,[Bird, System.Collections.Generic.List`1[System.Int32]]
+,[Fish, System.Collections.Generic.List`1[System.Int32]]
+,[Dog, System.Collections.Generic.List`1[System.Int32]] |  
+2021-04-18 10:04:33.1881 | Info | --------------------------------- |  
+2021-04-18 10:04:33.1881 | Info | Found solution: Cigar: 1,Light: 2,Unfiltered: 3,Bong: 4,Menthol: 5,Yellow: 1,Blue: 2,Red: 3,Green: 4,White: 5,Water: 1,Tea: 2,Milk: 3,Coffee: 4,Beer: 5,Norwegian: 1,Dane: 2,English: 3,German: 4,Sweden: 5,Cat: 1,Horse: 2,Bird: 3,Fish: 4,Dog: 5 |  
+2021-04-18 10:04:33.1881 | Info | Search time: 70 ms |  
+2021-04-18 10:04:33.1881 | Info | Visited nodes: 1668 |  
+2021-04-18 10:04:33.1919 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/zebra-puzzle-solution.json |  
+2021-04-18 10:06:35.3715 | Info | -------------------------------------------- |  
+2021-04-18 10:06:35.4138 | Info | Started solving Zebra Puzzle Problem |  
+2021-04-18 10:06:35.4319 | Debug | ----------------------------------------- |  
+2021-04-18 10:06:35.4319 | Debug | --------------- After AC3 --------------- |  
+2021-04-18 10:06:35.4319 | Debug | ----------------------------------------- |  
+2021-04-18 10:06:35.4319 | Debug | 1
+,2
+,3
+,4
+,5 |  
+2021-04-18 10:06:35.4319 | Debug | 1
+,2
+,3
+,4
+,5 |  
+2021-04-18 10:06:35.4319 | Debug | 1
+,2
+,3
+,4
+,5 |  
+2021-04-18 10:06:35.4319 | Debug | 1
+,2
+,3
+,4
+,5 |  
+2021-04-18 10:06:35.4350 | Debug | 1
+,2
+,3
+,4
+,5 |  
+2021-04-18 10:06:35.4350 | Debug | 1
+,2
+,3
+,4
+,5 |  
+2021-04-18 10:06:35.4350 | Debug | 1
+,2
+,3
+,4
+,5 |  
+2021-04-18 10:06:35.4350 | Debug | 1
+,2
+,3
+,4
+,5 |  
+2021-04-18 10:06:35.4350 | Debug | 1
+,2
+,3
+,4 |  
+2021-04-18 10:06:35.4350 | Debug | 2
+,3
+,4
+,5 |  
+2021-04-18 10:06:35.4350 | Debug | 1
+,2
+,3
+,4
+,5 |  
+2021-04-18 10:06:35.4350 | Debug | 1
+,2
+,3
+,4
+,5 |  
+2021-04-18 10:06:35.4350 | Debug | 1
+,2
+,3
+,4
+,5 |  
+2021-04-18 10:06:35.4350 | Debug | 1
+,2
+,3
+,4 |  
+2021-04-18 10:06:35.4350 | Debug | 1
+,2
+,3
+,4
+,5 |  
+2021-04-18 10:06:35.4350 | Debug | 1 |  
+2021-04-18 10:06:35.4350 | Debug | 1
+,2
+,3
+,4
+,5 |  
+2021-04-18 10:06:35.4350 | Debug | 1
+,2
+,3
+,4
+,5 |  
+2021-04-18 10:06:35.4350 | Debug | 1
+,2
+,3
+,4
+,5 |  
+2021-04-18 10:06:35.4350 | Debug | 1
+,2
+,3
+,4
+,5 |  
+2021-04-18 10:06:35.4350 | Debug | 1
+,2
+,3
+,4
+,5 |  
+2021-04-18 10:06:35.4350 | Debug | 1
+,2
+,3
+,4
+,5 |  
+2021-04-18 10:06:35.4350 | Debug | 1
+,2
+,3
+,4
+,5 |  
+2021-04-18 10:06:35.4350 | Debug | 1
+,2
+,3
+,4
+,5 |  
+2021-04-18 10:06:35.4350 | Debug | 1
+,2
+,3
+,4
+,5 |  
+2021-04-18 10:06:35.4716 | Info | --------------------------------- |  
+2021-04-18 10:06:35.4716 | Info | Found solution: Cigar: 1,Light: 2,Unfiltered: 3,Bong: 4,Menthol: 5,Yellow: 1,Blue: 2,Red: 3,Green: 4,White: 5,Water: 1,Tea: 2,Milk: 3,Coffee: 4,Beer: 5,Norwegian: 1,Dane: 2,English: 3,German: 4,Sweden: 5,Cat: 1,Horse: 2,Bird: 3,Fish: 4,Dog: 5 |  
+2021-04-18 10:06:35.4716 | Info | Search time: 24 ms |  
+2021-04-18 10:06:35.4716 | Info | Visited nodes: 1668 |  
+2021-04-18 10:06:35.4765 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/zebra-puzzle-solution.json |  
+2021-04-18 10:06:45.4032 | Info | -------------------------------------------- |  
+2021-04-18 10:06:45.4579 | Info | Started solving Zebra Puzzle Problem |  
+2021-04-18 10:06:45.4771 | Debug | ----------------------------------------- |  
+2021-04-18 10:06:45.4771 | Debug | --------------- After AC3 --------------- |  
+2021-04-18 10:06:45.4771 | Debug | ----------------------------------------- |  
+2021-04-18 10:06:45.4799 | Debug | 1,2,3,4,5 |  
+2021-04-18 10:06:45.4799 | Debug | 1,2,3,4,5 |  
+2021-04-18 10:06:45.4799 | Debug | 1,2,3,4,5 |  
+2021-04-18 10:06:45.4799 | Debug | 1,2,3,4,5 |  
+2021-04-18 10:06:45.4799 | Debug | 1,2,3,4,5 |  
+2021-04-18 10:06:45.4799 | Debug | 1,2,3,4,5 |  
+2021-04-18 10:06:45.4799 | Debug | 1,2,3,4,5 |  
+2021-04-18 10:06:45.4799 | Debug | 1,2,3,4,5 |  
+2021-04-18 10:06:45.4799 | Debug | 1,2,3,4 |  
+2021-04-18 10:06:45.4799 | Debug | 2,3,4,5 |  
+2021-04-18 10:06:45.4799 | Debug | 1,2,3,4,5 |  
+2021-04-18 10:06:45.4799 | Debug | 1,2,3,4,5 |  
+2021-04-18 10:06:45.4799 | Debug | 1,2,3,4,5 |  
+2021-04-18 10:06:45.4799 | Debug | 1,2,3,4 |  
+2021-04-18 10:06:45.4799 | Debug | 1,2,3,4,5 |  
+2021-04-18 10:06:45.4799 | Debug | 1 |  
+2021-04-18 10:06:45.4799 | Debug | 1,2,3,4,5 |  
+2021-04-18 10:06:45.4799 | Debug | 1,2,3,4,5 |  
+2021-04-18 10:06:45.4799 | Debug | 1,2,3,4,5 |  
+2021-04-18 10:06:45.4799 | Debug | 1,2,3,4,5 |  
+2021-04-18 10:06:45.4799 | Debug | 1,2,3,4,5 |  
+2021-04-18 10:06:45.4799 | Debug | 1,2,3,4,5 |  
+2021-04-18 10:06:45.4799 | Debug | 1,2,3,4,5 |  
+2021-04-18 10:06:45.4799 | Debug | 1,2,3,4,5 |  
+2021-04-18 10:06:45.4799 | Debug | 1,2,3,4,5 |  
+2021-04-18 10:06:45.5182 | Info | --------------------------------- |  
+2021-04-18 10:06:45.5182 | Info | Found solution: Cigar: 1,Light: 2,Unfiltered: 3,Bong: 4,Menthol: 5,Yellow: 1,Blue: 2,Red: 3,Green: 4,White: 5,Water: 1,Tea: 2,Milk: 3,Coffee: 4,Beer: 5,Norwegian: 1,Dane: 2,English: 3,German: 4,Sweden: 5,Cat: 1,Horse: 2,Bird: 3,Fish: 4,Dog: 5 |  
+2021-04-18 10:06:45.5182 | Info | Search time: 25 ms |  
+2021-04-18 10:06:45.5182 | Info | Visited nodes: 1668 |  
+2021-04-18 10:06:45.5224 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/zebra-puzzle-solution.json |  
+2021-04-18 10:07:35.4833 | Info | -------------------------------------------- |  
+2021-04-18 10:07:35.5251 | Info | Started solving Zebra Puzzle Problem |  
+2021-04-18 10:07:35.5460 | Debug | ----------------------------------------- |  
+2021-04-18 10:07:35.5460 | Debug | --------------- After AC3 --------------- |  
+2021-04-18 10:07:35.5460 | Debug | ----------------------------------------- |  
+2021-04-18 10:07:35.5482 | Debug | Cigar : [1,2,3,4,5] |  
+2021-04-18 10:07:35.5482 | Debug | Light : [1,2,3,4,5] |  
+2021-04-18 10:07:35.5482 | Debug | Unfiltered : [1,2,3,4,5] |  
+2021-04-18 10:07:35.5482 | Debug | Bong : [1,2,3,4,5] |  
+2021-04-18 10:07:35.5482 | Debug | Menthol : [1,2,3,4,5] |  
+2021-04-18 10:07:35.5482 | Debug | Yellow : [1,2,3,4,5] |  
+2021-04-18 10:07:35.5482 | Debug | Blue : [1,2,3,4,5] |  
+2021-04-18 10:07:35.5482 | Debug | Red : [1,2,3,4,5] |  
+2021-04-18 10:07:35.5482 | Debug | Green : [1,2,3,4] |  
+2021-04-18 10:07:35.5482 | Debug | White : [2,3,4,5] |  
+2021-04-18 10:07:35.5482 | Debug | Water : [1,2,3,4,5] |  
+2021-04-18 10:07:35.5482 | Debug | Tea : [1,2,3,4,5] |  
+2021-04-18 10:07:35.5482 | Debug | Milk : [1,2,3,4,5] |  
+2021-04-18 10:07:35.5482 | Debug | Coffee : [1,2,3,4] |  
+2021-04-18 10:07:35.5482 | Debug | Beer : [1,2,3,4,5] |  
+2021-04-18 10:07:35.5482 | Debug | Norwegian : [1] |  
+2021-04-18 10:07:35.5482 | Debug | Dane : [1,2,3,4,5] |  
+2021-04-18 10:07:35.5482 | Debug | English : [1,2,3,4,5] |  
+2021-04-18 10:07:35.5482 | Debug | German : [1,2,3,4,5] |  
+2021-04-18 10:07:35.5482 | Debug | Sweden : [1,2,3,4,5] |  
+2021-04-18 10:07:35.5482 | Debug | Cat : [1,2,3,4,5] |  
+2021-04-18 10:07:35.5482 | Debug | Horse : [1,2,3,4,5] |  
+2021-04-18 10:07:35.5482 | Debug | Bird : [1,2,3,4,5] |  
+2021-04-18 10:07:35.5482 | Debug | Fish : [1,2,3,4,5] |  
+2021-04-18 10:07:35.5482 | Debug | Dog : [1,2,3,4,5] |  
+2021-04-18 10:07:35.5722 | Info | --------------------------------- |  
+2021-04-18 10:07:35.5722 | Info | Found solution: Cigar: 1,Light: 2,Unfiltered: 3,Bong: 4,Menthol: 5,Yellow: 1,Blue: 2,Red: 3,Green: 4,White: 5,Water: 1,Tea: 2,Milk: 3,Coffee: 4,Beer: 5,Norwegian: 1,Dane: 2,English: 3,German: 4,Sweden: 5,Cat: 1,Horse: 2,Bird: 3,Fish: 4,Dog: 5 |  
+2021-04-18 10:07:35.5722 | Info | Search time: 17 ms |  
+2021-04-18 10:07:35.5722 | Info | Visited nodes: 1668 |  
+2021-04-18 10:07:35.5767 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/zebra-puzzle-solution.json |  
+2021-04-18 10:08:17.5882 | Info | -------------------------------------------- |  
+2021-04-18 10:08:17.6204 | Info | Started solving Zebra Puzzle Problem |  
+2021-04-18 10:09:22.4030 | Info | -------------------------------------------- |  
+2021-04-18 10:09:22.4549 | Info | Started solving Zebra Puzzle Problem |  
+2021-04-18 10:09:22.4749 | Debug | ----------------------------------------- |  
+2021-04-18 10:09:22.4751 | Debug | --------------- After AC3 --------------- |  
+2021-04-18 10:09:22.4751 | Debug | ----------------------------------------- |  
+2021-04-18 10:09:22.4751 | Debug | Cigar : [1,2,3,4,5] |  
+2021-04-18 10:09:22.4751 | Debug | Light : [1,2,3,4,5] |  
+2021-04-18 10:09:22.4751 | Debug | Unfiltered : [1,2,3,4,5] |  
+2021-04-18 10:09:22.4751 | Debug | Bong : [1,2,3,4,5] |  
+2021-04-18 10:09:22.4751 | Debug | Menthol : [1,2,3,4,5] |  
+2021-04-18 10:09:22.4751 | Debug | Yellow : [1,2,3,4,5] |  
+2021-04-18 10:09:22.4751 | Debug | Blue : [1,2,3,4,5] |  
+2021-04-18 10:09:22.4751 | Debug | Red : [1,2,3,4,5] |  
+2021-04-18 10:09:22.4751 | Debug | Green : [1,2,3,4] |  
+2021-04-18 10:09:22.4751 | Debug | White : [2,3,4,5] |  
+2021-04-18 10:09:22.4751 | Debug | Water : [1,2,3,4,5] |  
+2021-04-18 10:09:22.4751 | Debug | Tea : [1,2,3,4,5] |  
+2021-04-18 10:09:22.4751 | Debug | Milk : [1,2,3,4,5] |  
+2021-04-18 10:09:22.4751 | Debug | Coffee : [1,2,3,4] |  
+2021-04-18 10:09:22.4751 | Debug | Beer : [1,2,3,4,5] |  
+2021-04-18 10:09:22.4751 | Debug | Norwegian : [1] |  
+2021-04-18 10:09:22.4790 | Debug | Dane : [1,2,3,4,5] |  
+2021-04-18 10:09:22.4790 | Debug | English : [1,2,3,4,5] |  
+2021-04-18 10:09:22.4790 | Debug | German : [1,2,3,4,5] |  
+2021-04-18 10:09:22.4790 | Debug | Sweden : [1,2,3,4,5] |  
+2021-04-18 10:09:22.4790 | Debug | Cat : [1,2,3,4,5] |  
+2021-04-18 10:09:22.4790 | Debug | Horse : [1,2,3,4,5] |  
+2021-04-18 10:09:22.4790 | Debug | Bird : [1,2,3,4,5] |  
+2021-04-18 10:09:22.4790 | Debug | Fish : [1,2,3,4,5] |  
+2021-04-18 10:09:22.4790 | Debug | Dog : [1,2,3,4,5] |  
+2021-04-18 10:09:22.5090 | Info | --------------------------------- |  
+2021-04-18 10:09:22.5090 | Info | Found solution: Cigar: 1,Light: 2,Unfiltered: 3,Bong: 4,Menthol: 5,Yellow: 1,Blue: 2,Red: 3,Green: 4,White: 5,Water: 1,Tea: 2,Milk: 3,Coffee: 4,Beer: 5,Norwegian: 1,Dane: 2,English: 3,German: 4,Sweden: 5,Cat: 1,Horse: 2,Bird: 3,Fish: 4,Dog: 5 |  
+2021-04-18 10:09:22.5090 | Info | Search time: 23 ms |  
+2021-04-18 10:09:22.5090 | Info | Visited nodes: 1668 |  
+2021-04-18 10:09:22.5131 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/zebra-puzzle-solution.json |  
+2021-04-18 10:10:47.0178 | Info | -------------------------------------------- |  
+2021-04-18 10:10:47.0711 | Info | Started solving Zebra Puzzle Problem |  
+2021-04-18 10:10:47.1022 | Debug | ----------------------------------------- |  
+2021-04-18 10:10:47.1022 | Debug | --------------- After AC3 --------------- |  
+2021-04-18 10:10:47.1022 | Debug | ----------------------------------------- |  
+2021-04-18 10:10:47.1053 | Debug | Cigar : [1,2,3,4,5] |  
+2021-04-18 10:10:47.1053 | Debug | Light : [1,2,3,4,5] |  
+2021-04-18 10:10:47.1053 | Debug | Unfiltered : [1,2,3,4,5] |  
+2021-04-18 10:10:47.1053 | Debug | Bong : [1,2,3,4,5] |  
+2021-04-18 10:10:47.1053 | Debug | Menthol : [1,2,3,4,5] |  
+2021-04-18 10:10:47.1053 | Debug | Yellow : [1,2,3,4,5] |  
+2021-04-18 10:10:47.1053 | Debug | Blue : [1,2,3,4,5] |  
+2021-04-18 10:10:47.1053 | Debug | Red : [1,2,3,4,5] |  
+2021-04-18 10:10:47.1053 | Debug | Green : [1,2,3,4] |  
+2021-04-18 10:10:47.1053 | Debug | White : [2,3,4,5] |  
+2021-04-18 10:10:47.1053 | Debug | Water : [1,2,3,4,5] |  
+2021-04-18 10:10:47.1053 | Debug | Tea : [1,2,3,4,5] |  
+2021-04-18 10:10:47.1053 | Debug | Milk : [1,2,3,4,5] |  
+2021-04-18 10:10:47.1053 | Debug | Coffee : [1,2,3,4] |  
+2021-04-18 10:10:47.1053 | Debug | Beer : [1,2,3,4,5] |  
+2021-04-18 10:10:47.1053 | Debug | Norwegian : [1] |  
+2021-04-18 10:10:47.1053 | Debug | Dane : [1,2,3,4,5] |  
+2021-04-18 10:10:47.1053 | Debug | English : [1,2,3,4,5] |  
+2021-04-18 10:10:47.1070 | Debug | German : [1,2,3,4,5] |  
+2021-04-18 10:10:47.1070 | Debug | Sweden : [1,2,3,4,5] |  
+2021-04-18 10:10:47.1070 | Debug | Cat : [1,2,3,4,5] |  
+2021-04-18 10:10:47.1070 | Debug | Horse : [1,2,3,4,5] |  
+2021-04-18 10:10:47.1070 | Debug | Bird : [1,2,3,4,5] |  
+2021-04-18 10:10:47.1070 | Debug | Fish : [1,2,3,4,5] |  
+2021-04-18 10:10:47.1070 | Debug | Dog : [1,2,3,4,5] |  
+2021-04-18 10:10:47.1401 | Info | --------------------------------- |  
+2021-04-18 10:10:47.1401 | Info | Found solution: Cigar: 1,Light: 2,Unfiltered: 3,Bong: 4,Menthol: 5,Yellow: 1,Blue: 2,Red: 3,Green: 4,White: 5,Water: 1,Tea: 2,Milk: 3,Coffee: 4,Beer: 5,Norwegian: 1,Dane: 2,English: 3,German: 4,Sweden: 5,Cat: 1,Horse: 2,Bird: 3,Fish: 4,Dog: 5 |  
+2021-04-18 10:10:47.1401 | Info | Search time: 25 ms |  
+2021-04-18 10:10:47.1401 | Info | Visited nodes: 1668 |  
+2021-04-18 10:10:47.1463 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/zebra-puzzle-solution.json |  
+2021-04-18 10:14:05.2674 | Info | -------------------------------------------- |  
+2021-04-18 10:14:05.3245 | Info | Started solving Zebra Puzzle Problem |  
+2021-04-18 10:14:05.3439 | Debug | ----------------------------------------- |  
+2021-04-18 10:14:05.3439 | Debug | --------------- After AC3 --------------- |  
+2021-04-18 10:14:05.3439 | Debug | ----------------------------------------- |  
+2021-04-18 10:14:05.3473 | Debug | Cigar      : [1,2,3,4,5] |  
+2021-04-18 10:14:05.3473 | Debug | Light      : [1,2,3,4,5] |  
+2021-04-18 10:14:05.3473 | Debug | Unfiltered : [1,2,3,4,5] |  
+2021-04-18 10:14:05.3473 | Debug | Bong       : [1,2,3,4,5] |  
+2021-04-18 10:14:05.3473 | Debug | Menthol    : [1,2,3,4,5] |  
+2021-04-18 10:14:05.3473 | Debug | Yellow     : [1,2,3,4,5] |  
+2021-04-18 10:14:05.3473 | Debug | Blue       : [1,2,3,4,5] |  
+2021-04-18 10:14:05.3473 | Debug | Red        : [1,2,3,4,5] |  
+2021-04-18 10:14:05.3473 | Debug | Green      : [1,2,3,4] |  
+2021-04-18 10:14:05.3473 | Debug | White      : [2,3,4,5] |  
+2021-04-18 10:14:05.3473 | Debug | Water      : [1,2,3,4,5] |  
+2021-04-18 10:14:05.3473 | Debug | Tea        : [1,2,3,4,5] |  
+2021-04-18 10:14:05.3473 | Debug | Milk       : [1,2,3,4,5] |  
+2021-04-18 10:14:05.3473 | Debug | Coffee     : [1,2,3,4] |  
+2021-04-18 10:14:05.3473 | Debug | Beer       : [1,2,3,4,5] |  
+2021-04-18 10:14:05.3473 | Debug | Norwegian  : [1] |  
+2021-04-18 10:14:05.3473 | Debug | Dane       : [1,2,3,4,5] |  
+2021-04-18 10:14:05.3473 | Debug | English    : [1,2,3,4,5] |  
+2021-04-18 10:14:05.3473 | Debug | German     : [1,2,3,4,5] |  
+2021-04-18 10:14:05.3473 | Debug | Sweden     : [1,2,3,4,5] |  
+2021-04-18 10:14:05.3473 | Debug | Cat        : [1,2,3,4,5] |  
+2021-04-18 10:14:05.3473 | Debug | Horse      : [1,2,3,4,5] |  
+2021-04-18 10:14:05.3473 | Debug | Bird       : [1,2,3,4,5] |  
+2021-04-18 10:14:05.3473 | Debug | Fish       : [1,2,3,4,5] |  
+2021-04-18 10:14:05.3473 | Debug | Dog        : [1,2,3,4,5] |  
+2021-04-18 10:14:05.3820 | Info | --------------------------------- |  
+2021-04-18 10:14:05.3820 | Info | Found solution: Cigar: 1,Light: 2,Unfiltered: 3,Bong: 4,Menthol: 5,Yellow: 1,Blue: 2,Red: 3,Green: 4,White: 5,Water: 1,Tea: 2,Milk: 3,Coffee: 4,Beer: 5,Norwegian: 1,Dane: 2,English: 3,German: 4,Sweden: 5,Cat: 1,Horse: 2,Bird: 3,Fish: 4,Dog: 5 |  
+2021-04-18 10:14:05.3820 | Info | Search time: 27 ms |  
+2021-04-18 10:14:05.3820 | Info | Visited nodes: 1668 |  
+2021-04-18 10:14:05.3859 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/zebra-puzzle-solution.json |  
+2021-04-18 10:17:35.4912 | Info | -------------------------------------------- |  
+2021-04-18 10:17:35.5340 | Info | Started solving Zebra Puzzle Problem |  
+2021-04-18 10:17:35.5513 | Debug | ----------------------------------------- |  
+2021-04-18 10:17:35.5513 | Debug | --------------- After AC3 --------------- |  
+2021-04-18 10:17:35.5513 | Debug | ----------------------------------------- |  
+2021-04-18 10:17:35.5549 | Debug | Cigar      : [1,2,3,4,5   ] |  
+2021-04-18 10:17:35.5549 | Debug | Light      : [1,2,3,4,5   ] |  
+2021-04-18 10:17:35.5549 | Debug | Unfiltered : [1,2,3,4,5   ] |  
+2021-04-18 10:17:35.5549 | Debug | Bong       : [1,2,3,4,5   ] |  
+2021-04-18 10:17:35.5549 | Debug | Menthol    : [1,2,3,4,5   ] |  
+2021-04-18 10:17:35.5549 | Debug | Yellow     : [1,2,3,4,5   ] |  
+2021-04-18 10:17:35.5549 | Debug | Blue       : [1,2,3,4,5   ] |  
+2021-04-18 10:17:35.5549 | Debug | Red        : [1,2,3,4,5   ] |  
+2021-04-18 10:17:35.5549 | Debug | Green      : [1,2,3,4     ] |  
+2021-04-18 10:17:35.5549 | Debug | White      : [2,3,4,5     ] |  
+2021-04-18 10:17:35.5549 | Debug | Water      : [1,2,3,4,5   ] |  
+2021-04-18 10:17:35.5549 | Debug | Tea        : [1,2,3,4,5   ] |  
+2021-04-18 10:17:35.5549 | Debug | Milk       : [1,2,3,4,5   ] |  
+2021-04-18 10:17:35.5549 | Debug | Coffee     : [1,2,3,4     ] |  
+2021-04-18 10:17:35.5549 | Debug | Beer       : [1,2,3,4,5   ] |  
+2021-04-18 10:17:35.5549 | Debug | Norwegian  : [1           ] |  
+2021-04-18 10:17:35.5549 | Debug | Dane       : [1,2,3,4,5   ] |  
+2021-04-18 10:17:35.5549 | Debug | English    : [1,2,3,4,5   ] |  
+2021-04-18 10:17:35.5549 | Debug | German     : [1,2,3,4,5   ] |  
+2021-04-18 10:17:35.5549 | Debug | Sweden     : [1,2,3,4,5   ] |  
+2021-04-18 10:17:35.5549 | Debug | Cat        : [1,2,3,4,5   ] |  
+2021-04-18 10:17:35.5549 | Debug | Horse      : [1,2,3,4,5   ] |  
+2021-04-18 10:17:35.5549 | Debug | Bird       : [1,2,3,4,5   ] |  
+2021-04-18 10:17:35.5549 | Debug | Fish       : [1,2,3,4,5   ] |  
+2021-04-18 10:17:35.5549 | Debug | Dog        : [1,2,3,4,5   ] |  
+2021-04-18 10:17:35.5800 | Info | --------------------------------- |  
+2021-04-18 10:17:35.5800 | Info | Found solution: Cigar: 1,Light: 2,Unfiltered: 3,Bong: 4,Menthol: 5,Yellow: 1,Blue: 2,Red: 3,Green: 4,White: 5,Water: 1,Tea: 2,Milk: 3,Coffee: 4,Beer: 5,Norwegian: 1,Dane: 2,English: 3,German: 4,Sweden: 5,Cat: 1,Horse: 2,Bird: 3,Fish: 4,Dog: 5 |  
+2021-04-18 10:17:35.5800 | Info | Search time: 18 ms |  
+2021-04-18 10:17:35.5800 | Info | Visited nodes: 1668 |  
+2021-04-18 10:17:35.5839 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/zebra-puzzle-solution.json |  
+2021-04-18 10:17:44.9685 | Info | -------------------------------------------- |  
+2021-04-18 10:17:45.0064 | Info | Started solving Zebra Puzzle Problem |  
+2021-04-18 10:17:45.0187 | Debug | ----------------------------------------- |  
+2021-04-18 10:17:45.0187 | Debug | --------------- After AC3 --------------- |  
+2021-04-18 10:17:45.0190 | Debug | ----------------------------------------- |  
+2021-04-18 10:17:45.0190 | Debug | Cigar      : [1,2,3,4,5] |  
+2021-04-18 10:17:45.0190 | Debug | Light      : [1,2,3,4,5] |  
+2021-04-18 10:17:45.0190 | Debug | Unfiltered : [1,2,3,4,5] |  
+2021-04-18 10:17:45.0190 | Debug | Bong       : [1,2,3,4,5] |  
+2021-04-18 10:17:45.0190 | Debug | Menthol    : [1,2,3,4,5] |  
+2021-04-18 10:17:45.0190 | Debug | Yellow     : [1,2,3,4,5] |  
+2021-04-18 10:17:45.0190 | Debug | Blue       : [1,2,3,4,5] |  
+2021-04-18 10:17:45.0190 | Debug | Red        : [1,2,3,4,5] |  
+2021-04-18 10:17:45.0190 | Debug | Green      : [1,2,3,4] |  
+2021-04-18 10:17:45.0190 | Debug | White      : [2,3,4,5] |  
+2021-04-18 10:17:45.0190 | Debug | Water      : [1,2,3,4,5] |  
+2021-04-18 10:17:45.0190 | Debug | Tea        : [1,2,3,4,5] |  
+2021-04-18 10:17:45.0190 | Debug | Milk       : [1,2,3,4,5] |  
+2021-04-18 10:17:45.0190 | Debug | Coffee     : [1,2,3,4] |  
+2021-04-18 10:17:45.0190 | Debug | Beer       : [1,2,3,4,5] |  
+2021-04-18 10:17:45.0190 | Debug | Norwegian  : [1] |  
+2021-04-18 10:17:45.0190 | Debug | Dane       : [1,2,3,4,5] |  
+2021-04-18 10:17:45.0190 | Debug | English    : [1,2,3,4,5] |  
+2021-04-18 10:17:45.0190 | Debug | German     : [1,2,3,4,5] |  
+2021-04-18 10:17:45.0190 | Debug | Sweden     : [1,2,3,4,5] |  
+2021-04-18 10:17:45.0190 | Debug | Cat        : [1,2,3,4,5] |  
+2021-04-18 10:17:45.0190 | Debug | Horse      : [1,2,3,4,5] |  
+2021-04-18 10:17:45.0230 | Debug | Bird       : [1,2,3,4,5] |  
+2021-04-18 10:17:45.0230 | Debug | Fish       : [1,2,3,4,5] |  
+2021-04-18 10:17:45.0230 | Debug | Dog        : [1,2,3,4,5] |  
+2021-04-18 10:17:45.0476 | Info | --------------------------------- |  
+2021-04-18 10:17:45.0476 | Info | Found solution: Cigar: 1,Light: 2,Unfiltered: 3,Bong: 4,Menthol: 5,Yellow: 1,Blue: 2,Red: 3,Green: 4,White: 5,Water: 1,Tea: 2,Milk: 3,Coffee: 4,Beer: 5,Norwegian: 1,Dane: 2,English: 3,German: 4,Sweden: 5,Cat: 1,Horse: 2,Bird: 3,Fish: 4,Dog: 5 |  
+2021-04-18 10:17:45.0476 | Info | Search time: 19 ms |  
+2021-04-18 10:17:45.0476 | Info | Visited nodes: 1668 |  
+2021-04-18 10:17:45.0519 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/zebra-puzzle-solution.json |  
+2021-04-18 10:35:47.1590 | Info | -------------------------------------------- |  
+2021-04-18 10:35:47.1944 | Info | Started solving Zebra Puzzle Problem |  
+2021-04-18 10:35:47.2144 | Debug | ----------------------------------------- |  
+2021-04-18 10:35:47.2144 | Debug | --------------- After AC3 --------------- |  
+2021-04-18 10:35:47.2144 | Debug | ----------------------------------------- |  
+2021-04-18 10:35:47.2178 | Debug | Cigar      : [1,2,3,4,5] |  
+2021-04-18 10:35:47.2178 | Debug | Light      : [1,2,3,4,5] |  
+2021-04-18 10:35:47.2178 | Debug | Unfiltered : [1,2,3,4,5] |  
+2021-04-18 10:35:47.2178 | Debug | Bong       : [1,2,3,4,5] |  
+2021-04-18 10:35:47.2178 | Debug | Menthol    : [1,2,3,4,5] |  
+2021-04-18 10:35:47.2178 | Debug | Yellow     : [1,2,3,4,5] |  
+2021-04-18 10:35:47.2178 | Debug | Blue       : [1,2,3,4,5] |  
+2021-04-18 10:35:47.2178 | Debug | Red        : [1,2,3,4,5] |  
+2021-04-18 10:35:47.2178 | Debug | Green      : [1,2,3,4] |  
+2021-04-18 10:35:47.2190 | Debug | White      : [2,3,4,5] |  
+2021-04-18 10:35:47.2190 | Debug | Water      : [1,2,3,4,5] |  
+2021-04-18 10:35:47.2190 | Debug | Tea        : [1,2,3,4,5] |  
+2021-04-18 10:35:47.2190 | Debug | Milk       : [3] |  
+2021-04-18 10:35:47.2190 | Debug | Coffee     : [1,2,3,4] |  
+2021-04-18 10:35:47.2190 | Debug | Beer       : [1,2,3,4,5] |  
+2021-04-18 10:35:47.2190 | Debug | Norwegian  : [1] |  
+2021-04-18 10:35:47.2190 | Debug | Dane       : [1,2,3,4,5] |  
+2021-04-18 10:35:47.2190 | Debug | English    : [1,2,3,4,5] |  
+2021-04-18 10:35:47.2190 | Debug | German     : [1,2,3,4,5] |  
+2021-04-18 10:35:47.2190 | Debug | Sweden     : [1,2,3,4,5] |  
+2021-04-18 10:35:47.2190 | Debug | Cat        : [1,2,3,4,5] |  
+2021-04-18 10:35:47.2190 | Debug | Horse      : [1,2,3,4,5] |  
+2021-04-18 10:35:47.2190 | Debug | Bird       : [1,2,3,4,5] |  
+2021-04-18 10:35:47.2190 | Debug | Fish       : [1,2,3,4,5] |  
+2021-04-18 10:35:47.2190 | Debug | Dog        : [1,2,3,4,5] |  
+2021-04-18 10:35:47.2444 | Info | --------------------------------- |  
+2021-04-18 10:35:47.2444 | Info | Found solution: Cigar: 1,Light: 2,Unfiltered: 3,Bong: 4,Menthol: 5,Yellow: 1,Blue: 2,Red: 3,Green: 4,White: 5,Water: 1,Tea: 2,Milk: 3,Coffee: 4,Beer: 5,Norwegian: 1,Dane: 2,English: 3,German: 4,Sweden: 5,Cat: 1,Horse: 2,Bird: 3,Fish: 4,Dog: 5 |  
+2021-04-18 10:35:47.2444 | Info | Search time: 18 ms |  
+2021-04-18 10:35:47.2444 | Info | Visited nodes: 1129 |  
+2021-04-18 10:35:47.2483 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/zebra-puzzle-solution.json |  
+2021-04-18 10:47:36.1561 | Info | -------------------------------------------- |  
+2021-04-18 10:47:36.1991 | Info | Started solving Zebra Puzzle Problem |  
+2021-04-18 10:47:36.2255 | Debug | ----------------------------------------- |  
+2021-04-18 10:47:36.2255 | Debug | --------------- After AC3 --------------- |  
+2021-04-18 10:47:36.2255 | Debug | ----------------------------------------- |  
+2021-04-18 10:47:36.2290 | Debug | Cigar      : [1,2,3,4,5] |  
+2021-04-18 10:47:36.2290 | Debug | Light      : [1,2,3,4,5] |  
+2021-04-18 10:47:36.2290 | Debug | Unfiltered : [1,2,3,4,5] |  
+2021-04-18 10:47:36.2290 | Debug | Bong       : [2,3,4,5] |  
+2021-04-18 10:47:36.2290 | Debug | Menthol    : [1,2,4,5] |  
+2021-04-18 10:47:36.2290 | Debug | Yellow     : [1,2,3,4,5] |  
+2021-04-18 10:47:36.2290 | Debug | Blue       : [1,2,3,4,5] |  
+2021-04-18 10:47:36.2290 | Debug | Red        : [2,3,4,5] |  
+2021-04-18 10:47:36.2290 | Debug | Green      : [1,2,4] |  
+2021-04-18 10:47:36.2290 | Debug | White      : [2,3,5] |  
+2021-04-18 10:47:36.2290 | Debug | Water      : [1,2,4,5] |  
+2021-04-18 10:47:36.2290 | Debug | Tea        : [2,4,5] |  
+2021-04-18 10:47:36.2290 | Debug | Milk       : [3] |  
+2021-04-18 10:47:36.2290 | Debug | Coffee     : [1,2,4] |  
+2021-04-18 10:47:36.2290 | Debug | Beer       : [1,2,4,5] |  
+2021-04-18 10:47:36.2290 | Debug | Norwegian  : [1] |  
+2021-04-18 10:47:36.2290 | Debug | Dane       : [2,4,5] |  
+2021-04-18 10:47:36.2290 | Debug | English    : [2,3,4,5] |  
+2021-04-18 10:47:36.2290 | Debug | German     : [2,3,4,5] |  
+2021-04-18 10:47:36.2290 | Debug | Sweden     : [2,3,4,5] |  
+2021-04-18 10:47:36.2290 | Debug | Cat        : [1,2,3,4,5] |  
+2021-04-18 10:47:36.2310 | Debug | Horse      : [1,2,3,4,5] |  
+2021-04-18 10:47:36.2310 | Debug | Bird       : [1,2,3,4,5] |  
+2021-04-18 10:47:36.2310 | Debug | Fish       : [1,2,3,4,5] |  
+2021-04-18 10:47:36.2310 | Debug | Dog        : [2,3,4,5] |  
+2021-04-18 10:47:36.2550 | Info | --------------------------------- |  
+2021-04-18 10:47:36.2550 | Info | Found solution: Cigar: 1,Light: 2,Unfiltered: 3,Bong: 4,Menthol: 5,Yellow: 1,Blue: 2,Red: 3,Green: 4,White: 5,Water: 1,Tea: 2,Milk: 3,Coffee: 4,Beer: 5,Norwegian: 1,Dane: 2,English: 3,German: 4,Sweden: 5,Cat: 1,Horse: 2,Bird: 3,Fish: 4,Dog: 5 |  
+2021-04-18 10:47:36.2550 | Info | Search time: 17 ms |  
+2021-04-18 10:47:36.2550 | Info | Visited nodes: 675 |  
+2021-04-18 10:47:36.2593 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/zebra-puzzle-solution.json |  
+2021-04-18 12:19:50.8812 | Info | -------------------------------------------- |  
+2021-04-18 12:19:50.9109 | Info | Started solving Zebra Puzzle Problem |  
+2021-04-18 12:19:50.9257 | Debug | ----------------------------------------- |  
+2021-04-18 12:19:50.9257 | Debug | --------------- After AC3 --------------- |  
+2021-04-18 12:19:50.9257 | Debug | ----------------------------------------- |  
+2021-04-18 12:19:50.9277 | Debug | Cigar      : [] |  
+2021-04-18 12:19:50.9277 | Debug | Light      : [] |  
+2021-04-18 12:19:50.9277 | Debug | Unfiltered : [] |  
+2021-04-18 12:19:50.9277 | Debug | Bong       : [] |  
+2021-04-18 12:19:50.9277 | Debug | Menthol    : [] |  
+2021-04-18 12:19:50.9277 | Debug | Yellow     : [] |  
+2021-04-18 12:19:50.9277 | Debug | Blue       : [] |  
+2021-04-18 12:19:50.9277 | Debug | Red        : [] |  
+2021-04-18 12:19:50.9277 | Debug | Green      : [] |  
+2021-04-18 12:19:50.9277 | Debug | White      : [] |  
+2021-04-18 12:19:50.9277 | Debug | Water      : [] |  
+2021-04-18 12:19:50.9277 | Debug | Tea        : [] |  
+2021-04-18 12:19:50.9277 | Debug | Milk       : [] |  
+2021-04-18 12:19:50.9277 | Debug | Coffee     : [] |  
+2021-04-18 12:19:50.9277 | Debug | Beer       : [] |  
+2021-04-18 12:19:50.9277 | Debug | Norwegian  : [] |  
+2021-04-18 12:19:50.9277 | Debug | Dane       : [] |  
+2021-04-18 12:19:50.9277 | Debug | English    : [] |  
+2021-04-18 12:19:50.9277 | Debug | German     : [] |  
+2021-04-18 12:19:50.9277 | Debug | Sweden     : [] |  
+2021-04-18 12:19:50.9277 | Debug | Cat        : [] |  
+2021-04-18 12:19:50.9277 | Debug | Horse      : [] |  
+2021-04-18 12:19:50.9277 | Debug | Bird       : [] |  
+2021-04-18 12:19:50.9277 | Debug | Fish       : [] |  
+2021-04-18 12:19:50.9277 | Debug | Dog        : [] |  
+2021-04-18 12:20:22.0488 | Info | -------------------------------------------- |  
+2021-04-18 12:20:22.0824 | Info | Started solving Zebra Puzzle Problem |  
+2021-04-18 12:23:34.1655 | Info | -------------------------------------------- |  
+2021-04-18 12:23:34.2120 | Info | Started solving Zebra Puzzle Problem |  
+2021-04-18 12:23:34.2367 | Debug | ----------------------------------------- |  
+2021-04-18 12:23:34.2367 | Debug | --------------- After AC3 --------------- |  
+2021-04-18 12:23:34.2367 | Debug | ----------------------------------------- |  
+2021-04-18 12:23:34.2398 | Debug | Cigar      : [] |  
+2021-04-18 12:23:34.2398 | Debug | Light      : [] |  
+2021-04-18 12:23:34.2398 | Debug | Unfiltered : [] |  
+2021-04-18 12:23:34.2398 | Debug | Bong       : [] |  
+2021-04-18 12:23:34.2398 | Debug | Menthol    : [] |  
+2021-04-18 12:23:34.2398 | Debug | Yellow     : [] |  
+2021-04-18 12:23:34.2398 | Debug | Blue       : [] |  
+2021-04-18 12:23:34.2398 | Debug | Red        : [] |  
+2021-04-18 12:23:34.2398 | Debug | Green      : [] |  
+2021-04-18 12:23:34.2398 | Debug | White      : [] |  
+2021-04-18 12:23:34.2398 | Debug | Water      : [] |  
+2021-04-18 12:23:34.2398 | Debug | Tea        : [] |  
+2021-04-18 12:23:34.2398 | Debug | Milk       : [] |  
+2021-04-18 12:23:34.2398 | Debug | Coffee     : [] |  
+2021-04-18 12:23:34.2398 | Debug | Beer       : [] |  
+2021-04-18 12:23:34.2398 | Debug | Norwegian  : [] |  
+2021-04-18 12:23:34.2398 | Debug | Dane       : [] |  
+2021-04-18 12:23:34.2398 | Debug | English    : [] |  
+2021-04-18 12:23:34.2398 | Debug | German     : [] |  
+2021-04-18 12:23:34.2398 | Debug | Sweden     : [] |  
+2021-04-18 12:23:34.2398 | Debug | Cat        : [] |  
+2021-04-18 12:23:34.2398 | Debug | Horse      : [] |  
+2021-04-18 12:23:34.2398 | Debug | Bird       : [] |  
+2021-04-18 12:23:34.2398 | Debug | Fish       : [] |  
+2021-04-18 12:23:34.2398 | Debug | Dog        : [] |  
+2021-04-18 12:23:42.7961 | Info | -------------------------------------------- |  
+2021-04-18 12:23:42.8246 | Info | Started solving Zebra Puzzle Problem |  
+2021-04-18 12:27:15.8882 | Info | -------------------------------------------- |  
+2021-04-18 12:27:15.9329 | Info | Started solving Zebra Puzzle Problem |  
+2021-04-18 12:27:15.9626 | Debug | ----------------------------------------- |  
+2021-04-18 12:27:15.9626 | Debug | --------------- After AC3 --------------- |  
+2021-04-18 12:27:15.9626 | Debug | ----------------------------------------- |  
+2021-04-18 12:27:15.9652 | Debug | Cigar      : [1,2,3,4,5] |  
+2021-04-18 12:27:15.9652 | Debug | Light      : [1,2,3,4,5] |  
+2021-04-18 12:27:15.9652 | Debug | Unfiltered : [1,2,3,4,5] |  
+2021-04-18 12:27:15.9652 | Debug | Bong       : [2,3,4,5] |  
+2021-04-18 12:27:15.9652 | Debug | Menthol    : [1,2,4,5] |  
+2021-04-18 12:27:15.9652 | Debug | Yellow     : [1,2,3,4,5] |  
+2021-04-18 12:27:15.9652 | Debug | Blue       : [1,2,3,4,5] |  
+2021-04-18 12:27:15.9652 | Debug | Red        : [2,3,4,5] |  
+2021-04-18 12:27:15.9652 | Debug | Green      : [1,2,4] |  
+2021-04-18 12:27:15.9652 | Debug | White      : [2,3,5] |  
+2021-04-18 12:27:15.9652 | Debug | Water      : [1,2,4,5] |  
+2021-04-18 12:27:15.9652 | Debug | Tea        : [2,4,5] |  
+2021-04-18 12:27:15.9652 | Debug | Milk       : [3] |  
+2021-04-18 12:27:15.9652 | Debug | Coffee     : [1,2,4] |  
+2021-04-18 12:27:15.9652 | Debug | Beer       : [1,2,4,5] |  
+2021-04-18 12:27:15.9652 | Debug | Norwegian  : [1] |  
+2021-04-18 12:27:15.9652 | Debug | Dane       : [2,4,5] |  
+2021-04-18 12:27:15.9652 | Debug | English    : [2,3,4,5] |  
+2021-04-18 12:27:15.9670 | Debug | German     : [2,3,4,5] |  
+2021-04-18 12:27:15.9670 | Debug | Sweden     : [2,3,4,5] |  
+2021-04-18 12:27:15.9670 | Debug | Cat        : [1,2,3,4,5] |  
+2021-04-18 12:27:15.9670 | Debug | Horse      : [1,2,3,4,5] |  
+2021-04-18 12:27:15.9670 | Debug | Bird       : [1,2,3,4,5] |  
+2021-04-18 12:27:15.9670 | Debug | Fish       : [1,2,3,4,5] |  
+2021-04-18 12:27:15.9670 | Debug | Dog        : [2,3,4,5] |  
+2021-04-18 12:27:15.9964 | Info | --------------------------------- |  
+2021-04-18 12:27:15.9964 | Info | Found solution: Cigar: 1,Light: 2,Unfiltered: 3,Bong: 4,Menthol: 5,Yellow: 1,Blue: 2,Red: 3,Green: 4,White: 5,Water: 1,Tea: 2,Milk: 3,Coffee: 4,Beer: 5,Norwegian: 1,Dane: 2,English: 3,German: 4,Sweden: 5,Cat: 1,Horse: 2,Bird: 3,Fish: 4,Dog: 5 |  
+2021-04-18 12:27:15.9964 | Info | Search time: 19 ms |  
+2021-04-18 12:27:15.9964 | Info | Visited nodes: 675 |  
+2021-04-18 12:27:16.0004 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/zebra-puzzle-solution.json |  
+2021-04-18 12:29:49.4985 | Info | -------------------------------------------- |  
+2021-04-18 12:29:49.5301 | Info | Started solving Zebra Puzzle Problem |  
+2021-04-18 12:29:49.5498 | Debug | ----------------------------------------- |  
+2021-04-18 12:29:49.5498 | Debug | --------------- After AC3 --------------- |  
+2021-04-18 12:29:49.5498 | Debug | ----------------------------------------- |  
+2021-04-18 12:29:49.5524 | Debug | Cigar      : [1,2,3,4,5] |  
+2021-04-18 12:29:49.5524 | Debug | Light      : [1,2,3,4,5] |  
+2021-04-18 12:29:49.5524 | Debug | Unfiltered : [1,2,3,4,5] |  
+2021-04-18 12:29:49.5524 | Debug | Bong       : [1,2,3,4,5] |  
+2021-04-18 12:29:49.5524 | Debug | Menthol    : [1,2,4,5] |  
+2021-04-18 12:29:49.5524 | Debug | Yellow     : [1,2,3,4,5] |  
+2021-04-18 12:29:49.5524 | Debug | Blue       : [1,2,3,4,5] |  
+2021-04-18 12:29:49.5524 | Debug | Red        : [1,2,3,4,5] |  
+2021-04-18 12:29:49.5524 | Debug | Green      : [1,2,3,4] |  
+2021-04-18 12:29:49.5524 | Debug | White      : [2,3,4,5] |  
+2021-04-18 12:29:49.5524 | Debug | Water      : [1,2,4,5] |  
+2021-04-18 12:29:49.5524 | Debug | Tea        : [1,2,4,5] |  
+2021-04-18 12:29:49.5524 | Debug | Milk       : [3] |  
+2021-04-18 12:29:49.5524 | Debug | Coffee     : [1,2,4] |  
+2021-04-18 12:29:49.5524 | Debug | Beer       : [1,2,4,5] |  
+2021-04-18 12:29:49.5524 | Debug | Norwegian  : [1] |  
+2021-04-18 12:29:49.5524 | Debug | Dane       : [2,4,5] |  
+2021-04-18 12:29:49.5524 | Debug | English    : [2,3,4,5] |  
+2021-04-18 12:29:49.5524 | Debug | German     : [2,3,4,5] |  
+2021-04-18 12:29:49.5524 | Debug | Sweden     : [2,3,4,5] |  
+2021-04-18 12:29:49.5524 | Debug | Cat        : [1,2,3,4,5] |  
+2021-04-18 12:29:49.5524 | Debug | Horse      : [1,2,3,4,5] |  
+2021-04-18 12:29:49.5524 | Debug | Bird       : [1,2,3,4,5] |  
+2021-04-18 12:29:49.5524 | Debug | Fish       : [1,2,3,4,5] |  
+2021-04-18 12:29:49.5524 | Debug | Dog        : [1,2,3,4,5] |  
+2021-04-18 12:29:49.5773 | Info | --------------------------------- |  
+2021-04-18 12:29:49.5773 | Info | Found solution: Cigar: 1,Light: 2,Unfiltered: 3,Bong: 4,Menthol: 5,Yellow: 1,Blue: 2,Red: 3,Green: 4,White: 5,Water: 1,Tea: 2,Milk: 3,Coffee: 4,Beer: 5,Norwegian: 1,Dane: 2,English: 3,German: 4,Sweden: 5,Cat: 1,Horse: 2,Bird: 3,Fish: 4,Dog: 5 |  
+2021-04-18 12:29:49.5773 | Info | Search time: 12 ms |  
+2021-04-18 12:29:49.5773 | Info | Visited nodes: 1007 |  
+2021-04-18 12:29:49.5806 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/zebra-puzzle-solution.json |  
+2021-04-18 12:30:08.9695 | Info | -------------------------------------------- |  
+2021-04-18 12:30:09.0198 | Info | Started solving Zebra Puzzle Problem |  
+2021-04-18 12:30:09.0462 | Debug | ----------------------------------------- |  
+2021-04-18 12:30:09.0462 | Debug | --------------- After AC3 --------------- |  
+2021-04-18 12:30:09.0462 | Debug | ----------------------------------------- |  
+2021-04-18 12:30:09.0493 | Debug | Cigar      : [] |  
+2021-04-18 12:30:09.0493 | Debug | Light      : [] |  
+2021-04-18 12:30:09.0493 | Debug | Unfiltered : [] |  
+2021-04-18 12:30:09.0493 | Debug | Bong       : [] |  
+2021-04-18 12:30:09.0493 | Debug | Menthol    : [] |  
+2021-04-18 12:30:09.0493 | Debug | Yellow     : [] |  
+2021-04-18 12:30:09.0493 | Debug | Blue       : [] |  
+2021-04-18 12:30:09.0493 | Debug | Red        : [] |  
+2021-04-18 12:30:09.0493 | Debug | Green      : [] |  
+2021-04-18 12:30:09.0493 | Debug | White      : [] |  
+2021-04-18 12:30:09.0493 | Debug | Water      : [] |  
+2021-04-18 12:30:09.0493 | Debug | Tea        : [] |  
+2021-04-18 12:30:09.0493 | Debug | Milk       : [] |  
+2021-04-18 12:30:09.0493 | Debug | Coffee     : [] |  
+2021-04-18 12:30:09.0493 | Debug | Beer       : [] |  
+2021-04-18 12:30:09.0493 | Debug | Norwegian  : [] |  
+2021-04-18 12:30:09.0493 | Debug | Dane       : [] |  
+2021-04-18 12:30:09.0493 | Debug | English    : [] |  
+2021-04-18 12:30:09.0493 | Debug | German     : [] |  
+2021-04-18 12:30:09.0493 | Debug | Sweden     : [] |  
+2021-04-18 12:30:09.0493 | Debug | Cat        : [] |  
+2021-04-18 12:30:09.0510 | Debug | Horse      : [] |  
+2021-04-18 12:30:09.0510 | Debug | Bird       : [] |  
+2021-04-18 12:30:09.0510 | Debug | Fish       : [] |  
+2021-04-18 12:30:09.0510 | Debug | Dog        : [] |  
+2021-04-18 12:30:55.8660 | Info | -------------------------------------------- |  
+2021-04-18 12:30:55.9006 | Info | Started solving Zebra Puzzle Problem |  
+2021-04-18 12:30:55.9205 | Debug | ----------------------------------------- |  
+2021-04-18 12:30:55.9205 | Debug | --------------- After AC3 --------------- |  
+2021-04-18 12:30:55.9205 | Debug | ----------------------------------------- |  
+2021-04-18 12:30:55.9205 | Debug | Cigar      : [1,2,3,4,5] |  
+2021-04-18 12:30:55.9230 | Debug | Light      : [1,2,3,4,5] |  
+2021-04-18 12:30:55.9230 | Debug | Unfiltered : [1,2,3,4,5] |  
+2021-04-18 12:30:55.9230 | Debug | Bong       : [2,3,4,5] |  
+2021-04-18 12:30:55.9230 | Debug | Menthol    : [1,2,4,5] |  
+2021-04-18 12:30:55.9230 | Debug | Yellow     : [1,2,3,4,5] |  
+2021-04-18 12:30:55.9230 | Debug | Blue       : [1,2,3,4,5] |  
+2021-04-18 12:30:55.9230 | Debug | Red        : [2,3,4,5] |  
+2021-04-18 12:30:55.9230 | Debug | Green      : [1,2,4] |  
+2021-04-18 12:30:55.9230 | Debug | White      : [2,3,5] |  
+2021-04-18 12:30:55.9230 | Debug | Water      : [1,2,4,5] |  
+2021-04-18 12:30:55.9230 | Debug | Tea        : [2,4,5] |  
+2021-04-18 12:30:55.9230 | Debug | Milk       : [3] |  
+2021-04-18 12:30:55.9230 | Debug | Coffee     : [1,2,4] |  
+2021-04-18 12:30:55.9230 | Debug | Beer       : [1,2,4,5] |  
+2021-04-18 12:30:55.9230 | Debug | Norwegian  : [1] |  
+2021-04-18 12:30:55.9230 | Debug | Dane       : [2,4,5] |  
+2021-04-18 12:30:55.9230 | Debug | English    : [2,3,4,5] |  
+2021-04-18 12:30:55.9230 | Debug | German     : [2,3,4,5] |  
+2021-04-18 12:30:55.9230 | Debug | Sweden     : [2,3,4,5] |  
+2021-04-18 12:30:55.9230 | Debug | Cat        : [1,2,3,4,5] |  
+2021-04-18 12:30:55.9230 | Debug | Horse      : [1,2,3,4,5] |  
+2021-04-18 12:30:55.9230 | Debug | Bird       : [1,2,3,4,5] |  
+2021-04-18 12:30:55.9230 | Debug | Fish       : [1,2,3,4,5] |  
+2021-04-18 12:30:55.9230 | Debug | Dog        : [2,3,4,5] |  
+2021-04-18 12:30:55.9371 | Info | --------------------------------- |  
+2021-04-18 12:30:55.9371 | Info | Found solution: Cigar: 1,Light: 2,Unfiltered: 3,Bong: 4,Menthol: 5,Yellow: 1,Blue: 2,Red: 3,Green: 4,White: 5,Water: 1,Tea: 2,Milk: 3,Coffee: 4,Beer: 5,Norwegian: 1,Dane: 2,English: 3,German: 4,Sweden: 5,Cat: 1,Horse: 2,Bird: 3,Fish: 4,Dog: 5 |  
+2021-04-18 12:30:55.9371 | Info | Search time: 8 ms |  
+2021-04-18 12:30:55.9371 | Info | Visited nodes: 675 |  
+2021-04-18 12:30:55.9405 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/zebra-puzzle-solution.json |  
+2021-04-18 12:34:15.0201 | Info | -------------------------------------------- |  
+2021-04-18 12:34:15.0689 | Info | Started solving Zebra Puzzle Problem |  
+2021-04-18 12:34:15.0954 | Debug | ----------------------------------------- |  
+2021-04-18 12:34:15.0954 | Debug | --------------- After AC3 --------------- |  
+2021-04-18 12:34:15.0954 | Debug | ----------------------------------------- |  
+2021-04-18 12:34:15.0954 | Debug | Cigar      : [1,2,3,4,5] |  
+2021-04-18 12:34:15.0990 | Debug | Light      : [1,2,3,4,5] |  
+2021-04-18 12:34:15.0990 | Debug | Unfiltered : [1,2,3,4,5] |  
+2021-04-18 12:34:15.0990 | Debug | Bong       : [2,3,4,5] |  
+2021-04-18 12:34:15.0990 | Debug | Menthol    : [1,2,4,5] |  
+2021-04-18 12:34:15.0990 | Debug | Yellow     : [1,2,3,4,5] |  
+2021-04-18 12:34:15.0990 | Debug | Blue       : [1,2,3,4,5] |  
+2021-04-18 12:34:15.0990 | Debug | Red        : [2,3,4,5] |  
+2021-04-18 12:34:15.0990 | Debug | Green      : [1,2,4] |  
+2021-04-18 12:34:15.0990 | Debug | White      : [2,3,5] |  
+2021-04-18 12:34:15.0990 | Debug | Water      : [1,2,4,5] |  
+2021-04-18 12:34:15.0990 | Debug | Tea        : [2,4,5] |  
+2021-04-18 12:34:15.0990 | Debug | Milk       : [3] |  
+2021-04-18 12:34:15.0990 | Debug | Coffee     : [1,2,4] |  
+2021-04-18 12:34:15.0990 | Debug | Beer       : [1,2,4,5] |  
+2021-04-18 12:34:15.0990 | Debug | Norwegian  : [1] |  
+2021-04-18 12:34:15.0990 | Debug | Dane       : [2,4,5] |  
+2021-04-18 12:34:15.0990 | Debug | English    : [2,3,4,5] |  
+2021-04-18 12:34:15.0990 | Debug | German     : [2,3,4,5] |  
+2021-04-18 12:34:15.0990 | Debug | Sweden     : [2,3,4,5] |  
+2021-04-18 12:34:15.0990 | Debug | Cat        : [1,2,3,4,5] |  
+2021-04-18 12:34:15.0990 | Debug | Horse      : [1,2,3,4,5] |  
+2021-04-18 12:34:15.0990 | Debug | Bird       : [1,2,3,4,5] |  
+2021-04-18 12:34:15.0990 | Debug | Fish       : [1,2,3,4,5] |  
+2021-04-18 12:34:15.0990 | Debug | Dog        : [2,3,4,5] |  
+2021-04-18 12:34:15.1182 | Info | --------------------------------- |  
+2021-04-18 12:34:15.1182 | Info | Found solution: Cigar: 1,Light: 2,Unfiltered: 3,Bong: 4,Menthol: 5,Yellow: 1,Blue: 2,Red: 3,Green: 4,White: 5,Water: 1,Tea: 2,Milk: 3,Coffee: 4,Beer: 5,Norwegian: 1,Dane: 2,English: 3,German: 4,Sweden: 5,Cat: 1,Horse: 2,Bird: 3,Fish: 4,Dog: 5 |  
+2021-04-18 12:34:15.1182 | Info | Search time: 11 ms |  
+2021-04-18 12:34:15.1182 | Info | Visited nodes: 675 |  
+2021-04-18 12:34:15.1225 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/zebra-puzzle-solution.json |  
+2021-04-18 12:35:28.6568 | Info | -------------------------------------------- |  
+2021-04-18 12:35:28.6909 | Info | Started solving Zebra Puzzle Problem |  
+2021-04-18 12:35:28.7096 | Debug | ----------------------------------------- |  
+2021-04-18 12:35:28.7096 | Debug | --------------- After AC3 --------------- |  
+2021-04-18 12:35:28.7096 | Debug | ----------------------------------------- |  
+2021-04-18 12:35:28.7123 | Debug | Cigar      : [1,2,3,4,5] |  
+2021-04-18 12:35:28.7123 | Debug | Light      : [1,2,3,4,5] |  
+2021-04-18 12:35:28.7123 | Debug | Unfiltered : [1,2,3,4,5] |  
+2021-04-18 12:35:28.7123 | Debug | Bong       : [2,3,4,5] |  
+2021-04-18 12:35:28.7123 | Debug | Menthol    : [1,2,4,5] |  
+2021-04-18 12:35:28.7123 | Debug | Yellow     : [1,2,3,4,5] |  
+2021-04-18 12:35:28.7123 | Debug | Blue       : [1,2,3,4,5] |  
+2021-04-18 12:35:28.7123 | Debug | Red        : [2,3,4,5] |  
+2021-04-18 12:35:28.7123 | Debug | Green      : [1,2,4] |  
+2021-04-18 12:35:28.7123 | Debug | White      : [2,3,5] |  
+2021-04-18 12:35:28.7123 | Debug | Water      : [1,2,4,5] |  
+2021-04-18 12:35:28.7123 | Debug | Tea        : [2,4,5] |  
+2021-04-18 12:35:28.7123 | Debug | Milk       : [3] |  
+2021-04-18 12:35:28.7123 | Debug | Coffee     : [1,2,4] |  
+2021-04-18 12:35:28.7123 | Debug | Beer       : [1,2,4,5] |  
+2021-04-18 12:35:28.7123 | Debug | Norwegian  : [1] |  
+2021-04-18 12:35:28.7123 | Debug | Dane       : [2,4,5] |  
+2021-04-18 12:35:28.7123 | Debug | English    : [2,3,4,5] |  
+2021-04-18 12:35:28.7123 | Debug | German     : [2,3,4,5] |  
+2021-04-18 12:35:28.7123 | Debug | Sweden     : [2,3,4,5] |  
+2021-04-18 12:35:28.7123 | Debug | Cat        : [1,2,3,4,5] |  
+2021-04-18 12:35:28.7123 | Debug | Horse      : [1,2,3,4,5] |  
+2021-04-18 12:35:28.7123 | Debug | Bird       : [1,2,3,4,5] |  
+2021-04-18 12:35:28.7123 | Debug | Fish       : [1,2,3,4,5] |  
+2021-04-18 12:35:28.7123 | Debug | Dog        : [2,3,4,5] |  
+2021-04-18 12:35:28.7344 | Info | --------------------------------- |  
+2021-04-18 12:35:28.7344 | Info | Found solution: Cigar: 1,Light: 2,Unfiltered: 3,Bong: 4,Menthol: 5,Yellow: 1,Blue: 2,Red: 3,Green: 4,White: 5,Water: 1,Tea: 2,Milk: 3,Coffee: 4,Beer: 5,Norwegian: 1,Dane: 2,English: 3,German: 4,Sweden: 5,Cat: 1,Horse: 2,Bird: 3,Fish: 4,Dog: 5 |  
+2021-04-18 12:35:28.7344 | Info | Search time: 14 ms |  
+2021-04-18 12:35:28.7350 | Info | Visited nodes: 675 |  
+2021-04-18 12:35:28.7350 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/zebra-puzzle-solution.json |  
+2021-04-18 12:35:52.6681 | Info | -------------------------------------------- |  
+2021-04-18 12:35:52.7122 | Info | Started solving Zebra Puzzle Problem |  
+2021-04-18 12:35:52.7393 | Debug | ----------------------------------------- |  
+2021-04-18 12:35:52.7393 | Debug | --------------- After AC3 --------------- |  
+2021-04-18 12:35:52.7393 | Debug | ----------------------------------------- |  
+2021-04-18 12:35:52.7393 | Debug | Cigar      : [1,2,3,4,5] |  
+2021-04-18 12:35:52.7393 | Debug | Light      : [1,2,3,4,5] |  
+2021-04-18 12:35:52.7393 | Debug | Unfiltered : [1,2,3,4,5] |  
+2021-04-18 12:35:52.7393 | Debug | Bong       : [2,3,4,5] |  
+2021-04-18 12:35:52.7393 | Debug | Menthol    : [1,2,4,5] |  
+2021-04-18 12:35:52.7393 | Debug | Yellow     : [1,2,3,4,5] |  
+2021-04-18 12:35:52.7393 | Debug | Blue       : [1,2,3,4,5] |  
+2021-04-18 12:35:52.7393 | Debug | Red        : [2,3,4,5] |  
+2021-04-18 12:35:52.7393 | Debug | Green      : [1,2,4] |  
+2021-04-18 12:35:52.7393 | Debug | White      : [2,3,5] |  
+2021-04-18 12:35:52.7393 | Debug | Water      : [1,2,4,5] |  
+2021-04-18 12:35:52.7393 | Debug | Tea        : [2,4,5] |  
+2021-04-18 12:35:52.7393 | Debug | Milk       : [3] |  
+2021-04-18 12:35:52.7429 | Debug | Coffee     : [1,2,4] |  
+2021-04-18 12:35:52.7429 | Debug | Beer       : [1,2,4,5] |  
+2021-04-18 12:35:52.7429 | Debug | Norwegian  : [1] |  
+2021-04-18 12:35:52.7429 | Debug | Dane       : [2,4,5] |  
+2021-04-18 12:35:52.7429 | Debug | English    : [2,3,4,5] |  
+2021-04-18 12:35:52.7429 | Debug | German     : [2,3,4,5] |  
+2021-04-18 12:35:52.7429 | Debug | Sweden     : [2,3,4,5] |  
+2021-04-18 12:35:52.7429 | Debug | Cat        : [1,2,3,4,5] |  
+2021-04-18 12:35:52.7429 | Debug | Horse      : [1,2,3,4,5] |  
+2021-04-18 12:35:52.7429 | Debug | Bird       : [1,2,3,4,5] |  
+2021-04-18 12:35:52.7429 | Debug | Fish       : [1,2,3,4,5] |  
+2021-04-18 12:35:52.7429 | Debug | Dog        : [2,3,4,5] |  
+2021-04-18 12:35:52.7618 | Info | --------------------------------- |  
+2021-04-18 12:35:52.7618 | Info | Found solution: Cigar: 1,Light: 2,Unfiltered: 3,Bong: 4,Menthol: 5,Yellow: 1,Blue: 2,Red: 3,Green: 4,White: 5,Water: 1,Tea: 2,Milk: 3,Coffee: 4,Beer: 5,Norwegian: 1,Dane: 2,English: 3,German: 4,Sweden: 5,Cat: 1,Horse: 2,Bird: 3,Fish: 4,Dog: 5 |  
+2021-04-18 12:35:52.7618 | Info | Search time: 11 ms |  
+2021-04-18 12:35:52.7618 | Info | Visited nodes: 675 |  
+2021-04-18 12:35:52.7663 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/zebra-puzzle-solution.json |  
+2021-04-18 12:36:45.4460 | Info | -------------------------------------------- |  
+2021-04-18 12:36:45.4862 | Info | Started solving Zebra Puzzle Problem |  
+2021-04-18 12:36:45.5036 | Debug | ----------------------------------------- |  
+2021-04-18 12:36:45.5036 | Debug | --------------- After AC3 --------------- |  
+2021-04-18 12:36:45.5036 | Debug | ----------------------------------------- |  
+2021-04-18 12:36:45.5036 | Debug | Cigar      : [1,2,3,4,5] |  
+2021-04-18 12:36:45.5036 | Debug | Light      : [1,2,3,4,5] |  
+2021-04-18 12:36:45.5036 | Debug | Unfiltered : [1,2,3,4,5] |  
+2021-04-18 12:36:45.5036 | Debug | Bong       : [2,3,4,5] |  
+2021-04-18 12:36:45.5070 | Debug | Menthol    : [1,2,4,5] |  
+2021-04-18 12:36:45.5070 | Debug | Yellow     : [1,2,3,4,5] |  
+2021-04-18 12:36:45.5070 | Debug | Blue       : [1,2,3,4,5] |  
+2021-04-18 12:36:45.5070 | Debug | Red        : [2,3,4,5] |  
+2021-04-18 12:36:45.5070 | Debug | Green      : [1,2,4] |  
+2021-04-18 12:36:45.5070 | Debug | White      : [2,3,5] |  
+2021-04-18 12:36:45.5070 | Debug | Water      : [1,2,4,5] |  
+2021-04-18 12:36:45.5070 | Debug | Tea        : [2,4,5] |  
+2021-04-18 12:36:45.5070 | Debug | Milk       : [3] |  
+2021-04-18 12:36:45.5070 | Debug | Coffee     : [1,2,4] |  
+2021-04-18 12:36:45.5070 | Debug | Beer       : [1,2,4,5] |  
+2021-04-18 12:36:45.5070 | Debug | Norwegian  : [1] |  
+2021-04-18 12:36:45.5070 | Debug | Dane       : [2,4,5] |  
+2021-04-18 12:36:45.5070 | Debug | English    : [2,3,4,5] |  
+2021-04-18 12:36:45.5070 | Debug | German     : [2,3,4,5] |  
+2021-04-18 12:36:45.5070 | Debug | Sweden     : [2,3,4,5] |  
+2021-04-18 12:36:45.5070 | Debug | Cat        : [1,2,3,4,5] |  
+2021-04-18 12:36:45.5070 | Debug | Horse      : [1,2,3,4,5] |  
+2021-04-18 12:36:45.5070 | Debug | Bird       : [1,2,3,4,5] |  
+2021-04-18 12:36:45.5070 | Debug | Fish       : [1,2,3,4,5] |  
+2021-04-18 12:36:45.5070 | Debug | Dog        : [2,3,4,5] |  
+2021-04-18 12:36:45.5221 | Info | --------------------------------- |  
+2021-04-18 12:36:45.5221 | Info | Found solution: Cigar: 1,Light: 2,Unfiltered: 3,Bong: 4,Menthol: 5,Yellow: 1,Blue: 2,Red: 3,Green: 4,White: 5,Water: 1,Tea: 2,Milk: 3,Coffee: 4,Beer: 5,Norwegian: 1,Dane: 2,English: 3,German: 4,Sweden: 5,Cat: 1,Horse: 2,Bird: 3,Fish: 4,Dog: 5 |  
+2021-04-18 12:36:45.5221 | Info | Search time: 9 ms |  
+2021-04-18 12:36:45.5221 | Info | Visited nodes: 675 |  
+2021-04-18 12:36:45.5253 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/zebra-puzzle-solution.json |  
+2021-04-18 12:36:57.1700 | Info | -------------------------------------------- |  
+2021-04-18 12:36:57.2039 | Info | Started solving Zebra Puzzle Problem |  
+2021-04-18 12:36:57.2213 | Debug | ----------------------------------------- |  
+2021-04-18 12:36:57.2213 | Debug | --------------- After AC3 --------------- |  
+2021-04-18 12:36:57.2213 | Debug | ----------------------------------------- |  
+2021-04-18 12:36:57.2238 | Debug | Cigar      : [1,2,3,4,5] |  
+2021-04-18 12:36:57.2238 | Debug | Light      : [1,2,3,4,5] |  
+2021-04-18 12:36:57.2238 | Debug | Unfiltered : [1,2,3,4,5] |  
+2021-04-18 12:36:57.2238 | Debug | Bong       : [2,3,4,5] |  
+2021-04-18 12:36:57.2238 | Debug | Menthol    : [1,2,4,5] |  
+2021-04-18 12:36:57.2238 | Debug | Yellow     : [1,2,3,4,5] |  
+2021-04-18 12:36:57.2238 | Debug | Blue       : [1,2,3,4,5] |  
+2021-04-18 12:36:57.2238 | Debug | Red        : [2,3,4,5] |  
+2021-04-18 12:36:57.2238 | Debug | Green      : [1,2,4] |  
+2021-04-18 12:36:57.2238 | Debug | White      : [2,3,5] |  
+2021-04-18 12:36:57.2238 | Debug | Water      : [1,2,4,5] |  
+2021-04-18 12:36:57.2238 | Debug | Tea        : [2,4,5] |  
+2021-04-18 12:36:57.2238 | Debug | Milk       : [3] |  
+2021-04-18 12:36:57.2238 | Debug | Coffee     : [1,2,4] |  
+2021-04-18 12:36:57.2238 | Debug | Beer       : [1,2,4,5] |  
+2021-04-18 12:36:57.2238 | Debug | Norwegian  : [1] |  
+2021-04-18 12:36:57.2238 | Debug | Dane       : [2,4,5] |  
+2021-04-18 12:36:57.2238 | Debug | English    : [2,3,4,5] |  
+2021-04-18 12:36:57.2238 | Debug | German     : [2,3,4,5] |  
+2021-04-18 12:36:57.2238 | Debug | Sweden     : [2,3,4,5] |  
+2021-04-18 12:36:57.2238 | Debug | Cat        : [1,2,3,4,5] |  
+2021-04-18 12:36:57.2238 | Debug | Horse      : [1,2,3,4,5] |  
+2021-04-18 12:36:57.2238 | Debug | Bird       : [1,2,3,4,5] |  
+2021-04-18 12:36:57.2238 | Debug | Fish       : [1,2,3,4,5] |  
+2021-04-18 12:36:57.2238 | Debug | Dog        : [2,3,4,5] |  
+2021-04-18 12:36:57.2378 | Info | --------------------------------- |  
+2021-04-18 12:36:57.2378 | Info | Found solution: Cigar: 1,Light: 2,Unfiltered: 3,Bong: 4,Menthol: 5,Yellow: 1,Blue: 2,Red: 3,Green: 4,White: 5,Water: 1,Tea: 2,Milk: 3,Coffee: 4,Beer: 5,Norwegian: 1,Dane: 2,English: 3,German: 4,Sweden: 5,Cat: 1,Horse: 2,Bird: 3,Fish: 4,Dog: 5 |  
+2021-04-18 12:36:57.2378 | Info | Search time: 7 ms |  
+2021-04-18 12:36:57.2378 | Info | Visited nodes: 675 |  
+2021-04-18 12:36:57.2423 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/zebra-puzzle-solution.json |  
+2021-04-18 12:37:46.0203 | Info | -------------------------------------------- |  
+2021-04-18 12:37:46.0532 | Info | Started solving Zebra Puzzle Problem |  
+2021-04-18 12:37:46.0714 | Debug | ----------------------------------------- |  
+2021-04-18 12:37:46.0714 | Debug | --------------- After AC3 --------------- |  
+2021-04-18 12:37:46.0714 | Debug | ----------------------------------------- |  
+2021-04-18 12:37:46.0714 | Debug | Cigar      : [1,2,3,4,5] |  
+2021-04-18 12:37:46.0714 | Debug | Light      : [1,2,3,4,5] |  
+2021-04-18 12:37:46.0714 | Debug | Unfiltered : [1,2,3,4,5] |  
+2021-04-18 12:37:46.0714 | Debug | Bong       : [2,3,4,5] |  
+2021-04-18 12:37:46.0714 | Debug | Menthol    : [1,2,4,5] |  
+2021-04-18 12:37:46.0714 | Debug | Yellow     : [1,2,3,4,5] |  
+2021-04-18 12:37:46.0750 | Debug | Blue       : [1,2,3,4,5] |  
+2021-04-18 12:37:46.0750 | Debug | Red        : [2,3,4,5] |  
+2021-04-18 12:37:46.0750 | Debug | Green      : [1,2,4] |  
+2021-04-18 12:37:46.0750 | Debug | White      : [2,3,5] |  
+2021-04-18 12:37:46.0750 | Debug | Water      : [1,2,4,5] |  
+2021-04-18 12:37:46.0750 | Debug | Tea        : [2,4,5] |  
+2021-04-18 12:37:46.0750 | Debug | Milk       : [3] |  
+2021-04-18 12:37:46.0750 | Debug | Coffee     : [1,2,4] |  
+2021-04-18 12:37:46.0750 | Debug | Beer       : [1,2,4,5] |  
+2021-04-18 12:37:46.0750 | Debug | Norwegian  : [1] |  
+2021-04-18 12:37:46.0750 | Debug | Dane       : [2,4,5] |  
+2021-04-18 12:37:46.0750 | Debug | English    : [2,3,4,5] |  
+2021-04-18 12:37:46.0750 | Debug | German     : [2,3,4,5] |  
+2021-04-18 12:37:46.0750 | Debug | Sweden     : [2,3,4,5] |  
+2021-04-18 12:37:46.0750 | Debug | Cat        : [1,2,3,4,5] |  
+2021-04-18 12:37:46.0750 | Debug | Horse      : [1,2,3,4,5] |  
+2021-04-18 12:37:46.0750 | Debug | Bird       : [1,2,3,4,5] |  
+2021-04-18 12:37:46.0750 | Debug | Fish       : [1,2,3,4,5] |  
+2021-04-18 12:37:46.0750 | Debug | Dog        : [2,3,4,5] |  
+2021-04-18 12:37:46.0916 | Info | --------------------------------- |  
+2021-04-18 12:37:46.0916 | Info | Found solution: Cigar: 1,Light: 2,Unfiltered: 3,Bong: 4,Menthol: 5,Yellow: 1,Blue: 2,Red: 3,Green: 4,White: 5,Water: 1,Tea: 2,Milk: 3,Coffee: 4,Beer: 5,Norwegian: 1,Dane: 2,English: 3,German: 4,Sweden: 5,Cat: 1,Horse: 2,Bird: 3,Fish: 4,Dog: 5 |  
+2021-04-18 12:37:46.0916 | Info | Search time: 10 ms |  
+2021-04-18 12:37:46.0916 | Info | Visited nodes: 675 |  
+2021-04-18 12:37:46.0953 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/zebra-puzzle-solution.json |  
+2021-04-18 12:38:18.3903 | Info | -------------------------------------------- |  
+2021-04-18 12:38:18.4276 | Info | Started solving Zebra Puzzle Problem |  
+2021-04-18 12:38:18.4469 | Debug | ----------------------------------------- |  
+2021-04-18 12:38:18.4471 | Debug | --------------- After AC3 --------------- |  
+2021-04-18 12:38:18.4471 | Debug | ----------------------------------------- |  
+2021-04-18 12:38:18.4471 | Debug | Cigar      : [1,2,3,4,5] |  
+2021-04-18 12:38:18.4471 | Debug | Light      : [1,2,3,4,5] |  
+2021-04-18 12:38:18.4471 | Debug | Unfiltered : [1,2,3,4,5] |  
+2021-04-18 12:38:18.4471 | Debug | Bong       : [2,3,4,5] |  
+2021-04-18 12:38:18.4471 | Debug | Menthol    : [1,2,4,5] |  
+2021-04-18 12:38:18.4471 | Debug | Yellow     : [1,2,3,4,5] |  
+2021-04-18 12:38:18.4471 | Debug | Blue       : [1,2,3,4,5] |  
+2021-04-18 12:38:18.4471 | Debug | Red        : [2,3,4,5] |  
+2021-04-18 12:38:18.4471 | Debug | Green      : [1,2,4] |  
+2021-04-18 12:38:18.4471 | Debug | White      : [2,3,5] |  
+2021-04-18 12:38:18.4471 | Debug | Water      : [1,2,4,5] |  
+2021-04-18 12:38:18.4471 | Debug | Tea        : [2,4,5] |  
+2021-04-18 12:38:18.4471 | Debug | Milk       : [3] |  
+2021-04-18 12:38:18.4471 | Debug | Coffee     : [1,2,4] |  
+2021-04-18 12:38:18.4471 | Debug | Beer       : [1,2,4,5] |  
+2021-04-18 12:38:18.4471 | Debug | Norwegian  : [1] |  
+2021-04-18 12:38:18.4471 | Debug | Dane       : [2,4,5] |  
+2021-04-18 12:38:18.4471 | Debug | English    : [2,3,4,5] |  
+2021-04-18 12:38:18.4471 | Debug | German     : [2,3,4,5] |  
+2021-04-18 12:38:18.4471 | Debug | Sweden     : [2,3,4,5] |  
+2021-04-18 12:38:18.4509 | Debug | Cat        : [1,2,3,4,5] |  
+2021-04-18 12:38:18.4509 | Debug | Horse      : [1,2,3,4,5] |  
+2021-04-18 12:38:18.4509 | Debug | Bird       : [1,2,3,4,5] |  
+2021-04-18 12:38:18.4509 | Debug | Fish       : [1,2,3,4,5] |  
+2021-04-18 12:38:18.4509 | Debug | Dog        : [2,3,4,5] |  
+2021-04-18 12:38:18.4661 | Info | --------------------------------- |  
+2021-04-18 12:38:18.4661 | Info | Found solution: Cigar: 1,Light: 2,Unfiltered: 3,Bong: 4,Menthol: 5,Yellow: 1,Blue: 2,Red: 3,Green: 4,White: 5,Water: 1,Tea: 2,Milk: 3,Coffee: 4,Beer: 5,Norwegian: 1,Dane: 2,English: 3,German: 4,Sweden: 5,Cat: 1,Horse: 2,Bird: 3,Fish: 4,Dog: 5 |  
+2021-04-18 12:38:18.4661 | Info | Search time: 10 ms |  
+2021-04-18 12:38:18.4661 | Info | Visited nodes: 675 |  
+2021-04-18 12:38:18.4696 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/zebra-puzzle-solution.json |  
+2021-04-18 12:38:45.0555 | Info | -------------------------------------------- |  
+2021-04-18 12:38:45.1101 | Info | Started solving Zebra Puzzle Problem |  
+2021-04-18 12:38:45.1353 | Debug | ----------------------------------------- |  
+2021-04-18 12:38:45.1353 | Debug | --------------- After AC3 --------------- |  
+2021-04-18 12:38:45.1353 | Debug | ----------------------------------------- |  
+2021-04-18 12:38:45.1353 | Debug | Cigar      : [1,2,3,4,5] |  
+2021-04-18 12:38:45.1391 | Debug | Light      : [1,2,3,4,5] |  
+2021-04-18 12:38:45.1391 | Debug | Unfiltered : [1,2,3,4,5] |  
+2021-04-18 12:38:45.1391 | Debug | Bong       : [2,3,4,5] |  
+2021-04-18 12:38:45.1391 | Debug | Menthol    : [1,2,4,5] |  
+2021-04-18 12:38:45.1391 | Debug | Yellow     : [1,2,3,4,5] |  
+2021-04-18 12:38:45.1391 | Debug | Blue       : [1,2,3,4,5] |  
+2021-04-18 12:38:45.1391 | Debug | Red        : [2,3,4,5] |  
+2021-04-18 12:38:45.1391 | Debug | Green      : [1,2,4] |  
+2021-04-18 12:38:45.1391 | Debug | White      : [2,3,5] |  
+2021-04-18 12:38:45.1391 | Debug | Water      : [1,2,4,5] |  
+2021-04-18 12:38:45.1391 | Debug | Tea        : [2,4,5] |  
+2021-04-18 12:38:45.1391 | Debug | Milk       : [3] |  
+2021-04-18 12:38:45.1391 | Debug | Coffee     : [1,2,4] |  
+2021-04-18 12:38:45.1391 | Debug | Beer       : [1,2,4,5] |  
+2021-04-18 12:38:45.1391 | Debug | Norwegian  : [1] |  
+2021-04-18 12:38:45.1391 | Debug | Dane       : [2,4,5] |  
+2021-04-18 12:38:45.1391 | Debug | English    : [2,3,4,5] |  
+2021-04-18 12:38:45.1391 | Debug | German     : [2,3,4,5] |  
+2021-04-18 12:38:45.1391 | Debug | Sweden     : [2,3,4,5] |  
+2021-04-18 12:38:45.1391 | Debug | Cat        : [1,2,3,4,5] |  
+2021-04-18 12:38:45.1391 | Debug | Horse      : [1,2,3,4,5] |  
+2021-04-18 12:38:45.1391 | Debug | Bird       : [1,2,3,4,5] |  
+2021-04-18 12:38:45.1391 | Debug | Fish       : [1,2,3,4,5] |  
+2021-04-18 12:38:45.1391 | Debug | Dog        : [2,3,4,5] |  
+2021-04-18 12:38:45.1629 | Info | --------------------------------- |  
+2021-04-18 12:38:45.1629 | Info | Found solution: Cigar: 1,Light: 2,Unfiltered: 3,Bong: 4,Menthol: 5,Yellow: 1,Blue: 2,Red: 3,Green: 4,White: 5,Water: 1,Tea: 2,Milk: 3,Coffee: 4,Beer: 5,Norwegian: 1,Dane: 2,English: 3,German: 4,Sweden: 5,Cat: 1,Horse: 2,Bird: 3,Fish: 4,Dog: 5 |  
+2021-04-18 12:38:45.1629 | Info | Search time: 14 ms |  
+2021-04-18 12:38:45.1629 | Info | Visited nodes: 675 |  
+2021-04-18 12:38:45.1629 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/zebra-puzzle-solution.json |  
+2021-04-18 12:38:59.3644 | Info | -------------------------------------------- |  
+2021-04-18 12:38:59.3964 | Info | Started solving Zebra Puzzle Problem |  
+2021-04-18 12:38:59.4046 | Debug | ----------------------------------------- |  
+2021-04-18 12:38:59.4046 | Debug | --------------- After AC3 --------------- |  
+2021-04-18 12:38:59.4046 | Debug | ----------------------------------------- |  
+2021-04-18 12:38:59.4072 | Debug | Cigar      : [1,2,3,4,5] |  
+2021-04-18 12:38:59.4072 | Debug | Light      : [1,2,3,4,5] |  
+2021-04-18 12:38:59.4072 | Debug | Unfiltered : [1,2,3,4,5] |  
+2021-04-18 12:38:59.4072 | Debug | Bong       : [1,2,3,4,5] |  
+2021-04-18 12:38:59.4072 | Debug | Menthol    : [1,2,3,4,5] |  
+2021-04-18 12:38:59.4072 | Debug | Yellow     : [1,2,3,4,5] |  
+2021-04-18 12:38:59.4072 | Debug | Blue       : [1,2,3,4,5] |  
+2021-04-18 12:38:59.4072 | Debug | Red        : [1,2,3,4,5] |  
+2021-04-18 12:38:59.4072 | Debug | Green      : [1,2,3,4,5] |  
+2021-04-18 12:38:59.4072 | Debug | White      : [1,2,3,4,5] |  
+2021-04-18 12:38:59.4072 | Debug | Water      : [1,2,3,4,5] |  
+2021-04-18 12:38:59.4072 | Debug | Tea        : [1,2,3,4,5] |  
+2021-04-18 12:38:59.4072 | Debug | Milk       : [1,2,3,4,5] |  
+2021-04-18 12:38:59.4072 | Debug | Coffee     : [1,2,3,4,5] |  
+2021-04-18 12:38:59.4072 | Debug | Beer       : [1,2,3,4,5] |  
+2021-04-18 12:38:59.4072 | Debug | Norwegian  : [1,2,3,4,5] |  
+2021-04-18 12:38:59.4072 | Debug | Dane       : [1,2,3,4,5] |  
+2021-04-18 12:38:59.4072 | Debug | English    : [1,2,3,4,5] |  
+2021-04-18 12:38:59.4072 | Debug | German     : [1,2,3,4,5] |  
+2021-04-18 12:38:59.4072 | Debug | Sweden     : [1,2,3,4,5] |  
+2021-04-18 12:38:59.4072 | Debug | Cat        : [1,2,3,4,5] |  
+2021-04-18 12:38:59.4072 | Debug | Horse      : [1,2,3,4,5] |  
+2021-04-18 12:38:59.4072 | Debug | Bird       : [1,2,3,4,5] |  
+2021-04-18 12:38:59.4072 | Debug | Fish       : [1,2,3,4,5] |  
+2021-04-18 12:38:59.4072 | Debug | Dog        : [1,2,3,4,5] |  
+2021-04-18 12:38:59.4327 | Info | --------------------------------- |  
+2021-04-18 12:38:59.4327 | Info | Found solution: Cigar: 1,Light: 2,Unfiltered: 3,Bong: 4,Menthol: 5,Yellow: 1,Blue: 2,Red: 3,Green: 4,White: 5,Water: 1,Tea: 2,Milk: 3,Coffee: 4,Beer: 5,Norwegian: 1,Dane: 2,English: 3,German: 4,Sweden: 5,Cat: 1,Horse: 2,Bird: 3,Fish: 4,Dog: 5 |  
+2021-04-18 12:38:59.4327 | Info | Search time: 18 ms |  
+2021-04-18 12:38:59.4327 | Info | Visited nodes: 2850 |  
+2021-04-18 12:38:59.4356 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/zebra-puzzle-solution.json |  
+2021-04-18 12:39:06.3083 | Info | -------------------------------------------- |  
+2021-04-18 12:39:06.3418 | Info | Started solving Zebra Puzzle Problem |  
+2021-04-18 12:39:06.3624 | Debug | ----------------------------------------- |  
+2021-04-18 12:39:06.3624 | Debug | --------------- After AC3 --------------- |  
+2021-04-18 12:39:06.3624 | Debug | ----------------------------------------- |  
+2021-04-18 12:39:06.3657 | Debug | Cigar      : [1,2,3,4,5] |  
+2021-04-18 12:39:06.3657 | Debug | Light      : [1,2,3,4,5] |  
+2021-04-18 12:39:06.3657 | Debug | Unfiltered : [1,2,3,4,5] |  
+2021-04-18 12:39:06.3657 | Debug | Bong       : [2,3,4,5] |  
+2021-04-18 12:39:06.3657 | Debug | Menthol    : [1,2,4,5] |  
+2021-04-18 12:39:06.3657 | Debug | Yellow     : [1,2,3,4,5] |  
+2021-04-18 12:39:06.3657 | Debug | Blue       : [1,2,3,4,5] |  
+2021-04-18 12:39:06.3657 | Debug | Red        : [2,3,4,5] |  
+2021-04-18 12:39:06.3657 | Debug | Green      : [1,2,4] |  
+2021-04-18 12:39:06.3657 | Debug | White      : [2,3,5] |  
+2021-04-18 12:39:06.3657 | Debug | Water      : [1,2,4,5] |  
+2021-04-18 12:39:06.3657 | Debug | Tea        : [2,4,5] |  
+2021-04-18 12:39:06.3657 | Debug | Milk       : [3] |  
+2021-04-18 12:39:06.3670 | Debug | Coffee     : [1,2,4] |  
+2021-04-18 12:39:06.3670 | Debug | Beer       : [1,2,4,5] |  
+2021-04-18 12:39:06.3670 | Debug | Norwegian  : [1] |  
+2021-04-18 12:39:06.3670 | Debug | Dane       : [2,4,5] |  
+2021-04-18 12:39:06.3670 | Debug | English    : [2,3,4,5] |  
+2021-04-18 12:39:06.3670 | Debug | German     : [2,3,4,5] |  
+2021-04-18 12:39:06.3670 | Debug | Sweden     : [2,3,4,5] |  
+2021-04-18 12:39:06.3670 | Debug | Cat        : [1,2,3,4,5] |  
+2021-04-18 12:39:06.3670 | Debug | Horse      : [1,2,3,4,5] |  
+2021-04-18 12:39:06.3670 | Debug | Bird       : [1,2,3,4,5] |  
+2021-04-18 12:39:06.3670 | Debug | Fish       : [1,2,3,4,5] |  
+2021-04-18 12:39:06.3670 | Debug | Dog        : [2,3,4,5] |  
+2021-04-18 12:39:06.3916 | Info | --------------------------------- |  
+2021-04-18 12:39:06.3916 | Info | Found solution: Cigar: 1,Light: 2,Unfiltered: 3,Bong: 4,Menthol: 5,Yellow: 1,Blue: 2,Red: 3,Green: 4,White: 5,Water: 1,Tea: 2,Milk: 3,Coffee: 4,Beer: 5,Norwegian: 1,Dane: 2,English: 3,German: 4,Sweden: 5,Cat: 1,Horse: 2,Bird: 3,Fish: 4,Dog: 5 |  
+2021-04-18 12:39:06.3916 | Info | Search time: 17 ms |  
+2021-04-18 12:39:06.3916 | Info | Visited nodes: 675 |  
+2021-04-18 12:39:06.3960 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/zebra-puzzle-solution.json |  
+2021-04-18 12:42:17.4254 | Info | -------------------------------------------- |  
+2021-04-18 12:42:17.4610 | Info | Started solving Zebra Puzzle Problem |  
+2021-04-18 12:42:17.4804 | Debug | ----------------------------------------- |  
+2021-04-18 12:42:17.4804 | Debug | --------------- After AC3 --------------- |  
+2021-04-18 12:42:17.4804 | Debug | ----------------------------------------- |  
+2021-04-18 12:42:17.4804 | Debug | Cigar      : [1,2,3,4,5] |  
+2021-04-18 12:42:17.4804 | Debug | Light      : [1,2,3,4,5] |  
+2021-04-18 12:42:17.4804 | Debug | Unfiltered : [1,2,3,4,5] |  
+2021-04-18 12:42:17.4830 | Debug | Bong       : [2,3,4,5] |  
+2021-04-18 12:42:17.4830 | Debug | Menthol    : [1,2,4,5] |  
+2021-04-18 12:42:17.4830 | Debug | Yellow     : [1,2,3,4,5] |  
+2021-04-18 12:42:17.4830 | Debug | Blue       : [1,2,3,4,5] |  
+2021-04-18 12:42:17.4830 | Debug | Red        : [2,3,4,5] |  
+2021-04-18 12:42:17.4830 | Debug | Green      : [1,2,4] |  
+2021-04-18 12:42:17.4830 | Debug | White      : [2,3,5] |  
+2021-04-18 12:42:17.4830 | Debug | Water      : [1,2,4,5] |  
+2021-04-18 12:42:17.4830 | Debug | Tea        : [2,4,5] |  
+2021-04-18 12:42:17.4830 | Debug | Milk       : [3] |  
+2021-04-18 12:42:17.4830 | Debug | Coffee     : [1,2,4] |  
+2021-04-18 12:42:17.4830 | Debug | Beer       : [1,2,4,5] |  
+2021-04-18 12:42:17.4830 | Debug | Norwegian  : [1] |  
+2021-04-18 12:42:17.4830 | Debug | Dane       : [2,4,5] |  
+2021-04-18 12:42:17.4830 | Debug | English    : [2,3,4,5] |  
+2021-04-18 12:42:17.4830 | Debug | German     : [2,3,4,5] |  
+2021-04-18 12:42:17.4830 | Debug | Sweden     : [2,3,4,5] |  
+2021-04-18 12:42:17.4830 | Debug | Cat        : [1,2,3,4,5] |  
+2021-04-18 12:42:17.4830 | Debug | Horse      : [1,2,3,4,5] |  
+2021-04-18 12:42:17.4830 | Debug | Bird       : [1,2,3,4,5] |  
+2021-04-18 12:42:17.4830 | Debug | Fish       : [1,2,3,4,5] |  
+2021-04-18 12:42:17.4830 | Debug | Dog        : [2,3,4,5] |  
+2021-04-18 12:42:17.4974 | Info | --------------------------------- |  
+2021-04-18 12:42:17.4974 | Info | Found solution: Cigar: 1,Light: 2,Unfiltered: 3,Bong: 4,Menthol: 5,Yellow: 1,Blue: 2,Red: 3,Green: 4,White: 5,Water: 1,Tea: 2,Milk: 3,Coffee: 4,Beer: 5,Norwegian: 1,Dane: 2,English: 3,German: 4,Sweden: 5,Cat: 1,Horse: 2,Bird: 3,Fish: 4,Dog: 5 |  
+2021-04-18 12:42:17.4998 | Info | Search time: 8 ms |  
+2021-04-18 12:42:17.4998 | Info | Visited nodes: 675 |  
+2021-04-18 12:42:17.4998 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/zebra-puzzle-solution.json |  
+2021-04-18 12:43:28.8664 | Info | -------------------------------------------- |  
+2021-04-18 12:43:28.9059 | Info | Started solving Zebra Puzzle Problem |  
+2021-04-18 12:43:28.9231 | Debug | ----------------------------------------- |  
+2021-04-18 12:43:28.9231 | Debug | --------------- After AC3 --------------- |  
+2021-04-18 12:43:28.9231 | Debug | ----------------------------------------- |  
+2021-04-18 12:43:28.9231 | Debug | Cigar      : [1,2,3,4,5] |  
+2021-04-18 12:43:28.9231 | Debug | Light      : [1,2,3,4,5] |  
+2021-04-18 12:43:28.9231 | Debug | Unfiltered : [1,2,3,4,5] |  
+2021-04-18 12:43:28.9231 | Debug | Bong       : [2,3,4,5] |  
+2021-04-18 12:43:28.9231 | Debug | Menthol    : [1,2,4,5] |  
+2021-04-18 12:43:28.9231 | Debug | Yellow     : [1,2,3,4,5] |  
+2021-04-18 12:43:28.9231 | Debug | Blue       : [1,2,3,4,5] |  
+2021-04-18 12:43:28.9231 | Debug | Red        : [2,3,4,5] |  
+2021-04-18 12:43:28.9231 | Debug | Green      : [1,2,4] |  
+2021-04-18 12:43:28.9231 | Debug | White      : [2,3,5] |  
+2021-04-18 12:43:28.9231 | Debug | Water      : [1,2,4,5] |  
+2021-04-18 12:43:28.9231 | Debug | Tea        : [2,4,5] |  
+2021-04-18 12:43:28.9231 | Debug | Milk       : [3] |  
+2021-04-18 12:43:28.9231 | Debug | Coffee     : [1,2,4] |  
+2021-04-18 12:43:28.9231 | Debug | Beer       : [1,2,4,5] |  
+2021-04-18 12:43:28.9231 | Debug | Norwegian  : [1] |  
+2021-04-18 12:43:28.9231 | Debug | Dane       : [2,4,5] |  
+2021-04-18 12:43:28.9270 | Debug | English    : [2,3,4,5] |  
+2021-04-18 12:43:28.9270 | Debug | German     : [2,3,4,5] |  
+2021-04-18 12:43:28.9270 | Debug | Sweden     : [2,3,4,5] |  
+2021-04-18 12:43:28.9270 | Debug | Cat        : [1,2,3,4,5] |  
+2021-04-18 12:43:28.9270 | Debug | Horse      : [1,2,3,4,5] |  
+2021-04-18 12:43:28.9270 | Debug | Bird       : [1,2,3,4,5] |  
+2021-04-18 12:43:28.9270 | Debug | Fish       : [1,2,3,4,5] |  
+2021-04-18 12:43:28.9270 | Debug | Dog        : [2,3,4,5] |  
+2021-04-18 12:43:28.9433 | Info | --------------------------------- |  
+2021-04-18 12:43:28.9433 | Info | Found solution: Cigar: 1,Light: 2,Unfiltered: 3,Bong: 4,Menthol: 5,Yellow: 1,Blue: 2,Red: 3,Green: 4,White: 5,Water: 1,Tea: 2,Milk: 3,Coffee: 4,Beer: 5,Norwegian: 1,Dane: 2,English: 3,German: 4,Sweden: 5,Cat: 1,Horse: 2,Bird: 3,Fish: 4,Dog: 5 |  
+2021-04-18 12:43:28.9433 | Info | Search time: 11 ms |  
+2021-04-18 12:43:28.9433 | Info | Visited nodes: 675 |  
+2021-04-18 12:43:28.9433 | Info | Correct saved solution in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/zebra-puzzle-solution.json |  

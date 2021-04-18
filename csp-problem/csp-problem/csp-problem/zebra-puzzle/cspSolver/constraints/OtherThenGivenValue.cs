@@ -4,13 +4,13 @@ using csp_problem.csp.constraints;
 
 namespace csp_problem.cspSolver.constraints
 {
-    public class ValueEqualToGiven : IUnaryConstraint<string, int>
+    public class OtherThenGivenValue : IUnaryConstraint<string, int>
     {
         public ICollection<string> Variables { get; }
         public string GetVar { get; }
         public int GetValue { get; }
 
-        public ValueEqualToGiven(string varA, int value)
+        public OtherThenGivenValue(string varA, int value)
         {
             Variables = new List<string> {varA};
             GetVar = varA;
@@ -36,7 +36,7 @@ namespace csp_problem.cspSolver.constraints
 
         public bool IsSatisfied(int domainValue)
         {
-            return GetValue == domainValue;
+            return GetValue != domainValue;
         }
     }
 }

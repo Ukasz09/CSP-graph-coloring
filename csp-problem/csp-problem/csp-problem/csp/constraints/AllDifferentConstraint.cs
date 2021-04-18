@@ -28,6 +28,7 @@ namespace csp_problem.csp.constraints
                     assignedValues.Add(assignedValue);
                 }
             }
+
             var allValuesUnique = assignedValues.Distinct().Count() == assignedValues.Count;
             return allValuesUnique;
         }

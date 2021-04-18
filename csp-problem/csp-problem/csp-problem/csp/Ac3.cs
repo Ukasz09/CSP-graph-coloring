@@ -4,7 +4,7 @@ using csp_problem.csp.constraints;
 
 namespace csp_problem.csp
 {
-    public class Ac3<V, D>
+    public static class Ac3<V, D>
     {
         private static Queue<IBinaryConstraint<V, D>> GenerateArcs(IEnumerable<IBinaryConstraint<V, D>> constraints)
         {
@@ -21,6 +21,26 @@ namespace csp_problem.csp
 
         public static void ReduceDomains(Csp<V, D> csp)
         {
+            ReduceDomainsForUnaryConstraints(csp);
+            ReduceDomainForBinaryConstraints(csp);
+        }
+
+        private static void ReduceDomainsForUnaryConstraints(Csp<V, D> csp)
+        {
+            var unaryConstraints = csp.Constraints
+                .FindAll(c => c is IUnaryConstraint<V, D>)
+                .Select(c => (IUnaryConstraint<V, D>) c);
+            foreach (var constraint in unaryConstraints)
+            {
+                var affectedVariable = constraint.GetVar;
+                var domains = csp.Domains[affectedVariable];
+                var newDomains = domains.Where(domain => constraint.IsSatisfied(domain)).ToList();
+                csp.Domains[affectedVariable] = newDomains;
+            }
+        }
+
+        private static void ReduceDomainForBinaryConstraints(Csp<V, D> csp)
+        {
             var binaryConstraints = csp.Constraints
                 .FindAll(c => c is IBinaryConstraint<V, D>)
                 .Select(c => (IBinaryConstraint<V, D>) c);
@@ -32,6 +52,7 @@ namespace csp_problem.csp
                 RemoveInconsistent(checkedArc, csp, out var atLeastOneRemoved);
                 if (atLeastOneRemoved)
                 {
+                    // Workaround for error about checking equality on virtual, generic types, implicitly casted to object
                     var affectedArcs = arcsList.FindAll(arc => arc.IsEqualToVarB(checkedArc.GetVarA));
                     affectedArcs.ForEach(arc => agenda.Enqueue(arc));
                 }
