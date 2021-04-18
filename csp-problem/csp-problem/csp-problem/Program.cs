@@ -107,7 +107,7 @@ namespace csp_problem
 
             _logger.Info("--------------------------------------------");
             _logger.Info("Started solving Graph Coloring Problem");
-            var domains = new List<string>() {"red", "blue", "green", "orange"};
+            var domains = new List<string>() {"red", "blue", "green", "pink"};
 
             if (allSolutions)
             {

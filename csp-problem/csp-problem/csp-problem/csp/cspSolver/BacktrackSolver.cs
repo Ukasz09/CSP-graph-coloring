@@ -34,7 +34,7 @@ namespace csp_problem.csp.cspSolver
             var result = solveWithBacktracking(csp, assignment, false);
             _watch.Stop();
             ExecutionTimeInMs = _watch.ElapsedMilliseconds;
-            return result.GetAssignedValueForAll();
+            return result?.GetAssignedValueForAll();
         }
 
         public IList<IDictionary<V, D>> SolveAll(Csp<V, D> csp, IAssignment<V, D> assignment)
