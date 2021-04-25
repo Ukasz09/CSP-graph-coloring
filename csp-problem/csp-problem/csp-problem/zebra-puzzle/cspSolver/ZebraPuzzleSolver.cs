@@ -13,11 +13,11 @@ namespace csp_problem
     public class ZebraPuzzleSolver
     {
         private readonly ISolver<string, int> _solver;
-        private readonly List<string> _cigaretteVars = GetStaticPropertyNames(typeof(Cigarette));
-        private readonly List<string> _colorVars = GetStaticPropertyNames(typeof(Color));
-        private readonly List<string> _drinksVars = GetStaticPropertyNames(typeof(Drink));
-        private readonly List<string> _nationalityVars = GetStaticPropertyNames(typeof(Nationality));
-        private readonly List<string> _petVars = GetStaticPropertyNames(typeof(Pet));
+        private List<string> _cigaretteVars = GetStaticPropertyNames(typeof(Cigarette));
+        private List<string> _colorVars = GetStaticPropertyNames(typeof(Color));
+        private List<string> _drinksVars = GetStaticPropertyNames(typeof(Drink));
+        private List<string> _nationalityVars = GetStaticPropertyNames(typeof(Nationality));
+        private List<string> _petVars = GetStaticPropertyNames(typeof(Pet));
         private static readonly Logger _logger = LogManager.GetCurrentClassLogger();
 
         public long SearchTimeInMs => _solver.ExecutionTimeInMs;
@@ -43,9 +43,9 @@ namespace csp_problem
             if (withAc3)
             {
                 Ac3<string, int>.ReduceDomains(csp);
+                // LogAc3Results(csp);
             }
 
-            // LogAc3Results(csp);
 
             var assignment = new Assignment<string, int>(csp);
             var listOfVariableValues = _solver.SolveAll(csp, assignment, withForwardChecking);
@@ -61,6 +61,7 @@ namespace csp_problem
 
         private Csp<string, int> GetCsp()
         {
+            ResetVariables();
             var variables = GetVariables();
             var domains = new List<int> {1, 2, 3, 4, 5};
             var variableDomains = new Dictionary<string, ICollection<int>>();
@@ -90,6 +91,7 @@ namespace csp_problem
                 new NextToThe(Cigarette.Light, Drink.Water),
                 new TheSameValueAssigned(Cigarette.Unfiltered, Pet.Bird),
                 new TheSameValueAssigned(Nationality.Sweden, Pet.Dog),
+                new NextToThe(Nationality.Norwegian, Color.Blue),
                 new NextToThe(Pet.Horse, Color.Yellow),
                 new TheSameValueAssigned(Cigarette.Menthol, Drink.Beer),
                 new TheSameValueAssigned(Drink.Coffee, Color.Green),
@@ -109,6 +111,15 @@ namespace csp_problem
                 new OtherThenGivenValue(Drink.Water, milkHouse),
             };
             return new Csp<string, int>(variableDomains, constraints);
+        }
+
+        private void ResetVariables()
+        {
+            _cigaretteVars = GetStaticPropertyNames(typeof(Cigarette));
+            _colorVars = GetStaticPropertyNames(typeof(Color));
+            _drinksVars = GetStaticPropertyNames(typeof(Drink));
+            _nationalityVars = GetStaticPropertyNames(typeof(Nationality));
+            _petVars = GetStaticPropertyNames(typeof(Pet));
         }
 
         private IEnumerable<string> GetVariables()

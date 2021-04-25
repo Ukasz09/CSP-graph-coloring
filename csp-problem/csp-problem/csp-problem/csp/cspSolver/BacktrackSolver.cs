@@ -58,10 +58,10 @@ namespace csp_problem.csp.cspSolver
             Csp<V, D> csp, IAssignment<V, D> assignment, bool allSolutions, bool withForwardChecking
         )
         {
-            if (_totalSearchTimeWatch.ElapsedMilliseconds > TimeoutExecutionTimeMs)
-            {
-                throw new Exception($"Timed out - set to {TimeoutExecutionTimeMs} ms.");
-            }
+            // if (_totalSearchTimeWatch.ElapsedMilliseconds > TimeoutExecutionTimeMs)
+            // {
+            // throw new Exception($"Timed out - set to {TimeoutExecutionTimeMs} ms.");
+            // }
 
             if (assignment.AllVariablesAssigned())
             {
@@ -102,10 +102,8 @@ namespace csp_problem.csp.cspSolver
                         StoreResult(result);
                     }
                 }
-                else
-                {
-                    assignment.UnassignVariable(variable);
-                }
+
+                assignment.UnassignVariable(variable);
             }
 
             return null;

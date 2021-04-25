@@ -1,10 +1,12 @@
 using System.Collections.Generic;
 using System.Linq;
+using NLog;
 
 namespace csp_problem.csp
 {
     public static class ForwardChecking<V, D>
     {
+        private static readonly Logger _logger = LogManager.GetCurrentClassLogger();
         public static Dictionary<V, ICollection<D>> ReduceDomains(
             IDictionary<V, ICollection<D>> varDomains, D assignedValue, V assignedVariable,
             IAssignment<V, D> assignment)
@@ -25,14 +27,14 @@ namespace csp_problem.csp
             return clonedVarDomains;
         }
 
-        private static Dictionary<V, ICollection<D>> CloneVarDomains(IDictionary<V, ICollection<D>> varDomains)
+        public static Dictionary<V, ICollection<D>> CloneVarDomains(IDictionary<V, ICollection<D>> varDomains)
         {
             var clonedVarDomains = new Dictionary<V, ICollection<D>>();
             foreach (var variable in varDomains.Keys)
             {
                 clonedVarDomains[variable] = varDomains[variable].ToList();
             }
-
+    
             return clonedVarDomains;
         }
     }

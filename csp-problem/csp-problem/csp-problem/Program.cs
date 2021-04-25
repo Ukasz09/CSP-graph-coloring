@@ -40,8 +40,8 @@ namespace csp_problem
             //         // map coloring
             //         case MapColoringProblemArgName:
             //         {
-            //             var map = GenerateRandomDefaultMap();
-            //             SolveMapColoring(map);
+            // var map = GenerateRandomDefaultMap();
+            // SolveMapColoring(map);
             //             break;
             //         }
             //         // zebra puzzle
@@ -64,21 +64,22 @@ namespace csp_problem
 
             // TODO: tests
             // ReportMaker.GenerateRandomDefaultMap(5);
-            var graphs = new Dictionary<int, Graph>
-            {
-                [8] = ReportMaker.GenerateRandomDefaultMap(6),
-                [14] = ReportMaker.GenerateRandomDefaultMap(10),
-                [18] = ReportMaker.GenerateRandomDefaultMap(14),
-                [22] = ReportMaker.GenerateRandomDefaultMap(18)
-            };
+            // var graphs = new Dictionary<int, Graph>
+            // {
+            //     [8] = ReportMaker.GenerateRandomDefaultMap(6),
+            //     [14] = ReportMaker.GenerateRandomDefaultMap(10),
+            //     [18] = ReportMaker.GenerateRandomDefaultMap(14),
+            //     [22] = ReportMaker.GenerateRandomDefaultMap(18)
+            // };
             // ReportMaker.BtFcCompareGraph(graphs);
             // ReportMaker.HeuristicsCompareGraph(graphs);
-            ReportMaker.BtFcCompareZebra();
+            // ReportMaker.BtFcCompareZebra();
+            ReportMaker.HeuristicsCompareZebra();
         }
 
         private static Graph GenerateRandomDefaultMap()
         {
-            var map = new MapGenerator().GenerateMap(20, 20, 20);
+            var map = new MapGenerator().GenerateMap(6, 20, 20);
             DataUtils.SaveMap(map, GraphFilePath);
             return map;
         }
@@ -89,8 +90,10 @@ namespace csp_problem
         {
             #region initialization
 
-            var valueOrderHeuristicZebra = new TrivialOrderValues<string, int>();
-            var variableOrderHeuristicZebra = new FirstVariableHeuristic<string, int>();
+            var valueOrderHeuristicZebra = new Lcv<string, int>();
+            var variableOrderHeuristicZebra = new Mrv<string, int>();
+            // var valueOrderHeuristicZebra = new TrivialOrderValues<string, int>();
+            // var variableOrderHeuristicZebra = new FirstVariableHeuristic<string, int>();
             var solver = new BacktrackSolver<string, int>(valueOrderHeuristicZebra, variableOrderHeuristicZebra);
             var zebraPuzzleSolver = new ZebraPuzzleSolver(solver);
 

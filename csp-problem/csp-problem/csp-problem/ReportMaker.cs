@@ -323,6 +323,139 @@ namespace csp_problem
             }
         }
 
+        public static void HeuristicsCompareZebra()
+        {
+            // Clear report files
+            const string textHeader = "combination;0-fst;0-all;1-fst;1-all;2-fst;2-all;3-fst;3-all";
+            File.WriteAllLines(HeuristicsZebraCompareNodesQtyPath, new[] {textHeader});
+            File.WriteAllLines(HeuristicsZebraCompareTimePath, new[] {textHeader});
+
+            // BT
+            HeuristicCompareZebraHelper(false, false);
+            
+            // BT+FC 
+            HeuristicCompareZebraHelper(true, false);
+
+            // BT+AC3
+            HeuristicCompareZebraHelper(false, true);
+
+            // BT+FC+AC3
+            HeuristicCompareZebraHelper(true, true);
+        }
+
+        private static void HeuristicCompareZebraHelper( bool withFc, bool withAc3)
+        {
+            // 0) LCV + MRV
+            // 1) TVAL + FVAR
+            // 2) LCV + FVAR
+            // 3) TVAL + MRV
+            
+            #region solverInitialization-0
+
+            var valueOrderHeuristic0 = new Lcv<string, int>();
+            var variableOrderHeuristic0 = new Mrv<string, int>();
+            var backtrackSolver0 = new BacktrackSolver<string, int>(valueOrderHeuristic0, variableOrderHeuristic0);
+            var zebraColoringSolver0 = new ZebraPuzzleSolver(backtrackSolver0);
+
+            #endregion
+
+            #region solverInitialization-1
+
+            var valueOrderHeuristic1 = new TrivialOrderValues<string, int>();
+            var variableOrderHeuristic1 = new FirstVariableHeuristic<string, int>();
+            var backtrackSolver1 = new BacktrackSolver<string, int>(valueOrderHeuristic1, variableOrderHeuristic1);
+            var zebraColoringSolver1 = new ZebraPuzzleSolver(backtrackSolver1);
+
+            #endregion
+
+            #region solverInitialization-2
+
+            var valueOrderHeuristic2 = new Lcv<string, int>();
+            var variableOrderHeuristic2 = new FirstVariableHeuristic<string, int>();
+            var backtrackSolver2 = new BacktrackSolver<string, int>(valueOrderHeuristic2, variableOrderHeuristic2);
+            var zebraColoringSolver2 = new ZebraPuzzleSolver(backtrackSolver2);
+
+            #endregion
+
+            #region solverInitialization-3
+
+            var valueOrderHeuristic3 = new TrivialOrderValues<string, int>();
+            var variableOrderHeuristic3 = new Mrv<string, int>();
+            var backtrackSolver3 = new BacktrackSolver<string, int>(valueOrderHeuristic3, variableOrderHeuristic3);
+            var zebraColoringSolver3 = new ZebraPuzzleSolver(backtrackSolver3);
+
+            #endregion
+            
+            // 0)
+            zebraColoringSolver0.SolveAllSolutions(withFc, withAc3);
+            var fstSolutionSearchTime0 = zebraColoringSolver0.SearchTimeTillFstSolutionInMs;
+            var allSolutionsSearchTime0 = zebraColoringSolver0.SearchTimeInMs;
+            var fstSolutionVisitedNodesQty0 = zebraColoringSolver0.VisitedNodesTillFstSolution;
+            var allSolutionsVisitedNodesQty0 = zebraColoringSolver0.VisitedNodesQty;
+
+            // 1)
+            zebraColoringSolver1.SolveAllSolutions(withFc, withAc3);
+            var fstSolutionSearchTime1 = zebraColoringSolver1.SearchTimeTillFstSolutionInMs;
+            var allSolutionsSearchTime1 = zebraColoringSolver1.SearchTimeInMs;
+            var fstSolutionVisitedNodesQty1 = zebraColoringSolver1.VisitedNodesTillFstSolution;
+            var allSolutionsVisitedNodesQty1 = zebraColoringSolver1.VisitedNodesQty;
+
+            // 2)
+            zebraColoringSolver2.SolveAllSolutions(withFc, withAc3);
+            var fstSolutionSearchTime2 = zebraColoringSolver2.SearchTimeTillFstSolutionInMs;
+            var allSolutionsSearchTime2 = zebraColoringSolver2.SearchTimeInMs;
+            var fstSolutionVisitedNodesQty2 = zebraColoringSolver2.VisitedNodesTillFstSolution;
+            var allSolutionsVisitedNodesQty2 = zebraColoringSolver2.VisitedNodesQty;
+
+            // 3)
+            zebraColoringSolver3.SolveAllSolutions(withFc, withAc3);
+            var fstSolutionSearchTime3 = zebraColoringSolver3.SearchTimeTillFstSolutionInMs;
+            var allSolutionsSearchTime3 = zebraColoringSolver3.SearchTimeInMs;
+            var fstSolutionVisitedNodesQty3 = zebraColoringSolver3.VisitedNodesTillFstSolution;
+            var allSolutionsVisitedNodesQty3 = zebraColoringSolver3.VisitedNodesQty;
+
+
+            var combinationText = "BT";
+            if (withFc)
+            {
+                combinationText += "+FC";
+            }
+
+            if (withAc3)
+            {
+                combinationText += "+AC3";
+            }
+
+            var nodesExaminationTextLine = string.Join(";",
+                combinationText,
+                fstSolutionVisitedNodesQty0.ToString(),
+                allSolutionsVisitedNodesQty0.ToString(),
+                fstSolutionVisitedNodesQty1.ToString(),
+                allSolutionsVisitedNodesQty1.ToString(),
+                fstSolutionVisitedNodesQty2.ToString(),
+                allSolutionsVisitedNodesQty2.ToString(),
+                fstSolutionVisitedNodesQty3.ToString(),
+                allSolutionsVisitedNodesQty3.ToString()
+            );
+
+            var timeExaminationTextLine = string.Join(";",
+                combinationText,
+                fstSolutionSearchTime0.ToString(),
+                allSolutionsSearchTime0.ToString(),
+                fstSolutionSearchTime1.ToString(),
+                allSolutionsSearchTime1.ToString(),
+                fstSolutionSearchTime2.ToString(),
+                allSolutionsSearchTime2.ToString(),
+                fstSolutionSearchTime3.ToString(),
+                allSolutionsSearchTime3.ToString()
+            );
+
+            File.AppendAllLines(HeuristicsZebraCompareNodesQtyPath, new[] {nodesExaminationTextLine});
+            File.AppendAllLines(HeuristicsZebraCompareTimePath, new[] {timeExaminationTextLine});
+            _logger.Info(
+                $"Correct saved result for ZEBRA heurisitcs investigation: {combinationText} ");
+        }
+
         #endregion
     }
 }
