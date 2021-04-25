@@ -31,17 +31,21 @@ namespace csp_problem
             _solver = solver;
         }
 
-        public IDictionary<string, int> Solve(bool withForwardChecking)
+        public IDictionary<string, int> Solve(bool withForwardChecking, bool withAc3 = true)
         {
-            var resultAssignment = SolveAllSolutions(withForwardChecking);
+            var resultAssignment = SolveAllSolutions(withForwardChecking, withAc3);
             return resultAssignment[0];
         }
 
-        public IList<IDictionary<string, int>> SolveAllSolutions(bool withForwardChecking)
+        public IList<IDictionary<string, int>> SolveAllSolutions(bool withForwardChecking, bool withAc3 = true)
         {
             var csp = GetCsp();
-            Ac3<string, int>.ReduceDomains(csp);
-            LogAc3Results(csp);
+            if (withAc3)
+            {
+                Ac3<string, int>.ReduceDomains(csp);
+            }
+
+            // LogAc3Results(csp);
 
             var assignment = new Assignment<string, int>(csp);
             var listOfVariableValues = _solver.SolveAll(csp, assignment, withForwardChecking);

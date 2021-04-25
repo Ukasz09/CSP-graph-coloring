@@ -16,11 +16,22 @@ namespace csp_problem
         private static readonly string GraphFilePathPrefix = $"{BaseReportsPath}/graphs";
         private const string GraphFilePrefix = "graph-";
 
-        private static readonly string FcBcCompareNodesQtyPath = $"{BaseReportsPath}/fcBcCompare/nodes.csv";
-        private static readonly string FcBcCompareTimePath = $"{BaseReportsPath}/fcBcCompare/time.csv";
+        private static readonly string FcBcGraphCompareNodesQtyPath = $"{BaseReportsPath}/fcBcCompare/nodes-graph.csv";
+        private static readonly string FcBcGraphCompareTimePath = $"{BaseReportsPath}/fcBcCompare/time-graph.csv";
+        private static readonly string FcBcZebraCompareNodesQtyPath = $"{BaseReportsPath}/fcBcCompare/nodes-zebra.csv";
+        private static readonly string FcBcZebraCompareTimePath = $"{BaseReportsPath}/fcBcCompare/time-zebra.csv";
 
-        private static readonly string HeuristicsCompareNodesQtyPath = $"{BaseReportsPath}/heuristicsCompare/nodes.csv";
-        private static readonly string HeuristicsCompareTimePath = $"{BaseReportsPath}/heuristicsCompare/time.csv";
+        private static readonly string HeuristicsGraphCompareNodesQtyPath =
+            $"{BaseReportsPath}/heuristicsCompare/nodes-graph.csv";
+
+        private static readonly string HeuristicsGraphCompareTimePath =
+            $"{BaseReportsPath}/heuristicsCompare/time-graph.csv";
+
+        private static readonly string HeuristicsZebraCompareNodesQtyPath =
+            $"{BaseReportsPath}/heuristicsCompare/nodes-zebra.csv";
+
+        private static readonly string HeuristicsZebraCompareTimePath =
+            $"{BaseReportsPath}/heuristicsCompare/time-zebra.csv";
 
         #endregion
 
@@ -64,8 +75,8 @@ namespace csp_problem
 
             // Clear report files
             const string headerText = "nodes-qty;fst;all;fc-fst;fc-all";
-            File.WriteAllLines(FcBcCompareNodesQtyPath, new[] {headerText});
-            File.WriteAllLines(FcBcCompareTimePath, new[] {headerText});
+            File.WriteAllLines(FcBcGraphCompareNodesQtyPath, new[] {headerText});
+            File.WriteAllLines(FcBcGraphCompareTimePath, new[] {headerText});
 
             foreach (var (nodesQty, graph) in graphs)
             {
@@ -102,12 +113,85 @@ namespace csp_problem
                     fcAllSolutionsSearchTime.ToString()
                 );
 
-                File.AppendAllLines(FcBcCompareNodesQtyPath, new[] {nodesExaminationTextLine});
-                File.AppendAllLines(FcBcCompareTimePath, new[] {timeExaminationTextLine});
-                _logger.Info($"Correct saved result for FB-BC investigation: nodesQty={nodesQty.ToString()}");
+                File.AppendAllLines(FcBcGraphCompareNodesQtyPath, new[] {nodesExaminationTextLine});
+                File.AppendAllLines(FcBcGraphCompareTimePath, new[] {timeExaminationTextLine});
+                _logger.Info($"Correct saved result for GRAPH FB-BC investigation: nodesQty={nodesQty.ToString()}");
             }
         }
-        
+
+        public static void BtFcCompareZebra()
+        {
+            ResetDomains();
+
+            #region solverInitialization
+
+            var valueOrderHeuristic = new TrivialOrderValues<string, int>();
+            var variableOrderHeuristic = new FirstVariableHeuristic<string, int>();
+            var backtrackSolver = new BacktrackSolver<string, int>(valueOrderHeuristic, variableOrderHeuristic);
+            var zebraPuzzleSolver = new ZebraPuzzleSolver(backtrackSolver);
+
+            #endregion
+
+            // Clear report files
+            const string headerText = "fst;all;fc-fst;fc-all;ac3-fst;ac3-all;fc-ac3-fst;fc-ac3-all";
+            File.WriteAllLines(FcBcZebraCompareNodesQtyPath, new[] {headerText});
+            File.WriteAllLines(FcBcZebraCompareTimePath, new[] {headerText});
+
+            // 0) BT
+            zebraPuzzleSolver.SolveAllSolutions(false, false);
+            var fstSolutionSearchTime0 = zebraPuzzleSolver.SearchTimeTillFstSolutionInMs;
+            var allSolutionsSearchTime0 = zebraPuzzleSolver.SearchTimeInMs;
+            var fstSolutionVisitedNodesQty0 = zebraPuzzleSolver.VisitedNodesTillFstSolution;
+            var allSolutionsVisitedNodesQty0 = zebraPuzzleSolver.VisitedNodesQty;
+
+            // 1) BT+FC 
+            zebraPuzzleSolver.SolveAllSolutions(true, false);
+            var fstSolutionSearchTime1 = zebraPuzzleSolver.SearchTimeTillFstSolutionInMs;
+            var allSolutionsSearchTime1 = zebraPuzzleSolver.SearchTimeInMs;
+            var fstSolutionVisitedNodesQty1 = zebraPuzzleSolver.VisitedNodesTillFstSolution;
+            var allSolutionsVisitedNodesQty1 = zebraPuzzleSolver.VisitedNodesQty;
+
+            // 2) BT+AC3
+            zebraPuzzleSolver.SolveAllSolutions(false, true);
+            var fstSolutionSearchTime2 = zebraPuzzleSolver.SearchTimeTillFstSolutionInMs;
+            var allSolutionsSearchTime2 = zebraPuzzleSolver.SearchTimeInMs;
+            var fstSolutionVisitedNodesQty2 = zebraPuzzleSolver.VisitedNodesTillFstSolution;
+            var allSolutionsVisitedNodesQty2 = zebraPuzzleSolver.VisitedNodesQty;
+
+            // 3) BT+FC+AC3
+            zebraPuzzleSolver.SolveAllSolutions(true, true);
+            var fstSolutionSearchTime3 = zebraPuzzleSolver.SearchTimeTillFstSolutionInMs;
+            var allSolutionsSearchTime3 = zebraPuzzleSolver.SearchTimeInMs;
+            var fstSolutionVisitedNodesQty3 = zebraPuzzleSolver.VisitedNodesTillFstSolution;
+            var allSolutionsVisitedNodesQty3 = zebraPuzzleSolver.VisitedNodesQty;
+
+            var nodesExaminationTextLine = string.Join(";",
+                fstSolutionVisitedNodesQty0.ToString(),
+                allSolutionsVisitedNodesQty0.ToString(),
+                fstSolutionVisitedNodesQty1.ToString(),
+                allSolutionsVisitedNodesQty1.ToString(),
+                fstSolutionVisitedNodesQty2.ToString(),
+                allSolutionsVisitedNodesQty2.ToString(),
+                fstSolutionVisitedNodesQty3.ToString(),
+                allSolutionsVisitedNodesQty3.ToString()
+            );
+
+            var timeExaminationTextLine = string.Join(";",
+                fstSolutionSearchTime0.ToString(),
+                allSolutionsSearchTime0.ToString(),
+                fstSolutionSearchTime1.ToString(),
+                allSolutionsSearchTime1.ToString(),
+                fstSolutionSearchTime2.ToString(),
+                allSolutionsSearchTime2.ToString(),
+                fstSolutionSearchTime3.ToString(),
+                allSolutionsSearchTime3.ToString()
+            );
+
+            File.AppendAllLines(FcBcZebraCompareNodesQtyPath, new[] {nodesExaminationTextLine});
+            File.AppendAllLines(FcBcZebraCompareTimePath, new[] {timeExaminationTextLine});
+            _logger.Info($"Correct saved result for ZEBRA FB-BC investigation");
+        }
+
         public static void HeuristicsCompareGraph(Dictionary<int, Graph> graphs)
         {
             // 0) LCV + MRV
@@ -117,8 +201,8 @@ namespace csp_problem
 
             // Clear report files
             const string textHeader = "nodes-qty;with-fc;0-fst;0-all;1-fst;1-all;2-fst;2-all;3-fst;3-all";
-            File.WriteAllLines(HeuristicsCompareNodesQtyPath, new[] {textHeader});
-            File.WriteAllLines(HeuristicsCompareTimePath, new[] {textHeader});
+            File.WriteAllLines(HeuristicsGraphCompareNodesQtyPath, new[] {textHeader});
+            File.WriteAllLines(HeuristicsGraphCompareTimePath, new[] {textHeader});
 
             #region solverInitialization-0
 
@@ -159,7 +243,7 @@ namespace csp_problem
             // No FC
             HeuristicCompareGraphHelper(graphs, mapColoringSolver0, mapColoringSolver1, mapColoringSolver2,
                 mapColoringSolver3, false);
-            
+
             // With FC
             HeuristicCompareGraphHelper(graphs, mapColoringSolver0, mapColoringSolver1, mapColoringSolver2,
                 mapColoringSolver3, true);
@@ -171,7 +255,6 @@ namespace csp_problem
             MapColoringSolver mapColoringSolver2, MapColoringSolver mapColoringSolver3,
             bool withFc)
         {
-            
             foreach (var (nodesQty, graph) in graphs)
             {
                 // 0)
@@ -233,10 +316,10 @@ namespace csp_problem
                     allSolutionsSearchTime3.ToString()
                 );
 
-                File.AppendAllLines(HeuristicsCompareNodesQtyPath, new[] {nodesExaminationTextLine});
-                File.AppendAllLines(HeuristicsCompareTimePath, new[] {timeExaminationTextLine});
+                File.AppendAllLines(HeuristicsGraphCompareNodesQtyPath, new[] {nodesExaminationTextLine});
+                File.AppendAllLines(HeuristicsGraphCompareTimePath, new[] {timeExaminationTextLine});
                 _logger.Info(
-                    $"Correct saved result for heurisitcs investigation: nodesQty={nodesQty.ToString()}, FC={withFc.ToString()}");
+                    $"Correct saved result for GRAPH heurisitcs investigation: nodesQty={nodesQty.ToString()}, FC={withFc.ToString()}");
             }
         }
 

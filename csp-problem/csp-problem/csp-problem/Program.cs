@@ -72,7 +72,8 @@ namespace csp_problem
                 [22] = ReportMaker.GenerateRandomDefaultMap(18)
             };
             // ReportMaker.BtFcCompareGraph(graphs);
-            ReportMaker.HeuristicsCompareGraph(graphs);
+            // ReportMaker.HeuristicsCompareGraph(graphs);
+            ReportMaker.BtFcCompareZebra();
         }
 
         private static Graph GenerateRandomDefaultMap()
