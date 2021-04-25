@@ -66,12 +66,13 @@ namespace csp_problem
             // ReportMaker.GenerateRandomDefaultMap(5);
             var graphs = new Dictionary<int, Graph>
             {
-                [8] = ReportMaker.GenerateRandomDefaultMap(8),
-                [14] = ReportMaker.GenerateRandomDefaultMap(14),
-                [18] = ReportMaker.GenerateRandomDefaultMap(18),
-                [22] = ReportMaker.GenerateRandomDefaultMap(22)
+                [8] = ReportMaker.GenerateRandomDefaultMap(6),
+                [14] = ReportMaker.GenerateRandomDefaultMap(10),
+                [18] = ReportMaker.GenerateRandomDefaultMap(14),
+                [22] = ReportMaker.GenerateRandomDefaultMap(18)
             };
-            ReportMaker.BtFcCompare(graphs);
+            // ReportMaker.BtFcCompareGraph(graphs);
+            ReportMaker.HeuristicsCompareGraph(graphs);
         }
 
         private static Graph GenerateRandomDefaultMap()

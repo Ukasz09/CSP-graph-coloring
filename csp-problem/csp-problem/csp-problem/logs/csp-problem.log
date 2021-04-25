@@ -5318,3 +5318,212 @@ Dog: 5 |
 2021-04-25 10:03:41.9695 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-22.json |  
 2021-04-25 10:03:41.9878 | Info | Correct saved result for FB-BC investigation: nodesQty=8 |  
 2021-04-25 10:03:42.0013 | Info | Correct saved result for FB-BC investigation: nodesQty=14 |  
+2021-04-25 10:38:58.6163 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-8.json |  
+2021-04-25 10:38:58.6497 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-14.json |  
+2021-04-25 10:38:58.6578 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-18.json |  
+2021-04-25 10:38:58.6731 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-22.json |  
+2021-04-25 10:38:58.7061 | Info | Correct saved result for heurisitcs investigation: nodesQty=8, FC=False |  
+2021-04-25 10:38:58.7236 | Info | Correct saved result for heurisitcs investigation: nodesQty=14, FC=False |  
+2021-04-25 10:38:58.7723 | Info | Correct saved result for heurisitcs investigation: nodesQty=18, FC=False |  
+2021-04-25 10:38:59.0082 | Info | Correct saved result for heurisitcs investigation: nodesQty=22, FC=False |  
+2021-04-25 10:38:59.0115 | Info | Correct saved result for heurisitcs investigation: nodesQty=8, FC=False |  
+2021-04-25 10:38:59.0243 | Info | Correct saved result for heurisitcs investigation: nodesQty=14, FC=False |  
+2021-04-25 10:38:59.0507 | Info | Correct saved result for heurisitcs investigation: nodesQty=18, FC=False |  
+2021-04-25 10:38:59.2184 | Info | Correct saved result for heurisitcs investigation: nodesQty=22, FC=False |  
+2021-04-25 10:38:59.2224 | Info | Correct saved result for heurisitcs investigation: nodesQty=8, FC=False |  
+2021-04-25 10:38:59.2552 | Info | Correct saved result for heurisitcs investigation: nodesQty=14, FC=False |  
+2021-04-25 10:38:59.2918 | Info | Correct saved result for heurisitcs investigation: nodesQty=18, FC=False |  
+2021-04-25 10:38:59.4260 | Info | Correct saved result for heurisitcs investigation: nodesQty=22, FC=False |  
+2021-04-25 10:38:59.4296 | Info | Correct saved result for heurisitcs investigation: nodesQty=8, FC=False |  
+2021-04-25 10:38:59.4452 | Info | Correct saved result for heurisitcs investigation: nodesQty=14, FC=False |  
+2021-04-25 10:38:59.4719 | Info | Correct saved result for heurisitcs investigation: nodesQty=18, FC=False |  
+2021-04-25 10:38:59.6086 | Info | Correct saved result for heurisitcs investigation: nodesQty=22, FC=False |  
+2021-04-25 10:39:16.5222 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-8.json |  
+2021-04-25 10:39:16.5597 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-14.json |  
+2021-04-25 10:39:16.5686 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-18.json |  
+2021-04-25 10:39:16.5897 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-22.json |  
+2021-04-25 10:39:16.6336 | Info | Correct saved result for heurisitcs investigation: nodesQty=8, FC=False |  
+2021-04-25 10:39:16.6426 | Info | Correct saved result for heurisitcs investigation: nodesQty=14, FC=False |  
+2021-04-25 10:39:58.5181 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-6.json |  
+2021-04-25 10:39:58.5531 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-10.json |  
+2021-04-25 10:39:58.5583 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-14.json |  
+2021-04-25 10:39:58.5659 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-18.json |  
+2021-04-25 10:39:58.5996 | Info | Correct saved result for heurisitcs investigation: nodesQty=8, FC=False |  
+2021-04-25 10:39:58.6097 | Info | Correct saved result for heurisitcs investigation: nodesQty=14, FC=False |  
+2021-04-25 10:39:58.6420 | Info | Correct saved result for heurisitcs investigation: nodesQty=18, FC=False |  
+2021-04-25 10:39:58.6609 | Info | Correct saved result for heurisitcs investigation: nodesQty=22, FC=False |  
+2021-04-25 10:39:58.6609 | Info | Correct saved result for heurisitcs investigation: nodesQty=8, FC=False |  
+2021-04-25 10:39:58.6765 | Info | Correct saved result for heurisitcs investigation: nodesQty=14, FC=False |  
+2021-04-25 10:39:58.7007 | Info | Correct saved result for heurisitcs investigation: nodesQty=18, FC=False |  
+2021-04-25 10:39:58.7203 | Info | Correct saved result for heurisitcs investigation: nodesQty=22, FC=False |  
+2021-04-25 10:39:58.7221 | Info | Correct saved result for heurisitcs investigation: nodesQty=8, FC=False |  
+2021-04-25 10:39:58.7329 | Info | Correct saved result for heurisitcs investigation: nodesQty=14, FC=False |  
+2021-04-25 10:39:58.7548 | Info | Correct saved result for heurisitcs investigation: nodesQty=18, FC=False |  
+2021-04-25 10:39:58.7715 | Info | Correct saved result for heurisitcs investigation: nodesQty=22, FC=False |  
+2021-04-25 10:39:58.7736 | Info | Correct saved result for heurisitcs investigation: nodesQty=8, FC=False |  
+2021-04-25 10:39:58.7820 | Info | Correct saved result for heurisitcs investigation: nodesQty=14, FC=False |  
+2021-04-25 10:39:58.8077 | Info | Correct saved result for heurisitcs investigation: nodesQty=18, FC=False |  
+2021-04-25 10:39:58.8240 | Info | Correct saved result for heurisitcs investigation: nodesQty=22, FC=False |  
+2021-04-25 10:39:58.8293 | Info | Correct saved result for heurisitcs investigation: nodesQty=8, FC=True |  
+2021-04-25 10:39:58.8293 | Info | Correct saved result for heurisitcs investigation: nodesQty=14, FC=True |  
+2021-04-25 10:39:58.8392 | Info | Correct saved result for heurisitcs investigation: nodesQty=18, FC=True |  
+2021-04-25 10:40:27.2888 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-6.json |  
+2021-04-25 10:40:27.3378 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-10.json |  
+2021-04-25 10:40:27.3469 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-14.json |  
+2021-04-25 10:40:27.3584 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-18.json |  
+2021-04-25 10:40:27.4082 | Info | Correct saved result for heurisitcs investigation: nodesQty=8, FC=False |  
+2021-04-25 10:40:27.4148 | Info | Correct saved result for heurisitcs investigation: nodesQty=14, FC=False |  
+2021-04-25 10:40:39.4340 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-6.json |  
+2021-04-25 10:40:39.4743 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-10.json |  
+2021-04-25 10:40:39.4812 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-14.json |  
+2021-04-25 10:40:39.5261 | Info | Correct saved result for heurisitcs investigation: nodesQty=8, FC=False |  
+2021-04-25 10:40:39.5338 | Info | Correct saved result for heurisitcs investigation: nodesQty=14, FC=False |  
+2021-04-25 10:40:39.5472 | Info | Correct saved result for heurisitcs investigation: nodesQty=18, FC=False |  
+2021-04-25 10:40:39.5495 | Info | Correct saved result for heurisitcs investigation: nodesQty=8, FC=False |  
+2021-04-25 10:40:39.5580 | Info | Correct saved result for heurisitcs investigation: nodesQty=14, FC=False |  
+2021-04-25 10:40:39.5687 | Info | Correct saved result for heurisitcs investigation: nodesQty=18, FC=False |  
+2021-04-25 10:40:39.5687 | Info | Correct saved result for heurisitcs investigation: nodesQty=8, FC=False |  
+2021-04-25 10:40:39.5789 | Info | Correct saved result for heurisitcs investigation: nodesQty=14, FC=False |  
+2021-04-25 10:40:39.5871 | Info | Correct saved result for heurisitcs investigation: nodesQty=18, FC=False |  
+2021-04-25 10:40:39.5920 | Info | Correct saved result for heurisitcs investigation: nodesQty=8, FC=True |  
+2021-04-25 10:40:39.5946 | Info | Correct saved result for heurisitcs investigation: nodesQty=14, FC=True |  
+2021-04-25 10:40:39.6000 | Info | Correct saved result for heurisitcs investigation: nodesQty=18, FC=True |  
+2021-04-25 10:40:39.6019 | Info | Correct saved result for heurisitcs investigation: nodesQty=8, FC=True |  
+2021-04-25 10:40:39.6058 | Info | Correct saved result for heurisitcs investigation: nodesQty=14, FC=True |  
+2021-04-25 10:40:39.6145 | Info | Correct saved result for heurisitcs investigation: nodesQty=18, FC=True |  
+2021-04-25 10:40:39.6145 | Info | Correct saved result for heurisitcs investigation: nodesQty=8, FC=True |  
+2021-04-25 10:40:39.6192 | Info | Correct saved result for heurisitcs investigation: nodesQty=14, FC=True |  
+2021-04-25 10:40:39.6254 | Info | Correct saved result for heurisitcs investigation: nodesQty=18, FC=True |  
+2021-04-25 10:43:02.9420 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-6.json |  
+2021-04-25 10:43:02.9838 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-10.json |  
+2021-04-25 10:43:02.9895 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-14.json |  
+2021-04-25 10:43:03.0013 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-18.json |  
+2021-04-25 10:43:03.0394 | Info | Correct saved result for heurisitcs investigation: nodesQty=8, FC=False |  
+2021-04-25 10:43:03.0443 | Info | Correct saved result for heurisitcs investigation: nodesQty=14, FC=False |  
+2021-04-25 10:43:03.0554 | Info | Correct saved result for heurisitcs investigation: nodesQty=18, FC=False |  
+2021-04-25 10:43:03.2227 | Info | Correct saved result for heurisitcs investigation: nodesQty=22, FC=False |  
+2021-04-25 10:43:03.2251 | Info | Correct saved result for heurisitcs investigation: nodesQty=8, FC=False |  
+2021-04-25 10:43:03.2289 | Info | Correct saved result for heurisitcs investigation: nodesQty=14, FC=False |  
+2021-04-25 10:43:03.2364 | Info | Correct saved result for heurisitcs investigation: nodesQty=18, FC=False |  
+2021-04-25 10:43:03.3341 | Info | Correct saved result for heurisitcs investigation: nodesQty=22, FC=False |  
+2021-04-25 10:43:03.3341 | Info | Correct saved result for heurisitcs investigation: nodesQty=8, FC=False |  
+2021-04-25 10:43:03.3384 | Info | Correct saved result for heurisitcs investigation: nodesQty=14, FC=False |  
+2021-04-25 10:43:03.3436 | Info | Correct saved result for heurisitcs investigation: nodesQty=18, FC=False |  
+2021-04-25 10:43:03.4391 | Info | Correct saved result for heurisitcs investigation: nodesQty=22, FC=False |  
+2021-04-25 10:43:03.4418 | Info | Correct saved result for heurisitcs investigation: nodesQty=8, FC=False |  
+2021-04-25 10:43:03.4472 | Info | Correct saved result for heurisitcs investigation: nodesQty=14, FC=False |  
+2021-04-25 10:43:03.4571 | Info | Correct saved result for heurisitcs investigation: nodesQty=18, FC=False |  
+2021-04-25 10:43:03.5458 | Info | Correct saved result for heurisitcs investigation: nodesQty=22, FC=False |  
+2021-04-25 10:43:03.5514 | Info | Correct saved result for heurisitcs investigation: nodesQty=8, FC=True |  
+2021-04-25 10:43:03.5565 | Info | Correct saved result for heurisitcs investigation: nodesQty=14, FC=True |  
+2021-04-25 10:43:03.5608 | Info | Correct saved result for heurisitcs investigation: nodesQty=18, FC=True |  
+2021-04-25 10:43:03.5780 | Info | Correct saved result for heurisitcs investigation: nodesQty=22, FC=True |  
+2021-04-25 10:43:03.5780 | Info | Correct saved result for heurisitcs investigation: nodesQty=8, FC=True |  
+2021-04-25 10:43:03.5811 | Info | Correct saved result for heurisitcs investigation: nodesQty=14, FC=True |  
+2021-04-25 10:43:03.5811 | Info | Correct saved result for heurisitcs investigation: nodesQty=18, FC=True |  
+2021-04-25 10:43:03.6006 | Info | Correct saved result for heurisitcs investigation: nodesQty=22, FC=True |  
+2021-04-25 10:43:03.6006 | Info | Correct saved result for heurisitcs investigation: nodesQty=8, FC=True |  
+2021-04-25 10:43:03.6006 | Info | Correct saved result for heurisitcs investigation: nodesQty=14, FC=True |  
+2021-04-25 10:43:03.6071 | Info | Correct saved result for heurisitcs investigation: nodesQty=18, FC=True |  
+2021-04-25 10:43:03.6236 | Info | Correct saved result for heurisitcs investigation: nodesQty=22, FC=True |  
+2021-04-25 10:43:03.6236 | Info | Correct saved result for heurisitcs investigation: nodesQty=8, FC=True |  
+2021-04-25 10:43:03.6267 | Info | Correct saved result for heurisitcs investigation: nodesQty=14, FC=True |  
+2021-04-25 10:43:03.6301 | Info | Correct saved result for heurisitcs investigation: nodesQty=18, FC=True |  
+2021-04-25 10:43:03.6469 | Info | Correct saved result for heurisitcs investigation: nodesQty=22, FC=True |  
+2021-04-25 10:43:11.4196 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-6.json |  
+2021-04-25 10:43:11.4595 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-10.json |  
+2021-04-25 10:43:11.4662 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-14.json |  
+2021-04-25 10:43:11.4754 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-18.json |  
+2021-04-25 10:43:11.5101 | Info | Correct saved result for heurisitcs investigation: nodesQty=8, FC=False |  
+2021-04-25 10:43:11.5160 | Info | Correct saved result for heurisitcs investigation: nodesQty=14, FC=False |  
+2021-04-25 10:43:11.5365 | Info | Correct saved result for heurisitcs investigation: nodesQty=18, FC=False |  
+2021-04-25 10:43:11.6006 | Info | Correct saved result for heurisitcs investigation: nodesQty=22, FC=False |  
+2021-04-25 10:43:11.6032 | Info | Correct saved result for heurisitcs investigation: nodesQty=8, FC=False |  
+2021-04-25 10:43:11.6082 | Info | Correct saved result for heurisitcs investigation: nodesQty=14, FC=False |  
+2021-04-25 10:43:11.6192 | Info | Correct saved result for heurisitcs investigation: nodesQty=18, FC=False |  
+2021-04-25 10:43:11.6642 | Info | Correct saved result for heurisitcs investigation: nodesQty=22, FC=False |  
+2021-04-25 10:43:11.6665 | Info | Correct saved result for heurisitcs investigation: nodesQty=8, FC=False |  
+2021-04-25 10:43:11.6707 | Info | Correct saved result for heurisitcs investigation: nodesQty=14, FC=False |  
+2021-04-25 10:43:11.6813 | Info | Correct saved result for heurisitcs investigation: nodesQty=18, FC=False |  
+2021-04-25 10:43:11.7245 | Info | Correct saved result for heurisitcs investigation: nodesQty=22, FC=False |  
+2021-04-25 10:43:11.7331 | Info | Correct saved result for heurisitcs investigation: nodesQty=8, FC=False |  
+2021-04-25 10:43:11.7416 | Info | Correct saved result for heurisitcs investigation: nodesQty=14, FC=False |  
+2021-04-25 10:43:11.7592 | Info | Correct saved result for heurisitcs investigation: nodesQty=18, FC=False |  
+2021-04-25 10:43:11.8002 | Info | Correct saved result for heurisitcs investigation: nodesQty=22, FC=False |  
+2021-04-25 10:43:16.6308 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-6.json |  
+2021-04-25 10:43:16.6716 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-10.json |  
+2021-04-25 10:43:16.6774 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-14.json |  
+2021-04-25 10:43:16.6869 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-18.json |  
+2021-04-25 10:43:16.7204 | Info | Correct saved result for heurisitcs investigation: nodesQty=8, FC=False |  
+2021-04-25 10:43:16.7279 | Info | Correct saved result for heurisitcs investigation: nodesQty=14, FC=False |  
+2021-04-25 10:43:16.7684 | Info | Correct saved result for heurisitcs investigation: nodesQty=18, FC=False |  
+2021-04-25 10:47:31.7245 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-6.json |  
+2021-04-25 10:47:31.7694 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-10.json |  
+2021-04-25 10:47:31.7768 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-14.json |  
+2021-04-25 10:47:31.7862 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-18.json |  
+2021-04-25 10:47:43.4895 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-6.json |  
+2021-04-25 10:47:43.5234 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-10.json |  
+2021-04-25 10:47:43.5308 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-14.json |  
+2021-04-25 10:47:43.5390 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-18.json |  
+2021-04-25 10:50:01.3821 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-6.json |  
+2021-04-25 10:50:01.4252 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-10.json |  
+2021-04-25 10:50:01.4338 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-14.json |  
+2021-04-25 10:50:01.4465 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-18.json |  
+2021-04-25 10:50:01.4859 | Info | Correct saved result for heurisitcs investigation: nodesQty=8, FC=False |  
+2021-04-25 10:50:01.4965 | Info | Correct saved result for heurisitcs investigation: nodesQty=14, FC=False |  
+2021-04-25 10:50:08.9524 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-6.json |  
+2021-04-25 10:50:08.9940 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-10.json |  
+2021-04-25 10:50:08.9999 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-14.json |  
+2021-04-25 10:50:09.0076 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-18.json |  
+2021-04-25 10:50:09.0450 | Info | Correct saved result for heurisitcs investigation: nodesQty=8, FC=False |  
+2021-04-25 10:50:09.0517 | Info | Correct saved result for heurisitcs investigation: nodesQty=14, FC=False |  
+2021-04-25 10:50:09.0762 | Info | Correct saved result for heurisitcs investigation: nodesQty=18, FC=False |  
+2021-04-25 10:50:35.3642 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-6.json |  
+2021-04-25 10:50:35.3985 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-10.json |  
+2021-04-25 10:50:35.4069 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-14.json |  
+2021-04-25 10:50:35.4164 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-18.json |  
+2021-04-25 10:51:29.3475 | Info | Correct saved result for heurisitcs investigation: nodesQty=8, FC=False |  
+2021-04-25 10:51:29.3590 | Info | Correct saved result for heurisitcs investigation: nodesQty=14, FC=False |  
+2021-04-25 10:51:29.3791 | Info | Correct saved result for heurisitcs investigation: nodesQty=18, FC=False |  
+2021-04-25 10:51:29.4723 | Info | Correct saved result for heurisitcs investigation: nodesQty=22, FC=False |  
+2021-04-25 10:53:11.9084 | Info | Correct saved result for heurisitcs investigation: nodesQty=8, FC=True |  
+2021-04-25 10:54:22.9094 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-6.json |  
+2021-04-25 10:54:22.9500 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-10.json |  
+2021-04-25 10:54:22.9575 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-14.json |  
+2021-04-25 10:54:22.9675 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-18.json |  
+2021-04-25 10:54:23.0119 | Info | Correct saved result for heurisitcs investigation: nodesQty=8, FC=False |  
+2021-04-25 10:54:23.0220 | Info | Correct saved result for heurisitcs investigation: nodesQty=14, FC=False |  
+2021-04-25 10:54:23.0652 | Info | Correct saved result for heurisitcs investigation: nodesQty=18, FC=False |  
+2021-04-25 10:54:23.1299 | Info | Correct saved result for heurisitcs investigation: nodesQty=22, FC=False |  
+2021-04-25 10:54:23.1356 | Info | Correct saved result for heurisitcs investigation: nodesQty=8, FC=True |  
+2021-04-25 10:54:23.1414 | Info | Correct saved result for heurisitcs investigation: nodesQty=14, FC=True |  
+2021-04-25 10:54:23.1499 | Info | Correct saved result for heurisitcs investigation: nodesQty=18, FC=True |  
+2021-04-25 10:54:33.5177 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-6.json |  
+2021-04-25 10:54:33.5562 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-10.json |  
+2021-04-25 10:54:33.5835 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-14.json |  
+2021-04-25 10:54:33.5935 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-18.json |  
+2021-04-25 10:54:33.6249 | Info | Correct saved result for heurisitcs investigation: nodesQty=8, FC=False |  
+2021-04-25 10:54:33.6340 | Info | Correct saved result for heurisitcs investigation: nodesQty=14, FC=False |  
+2021-04-25 10:54:33.6716 | Info | Correct saved result for heurisitcs investigation: nodesQty=18, FC=False |  
+2021-04-25 10:54:33.7244 | Info | Correct saved result for heurisitcs investigation: nodesQty=22, FC=False |  
+2021-04-25 10:54:33.7273 | Info | Correct saved result for heurisitcs investigation: nodesQty=8, FC=True |  
+2021-04-25 10:54:33.7297 | Info | Correct saved result for heurisitcs investigation: nodesQty=14, FC=True |  
+2021-04-25 10:54:33.7484 | Info | Correct saved result for heurisitcs investigation: nodesQty=18, FC=True |  
+2021-04-25 10:57:06.1523 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-6.json |  
+2021-04-25 10:57:06.1876 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-10.json |  
+2021-04-25 10:57:06.1936 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-14.json |  
+2021-04-25 10:57:06.2063 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-18.json |  
+2021-04-25 10:57:06.2392 | Info | Correct saved result for heurisitcs investigation: nodesQty=8, FC=False |  
+2021-04-25 10:57:06.2474 | Info | Correct saved result for heurisitcs investigation: nodesQty=14, FC=False |  
+2021-04-25 10:57:09.7949 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-6.json |  
+2021-04-25 10:57:09.8351 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-10.json |  
+2021-04-25 10:57:09.8435 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-14.json |  
+2021-04-25 10:57:09.8529 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-18.json |  
+2021-04-25 10:57:09.8879 | Info | Correct saved result for heurisitcs investigation: nodesQty=8, FC=False |  
+2021-04-25 10:57:09.8930 | Info | Correct saved result for heurisitcs investigation: nodesQty=14, FC=False |  
+2021-04-25 10:57:09.9264 | Info | Correct saved result for heurisitcs investigation: nodesQty=18, FC=False |  
+2021-04-25 10:57:09.9801 | Info | Correct saved result for heurisitcs investigation: nodesQty=22, FC=False |  
+2021-04-25 10:57:09.9829 | Info | Correct saved result for heurisitcs investigation: nodesQty=8, FC=True |  
+2021-04-25 10:57:09.9859 | Info | Correct saved result for heurisitcs investigation: nodesQty=14, FC=True |  
+2021-04-25 10:57:09.9912 | Info | Correct saved result for heurisitcs investigation: nodesQty=18, FC=True |  
+2021-04-25 10:57:10.0799 | Info | Correct saved result for heurisitcs investigation: nodesQty=22, FC=True |  
