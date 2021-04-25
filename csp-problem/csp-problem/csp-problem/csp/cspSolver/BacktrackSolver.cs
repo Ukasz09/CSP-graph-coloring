@@ -10,11 +10,15 @@ namespace csp_problem.csp.cspSolver
         public IValueOrderHeuristic<V, D> ValuesOrderHeuristic { get; }
         public IVariableHeuristic<V, D> VariableHeuristic { get; }
         public long ExecutionTimeInMs { get; private set; }
-        public int VisitedNodesQty { get; private set; }
+        public long SearchTimeTillFstSolutionInMs { get; private set; }
+        public int TotalVisitedNodesQty { get; private set; }
+        public int VisitedNodesQtyTillFstSolution { get; private set; }
         public int FoundSolutionsQty { get; private set; }
         private long TimeoutExecutionTimeMs { get; }
 
-        private readonly Stopwatch _watch = new Stopwatch();
+        private readonly Stopwatch _totalSearchTimeWatch = new Stopwatch();
+
+        private readonly Stopwatch _searchTimeTillFstSolutionWatch = new Stopwatch();
 
         private readonly IList<IDictionary<V, D>> _solutions = new List<IDictionary<V, D>>();
 
@@ -35,11 +39,18 @@ namespace csp_problem.csp.cspSolver
 
         public IList<IDictionary<V, D>> SolveAll(Csp<V, D> csp, IAssignment<V, D> assignment, bool withForwardChecking)
         {
-            _watch.Start();
+            _totalSearchTimeWatch.Start();
+            _searchTimeTillFstSolutionWatch.Start();
             ResetCalcStatistics();
             solveWithBacktracking(csp.Domains, csp, assignment, true, withForwardChecking);
-            _watch.Stop();
-            ExecutionTimeInMs = _watch.ElapsedMilliseconds;
+            if (_searchTimeTillFstSolutionWatch.IsRunning)
+            {
+                _searchTimeTillFstSolutionWatch.Stop();
+            }
+
+            _totalSearchTimeWatch.Stop();
+            ExecutionTimeInMs = _totalSearchTimeWatch.ElapsedMilliseconds;
+            SearchTimeTillFstSolutionInMs = _searchTimeTillFstSolutionWatch.ElapsedMilliseconds;
             return _solutions;
         }
 
@@ -47,7 +58,7 @@ namespace csp_problem.csp.cspSolver
             Csp<V, D> csp, IAssignment<V, D> assignment, bool allSolutions, bool withForwardChecking
         )
         {
-            if (_watch.ElapsedMilliseconds > TimeoutExecutionTimeMs)
+            if (_totalSearchTimeWatch.ElapsedMilliseconds > TimeoutExecutionTimeMs)
             {
                 throw new Exception($"Timed out - set to {TimeoutExecutionTimeMs} ms.");
             }
@@ -61,7 +72,17 @@ namespace csp_problem.csp.cspSolver
             var orderedValues = ValuesOrderHeuristic.GetOrderedDomainValues(variable, varDomains[variable], assignment);
             foreach (var value in orderedValues)
             {
-                VisitedNodesQty++;
+                TotalVisitedNodesQty++;
+                var notFoundAnySolutionsYet = _solutions.Count == 0;
+                if (notFoundAnySolutionsYet)
+                {
+                    VisitedNodesQtyTillFstSolution++;
+                }
+                else if (_searchTimeTillFstSolutionWatch.IsRunning)
+                {
+                    _searchTimeTillFstSolutionWatch.Stop();
+                }
+
                 assignment.AssignVariable(variable, value);
                 if (assignment.IsConsistent(variable))
                 {
@@ -105,7 +126,8 @@ namespace csp_problem.csp.cspSolver
         private void ResetCalcStatistics()
         {
             ExecutionTimeInMs = 0;
-            VisitedNodesQty = 0;
+            TotalVisitedNodesQty = 0;
+            VisitedNodesQtyTillFstSolution = 0;
             FoundSolutionsQty = 0;
             _solutions.Clear();
         }

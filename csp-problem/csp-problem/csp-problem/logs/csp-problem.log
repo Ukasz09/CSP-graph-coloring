@@ -4966,3 +4966,355 @@ Dog: 5 |
 2021-04-19 00:36:13.7554 | Info | ---------------------------------
  |  
 2021-04-19 00:36:13.7554 | Info | Correct saved solutions in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-24 23:02:38.1719 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-24 23:02:38.2057 | Info | -------------------------------------------- |  
+2021-04-24 23:02:38.2057 | Info | Started solving Graph Coloring Problem |  
+2021-04-24 23:02:38.2285 | Info | --------------------------------- |  
+2021-04-24 23:02:38.2287 | Info | Forward checking: False |  
+2021-04-24 23:02:38.2287 | Info | Search time: 16 ms |  
+2021-04-24 23:02:38.2287 | Info | Visited nodes: 64 |  
+2021-04-24 23:02:38.2287 | Info | Amount of found solutions: 6 |  
+2021-04-24 23:02:38.2287 | Info | ---------------------------------
+ |  
+2021-04-24 23:02:38.2287 | Info | Correct saved solutions in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-24 23:02:38.2287 | Info | --------------------------------- |  
+2021-04-24 23:02:38.2287 | Info | Forward checking: True |  
+2021-04-24 23:02:38.2287 | Info | Search time: 18 ms |  
+2021-04-24 23:02:38.2287 | Info | Visited nodes: 30 |  
+2021-04-24 23:02:38.2287 | Info | Amount of found solutions: 5 |  
+2021-04-24 23:02:38.2287 | Info | ---------------------------------
+ |  
+2021-04-24 23:02:38.2287 | Info | Correct saved solutions in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-24 23:02:57.4592 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-24 23:02:57.4862 | Info | -------------------------------------------- |  
+2021-04-24 23:02:57.4862 | Info | Started solving Graph Coloring Problem |  
+2021-04-24 23:02:57.5083 | Info | --------------------------------- |  
+2021-04-24 23:02:57.5085 | Info | Forward checking: False |  
+2021-04-24 23:02:57.5085 | Info | Search time: 16 ms |  
+2021-04-24 23:02:57.5085 | Info | Visited nodes: 116 |  
+2021-04-24 23:02:57.5085 | Info | Amount of found solutions: 19 |  
+2021-04-24 23:02:57.5085 | Info | ---------------------------------
+ |  
+2021-04-24 23:02:57.5085 | Info | Correct saved solutions in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-24 23:02:57.5085 | Info | --------------------------------- |  
+2021-04-24 23:02:57.5085 | Info | Forward checking: True |  
+2021-04-24 23:02:57.5085 | Info | Search time: 18 ms |  
+2021-04-24 23:02:57.5085 | Info | Visited nodes: 34 |  
+2021-04-24 23:02:57.5085 | Info | Amount of found solutions: 4 |  
+2021-04-24 23:02:57.5085 | Info | ---------------------------------
+ |  
+2021-04-24 23:02:57.5085 | Info | Correct saved solutions in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-24 23:03:25.7550 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-24 23:03:25.7815 | Info | -------------------------------------------- |  
+2021-04-24 23:03:25.7815 | Info | Started solving Graph Coloring Problem |  
+2021-04-24 23:03:25.8038 | Info | --------------------------------- |  
+2021-04-24 23:03:25.8038 | Info | Forward checking: False |  
+2021-04-24 23:03:25.8038 | Info | Search time: 16 ms |  
+2021-04-24 23:03:25.8038 | Info | Visited nodes: 88 |  
+2021-04-24 23:03:25.8038 | Info | Amount of found solutions: 9 |  
+2021-04-24 23:03:25.8038 | Info | ---------------------------------
+ |  
+2021-04-24 23:03:25.8047 | Info | Correct saved solutions in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-24 23:03:25.8047 | Info | --------------------------------- |  
+2021-04-24 23:03:25.8047 | Info | Forward checking: True |  
+2021-04-24 23:03:25.8047 | Info | Search time: 18 ms |  
+2021-04-24 23:03:25.8047 | Info | Visited nodes: 19 |  
+2021-04-24 23:03:25.8047 | Info | Amount of found solutions: 6 |  
+2021-04-24 23:03:25.8047 | Info | ---------------------------------
+ |  
+2021-04-24 23:03:25.8047 | Info | Correct saved solutions in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-24 23:04:13.7017 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-24 23:04:13.7286 | Info | -------------------------------------------- |  
+2021-04-24 23:04:13.7286 | Info | Started solving Graph Coloring Problem |  
+2021-04-24 23:04:13.7515 | Info | --------------------------------- |  
+2021-04-24 23:04:13.7515 | Info | Forward checking: False |  
+2021-04-24 23:04:13.7515 | Info | Search time: 17 ms |  
+2021-04-24 23:04:13.7515 | Info | Visited nodes: 140 |  
+2021-04-24 23:04:13.7515 | Info | Amount of found solutions: 30 |  
+2021-04-24 23:04:13.7515 | Info | ---------------------------------
+ |  
+2021-04-24 23:04:13.7515 | Info | Correct saved solutions in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-24 23:04:13.7541 | Info | --------------------------------- |  
+2021-04-24 23:04:13.7541 | Info | Forward checking: True |  
+2021-04-24 23:04:13.7541 | Info | Search time: 18 ms |  
+2021-04-24 23:04:13.7541 | Info | Visited nodes: 21 |  
+2021-04-24 23:04:13.7541 | Info | Amount of found solutions: 6 |  
+2021-04-24 23:04:13.7541 | Info | ---------------------------------
+ |  
+2021-04-24 23:04:13.7541 | Info | Correct saved solutions in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-24 23:12:18.1479 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-24 23:12:18.1818 | Info | -------------------------------------------- |  
+2021-04-24 23:12:18.1818 | Info | Started solving Graph Coloring Problem |  
+2021-04-24 23:12:18.2091 | Info | --------------------------------- |  
+2021-04-24 23:12:18.2091 | Info | Forward checking: False |  
+2021-04-24 23:12:18.2091 | Info | Search time: 19 ms |  
+2021-04-24 23:12:18.2091 | Info | Visited nodes: 96 |  
+2021-04-24 23:12:18.2091 | Info | Amount of found solutions: 15 |  
+2021-04-24 23:12:18.2091 | Info | ---------------------------------
+ |  
+2021-04-24 23:12:18.2091 | Info | Correct saved solutions in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-24 23:12:18.2091 | Info | --------------------------------- |  
+2021-04-24 23:12:18.2126 | Info | Forward checking: True |  
+2021-04-24 23:12:18.2126 | Info | Search time: 21 ms |  
+2021-04-24 23:12:18.2126 | Info | Visited nodes: 40 |  
+2021-04-24 23:12:18.2126 | Info | Amount of found solutions: 6 |  
+2021-04-24 23:12:18.2126 | Info | ---------------------------------
+ |  
+2021-04-24 23:12:18.2126 | Info | Correct saved solutions in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-24 23:21:07.8778 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-24 23:21:07.9309 | Info | -------------------------------------------- |  
+2021-04-24 23:21:07.9309 | Info | Started solving Graph Coloring Problem |  
+2021-04-24 23:21:07.9764 | Info | --------------------------------- |  
+2021-04-24 23:21:07.9766 | Info | Forward checking: False |  
+2021-04-24 23:21:07.9766 | Info | Search time: 32 ms |  
+2021-04-24 23:21:07.9766 | Info | Total visited nodes qty: 160 |  
+2021-04-24 23:21:07.9766 | Info | Visited nodes till first solution: 11 |  
+2021-04-24 23:21:07.9766 | Info | Amount of found solutions: 28 |  
+2021-04-24 23:21:07.9766 | Info | ---------------------------------
+ |  
+2021-04-24 23:21:07.9766 | Info | Correct saved solutions in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-24 23:21:07.9826 | Info | --------------------------------- |  
+2021-04-24 23:21:07.9826 | Info | Forward checking: True |  
+2021-04-24 23:21:07.9826 | Info | Search time: 35 ms |  
+2021-04-24 23:21:07.9826 | Info | Total visited nodes qty: 28 |  
+2021-04-24 23:21:07.9826 | Info | Visited nodes till first solution: 7 |  
+2021-04-24 23:21:07.9826 | Info | Amount of found solutions: 4 |  
+2021-04-24 23:21:07.9826 | Info | ---------------------------------
+ |  
+2021-04-24 23:21:07.9826 | Info | Correct saved solutions in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-24 23:29:53.4240 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-24 23:29:53.4547 | Info | -------------------------------------------- |  
+2021-04-24 23:29:53.4547 | Info | Started solving Graph Coloring Problem |  
+2021-04-24 23:29:53.4783 | Info | --------------------------------- |  
+2021-04-24 23:29:53.4783 | Info | Forward checking: False |  
+2021-04-24 23:29:53.4783 | Info | Search time: 17 ms |  
+2021-04-24 23:29:53.4783 | Info | Search time till first solution: 17 ms |  
+2021-04-24 23:29:53.4783 | Info | Total visited nodes qty: 44 |  
+2021-04-24 23:29:53.4783 | Info | Visited nodes till first solution: 12 |  
+2021-04-24 23:29:53.4783 | Info | Amount of found solutions: 4 |  
+2021-04-24 23:29:53.4783 | Info | ---------------------------------
+ |  
+2021-04-24 23:29:53.4783 | Info | Correct saved solutions in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-24 23:29:53.4813 | Info | --------------------------------- |  
+2021-04-24 23:29:53.4813 | Info | Forward checking: True |  
+2021-04-24 23:29:53.4813 | Info | Search time: 18 ms |  
+2021-04-24 23:29:53.4813 | Info | Search time till first solution: 18 ms |  
+2021-04-24 23:29:53.4813 | Info | Total visited nodes qty: 25 |  
+2021-04-24 23:29:53.4813 | Info | Visited nodes till first solution: 7 |  
+2021-04-24 23:29:53.4813 | Info | Amount of found solutions: 4 |  
+2021-04-24 23:29:53.4813 | Info | ---------------------------------
+ |  
+2021-04-24 23:29:53.4813 | Info | Correct saved solutions in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-24 23:30:10.6264 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-24 23:30:10.6635 | Info | -------------------------------------------- |  
+2021-04-24 23:30:10.6635 | Info | Started solving Graph Coloring Problem |  
+2021-04-24 23:30:10.6942 | Info | --------------------------------- |  
+2021-04-24 23:30:10.6942 | Info | Forward checking: False |  
+2021-04-24 23:30:10.6942 | Info | Search time: 23 ms |  
+2021-04-24 23:30:10.6942 | Info | Search time till first solution: 23 ms |  
+2021-04-24 23:30:10.6942 | Info | Total visited nodes qty: 104 |  
+2021-04-24 23:30:10.6942 | Info | Visited nodes till first solution: 10 |  
+2021-04-24 23:30:10.6942 | Info | Amount of found solutions: 8 |  
+2021-04-24 23:30:10.6942 | Info | ---------------------------------
+ |  
+2021-04-24 23:30:10.6942 | Info | Correct saved solutions in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-24 23:30:10.6992 | Info | --------------------------------- |  
+2021-04-24 23:30:10.6992 | Info | Forward checking: True |  
+2021-04-24 23:30:10.6992 | Info | Search time: 26 ms |  
+2021-04-24 23:30:10.6992 | Info | Search time till first solution: 26 ms |  
+2021-04-24 23:30:10.6992 | Info | Total visited nodes qty: 31 |  
+2021-04-24 23:30:10.6992 | Info | Visited nodes till first solution: 7 |  
+2021-04-24 23:30:10.6992 | Info | Amount of found solutions: 4 |  
+2021-04-24 23:30:10.6992 | Info | ---------------------------------
+ |  
+2021-04-24 23:30:10.6992 | Info | Correct saved solutions in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-24 23:49:47.3146 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-24 23:49:47.3679 | Info | -------------------------------------------- |  
+2021-04-24 23:49:47.3679 | Info | Started solving Graph Coloring Problem |  
+2021-04-24 23:49:58.1845 | Info | --------------------------------- |  
+2021-04-24 23:49:58.1849 | Info | Forward checking: False |  
+2021-04-24 23:49:58.1849 | Info | Search time: 10804 ms |  
+2021-04-24 23:49:58.1849 | Info | Search time till first solution: 10804 ms |  
+2021-04-24 23:49:58.1849 | Info | Total visited nodes qty: 184 |  
+2021-04-24 23:49:58.1849 | Info | Visited nodes till first solution: 14 |  
+2021-04-24 23:49:58.1849 | Info | Amount of found solutions: 18 |  
+2021-04-24 23:49:58.1849 | Info | ---------------------------------
+ |  
+2021-04-24 23:49:58.1849 | Info | Correct saved solutions in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-24 23:50:00.5170 | Info | --------------------------------- |  
+2021-04-24 23:50:00.5170 | Info | Forward checking: True |  
+2021-04-24 23:50:00.5170 | Info | Search time: 13134 ms |  
+2021-04-24 23:50:00.5170 | Info | Search time till first solution: 13134 ms |  
+2021-04-24 23:50:00.5170 | Info | Total visited nodes qty: 72 |  
+2021-04-24 23:50:00.5170 | Info | Visited nodes till first solution: 7 |  
+2021-04-24 23:50:00.5170 | Info | Amount of found solutions: 10 |  
+2021-04-24 23:50:00.5170 | Info | ---------------------------------
+ |  
+2021-04-24 23:50:00.5170 | Info | Correct saved solutions in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-25 08:30:17.2248 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-25 08:30:17.2816 | Info | -------------------------------------------- |  
+2021-04-25 08:30:17.2816 | Info | Started solving Graph Coloring Problem |  
+2021-04-25 08:30:25.9258 | Info | --------------------------------- |  
+2021-04-25 08:30:25.9258 | Info | Forward checking: False |  
+2021-04-25 08:30:25.9258 | Info | Search time: 8623 ms |  
+2021-04-25 08:30:25.9258 | Info | Search time till first solution: 8623 ms |  
+2021-04-25 08:30:25.9258 | Info | Total visited nodes qty: 84 |  
+2021-04-25 08:30:25.9258 | Info | Visited nodes till first solution: 11 |  
+2021-04-25 08:30:25.9258 | Info | Amount of found solutions: 14 |  
+2021-04-25 08:30:25.9258 | Info | ---------------------------------
+ |  
+2021-04-25 08:30:25.9258 | Info | Correct saved solutions in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-25 08:30:33.4948 | Info | --------------------------------- |  
+2021-04-25 08:30:33.4948 | Info | Forward checking: True |  
+2021-04-25 08:30:33.4948 | Info | Search time: 16190 ms |  
+2021-04-25 08:30:33.4948 | Info | Search time till first solution: 16190 ms |  
+2021-04-25 08:30:33.4948 | Info | Total visited nodes qty: 26 |  
+2021-04-25 08:30:33.4948 | Info | Visited nodes till first solution: 7 |  
+2021-04-25 08:30:33.4948 | Info | Amount of found solutions: 8 |  
+2021-04-25 08:30:33.4948 | Info | ---------------------------------
+ |  
+2021-04-25 08:30:33.4948 | Info | Correct saved solutions in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-25 08:30:56.2611 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-25 08:30:56.3054 | Info | -------------------------------------------- |  
+2021-04-25 08:30:56.3054 | Info | Started solving Graph Coloring Problem |  
+2021-04-25 08:31:52.6022 | Info | --------------------------------- |  
+2021-04-25 08:31:52.6022 | Info | Forward checking: False |  
+2021-04-25 08:31:52.6022 | Info | Search time: 56276 ms |  
+2021-04-25 08:31:52.6022 | Info | Search time till first solution: 56276 ms |  
+2021-04-25 08:31:52.6022 | Info | Total visited nodes qty: 104 |  
+2021-04-25 08:31:52.6022 | Info | Visited nodes till first solution: 11 |  
+2021-04-25 08:31:52.6022 | Info | Amount of found solutions: 10 |  
+2021-04-25 08:31:52.6022 | Info | ---------------------------------
+ |  
+2021-04-25 08:31:52.6022 | Info | Correct saved solutions in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-25 08:32:47.0732 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-25 08:32:47.1032 | Info | -------------------------------------------- |  
+2021-04-25 08:32:47.1032 | Info | Started solving Graph Coloring Problem |  
+2021-04-25 08:32:47.1274 | Info | --------------------------------- |  
+2021-04-25 08:32:47.1274 | Info | Forward checking: False |  
+2021-04-25 08:32:47.1274 | Info | Search time: 17 ms |  
+2021-04-25 08:32:47.1274 | Info | Search time till first solution: 17 ms |  
+2021-04-25 08:32:47.1274 | Info | Total visited nodes qty: 52 |  
+2021-04-25 08:32:47.1274 | Info | Visited nodes till first solution: 12 |  
+2021-04-25 08:32:47.1274 | Info | Amount of found solutions: 4 |  
+2021-04-25 08:32:47.1274 | Info | ---------------------------------
+ |  
+2021-04-25 08:32:47.1274 | Info | Correct saved solutions in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-25 08:32:47.1302 | Info | --------------------------------- |  
+2021-04-25 08:32:47.1302 | Info | Forward checking: True |  
+2021-04-25 08:32:47.1302 | Info | Search time: 18 ms |  
+2021-04-25 08:32:47.1302 | Info | Search time till first solution: 18 ms |  
+2021-04-25 08:32:47.1302 | Info | Total visited nodes qty: 28 |  
+2021-04-25 08:32:47.1302 | Info | Visited nodes till first solution: 7 |  
+2021-04-25 08:32:47.1302 | Info | Amount of found solutions: 2 |  
+2021-04-25 08:32:47.1302 | Info | ---------------------------------
+ |  
+2021-04-25 08:32:47.1302 | Info | Correct saved solutions in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-25 08:33:17.4538 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-25 08:33:17.5029 | Info | -------------------------------------------- |  
+2021-04-25 08:33:17.5029 | Info | Started solving Graph Coloring Problem |  
+2021-04-25 08:34:09.6824 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-25 08:34:09.7171 | Info | -------------------------------------------- |  
+2021-04-25 08:34:09.7171 | Info | Started solving Graph Coloring Problem |  
+2021-04-25 08:35:18.8694 | Info | --------------------------------- |  
+2021-04-25 08:35:18.8694 | Info | Forward checking: False |  
+2021-04-25 08:35:18.8694 | Info | Search time: 38763 ms |  
+2021-04-25 08:35:18.8694 | Info | Search time till first solution: 20 ms |  
+2021-04-25 08:35:18.8694 | Info | Total visited nodes qty: 100 |  
+2021-04-25 08:35:18.8694 | Info | Visited nodes till first solution: 11 |  
+2021-04-25 08:35:18.8694 | Info | Amount of found solutions: 17 |  
+2021-04-25 08:35:18.8694 | Info | ---------------------------------
+ |  
+2021-04-25 08:35:18.8694 | Info | Correct saved solutions in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-25 08:35:23.6737 | Info | --------------------------------- |  
+2021-04-25 08:35:23.6737 | Info | Forward checking: True |  
+2021-04-25 08:35:23.6737 | Info | Search time: 40633 ms |  
+2021-04-25 08:35:23.6737 | Info | Search time till first solution: 23 ms |  
+2021-04-25 08:35:23.6737 | Info | Total visited nodes qty: 31 |  
+2021-04-25 08:35:23.6737 | Info | Visited nodes till first solution: 7 |  
+2021-04-25 08:35:23.6737 | Info | Amount of found solutions: 8 |  
+2021-04-25 08:35:23.6737 | Info | ---------------------------------
+ |  
+2021-04-25 08:35:23.6737 | Info | Correct saved solutions in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-25 08:35:33.4754 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-25 08:35:33.5271 | Info | -------------------------------------------- |  
+2021-04-25 08:35:33.5271 | Info | Started solving Graph Coloring Problem |  
+2021-04-25 08:35:33.5693 | Info | --------------------------------- |  
+2021-04-25 08:35:33.5693 | Info | Forward checking: False |  
+2021-04-25 08:35:33.5693 | Info | Search time: 30 ms |  
+2021-04-25 08:35:33.5693 | Info | Search time till first solution: 29 ms |  
+2021-04-25 08:35:33.5693 | Info | Total visited nodes qty: 108 |  
+2021-04-25 08:35:33.5693 | Info | Visited nodes till first solution: 12 |  
+2021-04-25 08:35:33.5693 | Info | Amount of found solutions: 8 |  
+2021-04-25 08:35:33.5693 | Info | ---------------------------------
+ |  
+2021-04-25 08:35:33.5693 | Info | Correct saved solutions in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-25 08:35:33.5734 | Info | --------------------------------- |  
+2021-04-25 08:35:33.5734 | Info | Forward checking: True |  
+2021-04-25 08:35:33.5734 | Info | Search time: 32 ms |  
+2021-04-25 08:35:33.5734 | Info | Search time till first solution: 32 ms |  
+2021-04-25 08:35:33.5734 | Info | Total visited nodes qty: 24 |  
+2021-04-25 08:35:33.5734 | Info | Visited nodes till first solution: 7 |  
+2021-04-25 08:35:33.5734 | Info | Amount of found solutions: 4 |  
+2021-04-25 08:35:33.5734 | Info | ---------------------------------
+ |  
+2021-04-25 08:35:33.5734 | Info | Correct saved solutions in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-25 08:37:02.3499 | Info | Correct saved map graph in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json |  
+2021-04-25 08:37:02.3822 | Info | -------------------------------------------- |  
+2021-04-25 08:37:02.3822 | Info | Started solving Graph Coloring Problem |  
+2021-04-25 08:37:02.6583 | Info | --------------------------------- |  
+2021-04-25 08:37:02.6583 | Info | Forward checking: False |  
+2021-04-25 08:37:02.6583 | Info | Search time: 264 ms |  
+2021-04-25 08:37:02.6583 | Info | Search time till first solution: 4 ms |  
+2021-04-25 08:37:02.6583 | Info | Total visited nodes qty: 81620 |  
+2021-04-25 08:37:02.6583 | Info | Visited nodes till first solution: 177 |  
+2021-04-25 08:37:02.6583 | Info | Amount of found solutions: 120 |  
+2021-04-25 08:37:02.6608 | Info | ---------------------------------
+ |  
+2021-04-25 08:37:02.6608 | Info | Correct saved solutions in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-25 08:37:02.7913 | Info | --------------------------------- |  
+2021-04-25 08:37:02.7913 | Info | Forward checking: True |  
+2021-04-25 08:37:02.7913 | Info | Search time: 391 ms |  
+2021-04-25 08:37:02.7913 | Info | Search time till first solution: 10 ms |  
+2021-04-25 08:37:02.7913 | Info | Total visited nodes qty: 12915 |  
+2021-04-25 08:37:02.7913 | Info | Visited nodes till first solution: 66 |  
+2021-04-25 08:37:02.7913 | Info | Amount of found solutions: 40 |  
+2021-04-25 08:37:02.7913 | Info | ---------------------------------
+ |  
+2021-04-25 08:37:02.7929 | Info | Correct saved solutions in file: /home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json |  
+2021-04-25 09:02:55.2580 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-5 |  
+2021-04-25 09:03:23.8328 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-5.json |  
+2021-04-25 09:55:17.5808 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-8.json |  
+2021-04-25 09:55:17.6312 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-14.json |  
+2021-04-25 09:55:17.6406 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-18.json |  
+2021-04-25 09:55:17.6565 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-22.json |  
+2021-04-25 09:56:59.4835 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-8.json |  
+2021-04-25 09:56:59.5216 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-14.json |  
+2021-04-25 09:56:59.5315 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-18.json |  
+2021-04-25 09:56:59.5505 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-22.json |  
+2021-04-25 09:56:59.5730 | Info | Correct saved result for FB-BC investigation: nodesQty=8 |  
+2021-04-25 09:56:59.5789 | Info | Correct saved result for FB-BC investigation: nodesQty=14 |  
+2021-04-25 09:56:59.5951 | Info | Correct saved result for FB-BC investigation: nodesQty=18 |  
+2021-04-25 09:56:59.6271 | Info | Correct saved result for FB-BC investigation: nodesQty=22 |  
+2021-04-25 09:58:28.0214 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-8.json |  
+2021-04-25 09:58:28.0636 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-14.json |  
+2021-04-25 09:58:28.0724 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-18.json |  
+2021-04-25 09:58:28.0900 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-22.json |  
+2021-04-25 09:58:28.1132 | Info | Correct saved result for FB-BC investigation: nodesQty=8 |  
+2021-04-25 09:58:28.1947 | Info | Correct saved result for FB-BC investigation: nodesQty=14 |  
+2021-04-25 09:58:28.2188 | Info | Correct saved result for FB-BC investigation: nodesQty=18 |  
+2021-04-25 09:58:28.3886 | Info | Correct saved result for FB-BC investigation: nodesQty=22 |  
+2021-04-25 10:01:57.9853 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-8.json |  
+2021-04-25 10:01:58.0256 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-14.json |  
+2021-04-25 10:01:58.0344 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-18.json |  
+2021-04-25 10:01:58.0525 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-22.json |  
+2021-04-25 10:01:58.0745 | Info | Correct saved result for FB-BC investigation: nodesQty=8 |  
+2021-04-25 10:01:58.0883 | Info | Correct saved result for FB-BC investigation: nodesQty=14 |  
+2021-04-25 10:01:58.1128 | Info | Correct saved result for FB-BC investigation: nodesQty=18 |  
+2021-04-25 10:01:58.1466 | Info | Correct saved result for FB-BC investigation: nodesQty=22 |  
+2021-04-25 10:03:41.9081 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-8.json |  
+2021-04-25 10:03:41.9463 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-14.json |  
+2021-04-25 10:03:41.9550 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-18.json |  
+2021-04-25 10:03:41.9695 | Info | Correct saved map graph in file: ../../report-data/graphs/graph-22.json |  
+2021-04-25 10:03:41.9878 | Info | Correct saved result for FB-BC investigation: nodesQty=8 |  
+2021-04-25 10:03:42.0013 | Info | Correct saved result for FB-BC investigation: nodesQty=14 |  

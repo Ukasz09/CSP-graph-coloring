@@ -10,7 +10,9 @@ namespace csp_problem
     {
         private readonly ISolver<string, string> _solver;
         public long SearchTimeInMs => _solver.ExecutionTimeInMs;
-        public int VisitedNodesQty => _solver.VisitedNodesQty;
+        public long SearchTimeTillFstSolutionInMs => _solver.SearchTimeTillFstSolutionInMs;
+        public int VisitedNodesQty => _solver.TotalVisitedNodesQty;
+        public int VisitedNodesTillFstSolution => _solver.VisitedNodesQtyTillFstSolution;
         public int FoundSolutionsQty => _solver.FoundSolutionsQty;
 
         public MapColoringSolver(ISolver<string, string> solver)

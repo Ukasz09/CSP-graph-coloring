@@ -14,8 +14,8 @@ namespace csp_problem
             var lines = new[] {"[", map.ToString(), "]"};
             File.WriteAllLines(filePath, lines);
             _logger.Log(LogLevel.Info, $"Correct saved map graph in file: {filePath}");
-        } 
-        
+        }
+
         public static void SaveGraphColoringSolution(IDictionary<string, string> solution, string filePath)
         {
             var lines = GetMapColoringSolutionContent(solution);
@@ -40,6 +40,7 @@ namespace csp_problem
                 content.Add(",");
                 lines.AddRange(content);
             }
+
             // Remove last comma
             lines[^1] = lines[^1].Remove(lines[^1].Length - 1);
             lines.Add("]");
@@ -76,6 +77,12 @@ namespace csp_problem
 
             File.WriteAllLines(filePath, lines);
             _logger.Log(LogLevel.Info, $"Correct saved solution in file: {filePath}");
+        }
+
+        public static string[] ReadDataFromFile(string filepath)
+        {
+            var lines = File.ReadAllLines(filepath);
+            return lines;
         }
     }
 }

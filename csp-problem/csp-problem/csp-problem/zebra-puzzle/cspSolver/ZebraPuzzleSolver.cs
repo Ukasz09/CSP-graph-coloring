@@ -21,7 +21,9 @@ namespace csp_problem
         private static readonly Logger _logger = LogManager.GetCurrentClassLogger();
 
         public long SearchTimeInMs => _solver.ExecutionTimeInMs;
-        public int VisitedNodesQty => _solver.VisitedNodesQty;
+        public long SearchTimeTillFstSolutionInMs => _solver.SearchTimeTillFstSolutionInMs;
+        public int VisitedNodesQty => _solver.TotalVisitedNodesQty;
+        public int VisitedNodesTillFstSolution => _solver.VisitedNodesQtyTillFstSolution;
         public int SolutionsQty => _solver.FoundSolutionsQty;
 
         public ZebraPuzzleSolver(ISolver<string, int> solver)
@@ -46,7 +48,7 @@ namespace csp_problem
             if (listOfVariableValues.Count == 0)
             {
                 throw new Exception(
-                    $"Couldn't find any solution, time of executing: {_solver.ExecutionTimeInMs} ms, visited nodes: {_solver.VisitedNodesQty}"
+                    $"Couldn't find any solution, time of executing: {_solver.ExecutionTimeInMs} ms, visited nodes: {_solver.TotalVisitedNodesQty}"
                 );
             }
 

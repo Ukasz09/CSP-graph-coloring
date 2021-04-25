@@ -26,19 +26,20 @@ def _draw_nodes(nodes: List[Tuple[int, int]], colors: Dict[Tuple[int, int], str]
         else:
             color = "black"
         plt.scatter(point[0], point[1], color=color, s=node_size)
-        plt.annotate(f'({point[0]},{point[1]})',
-                     (point[0], point[1]),
-                     textcoords="offset points",
-                     xytext=(0, 15),
-                     bbox=dict(boxstyle="round", alpha=0.1),
-                     ha='center')
+        # plt.annotate(f'({point[0]},{point[1]})',
+        #              (point[0], point[1]),
+        #              textcoords="offset points",
+        #              xytext=(0, 15),
+        #              bbox=dict(boxstyle="round", alpha=0.9, fc='white'),
+        #              ha='center')
 
 
 def _plot_graph(nodes: List[Tuple[int, int]], edges: List[Tuple[Tuple[int, int], Tuple[int, int]]],
                 colors: Dict[Tuple[int, int], str]):
     plot_title_scheme = 'NodesQty = {nodes_qty}, EdgesQty = {edgesQty}, ColorsQty = {colorsQty}'
     distinct_colors_qty = len(np.unique(list(colors.values())))
-    plot_title = plot_title_scheme.format(nodes_qty=len(nodes), edgesQty=len(edges), colorsQty=distinct_colors_qty)
+    plot_title = plot_title_scheme.format(nodes_qty=len(
+        nodes), edgesQty=len(edges), colorsQty=distinct_colors_qty)
     plt.title(plot_title, pad=25)
     _draw_nodes(nodes, colors)
     _draw_edges(edges)
@@ -51,7 +52,8 @@ def _read_graph(filepath: str):
     with open(filepath) as json_file:
         data = json.load(json_file)
         # Parsing list into tuples
-        tuple_data = [tuple([tuple(nodes_list[0]), tuple(nodes_list[1])]) for nodes_list in data]
+        tuple_data = [tuple([tuple(nodes_list[0]), tuple(nodes_list[1])])
+                      for nodes_list in data]
         return tuple_data
 
 
@@ -82,7 +84,8 @@ def _plot_result(_nodes: List[Tuple[int, int]], _edges: List[Tuple[Tuple[int, in
 
 
 if __name__ == "__main__":
-    _edges = _read_graph('/home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json')
+    _edges = _read_graph(
+        '/home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/graph.json')
     _nodes = _extract_unique_nodes_from_edges(_edges)
     _colors_raw = _read_colors(
         '/home/ukasz09/Documents/OneDrive/Uczelnia/Semestr_VI/SI-L/2/graph-coloring-ui/solution.json')
