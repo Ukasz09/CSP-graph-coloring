@@ -11,6 +11,7 @@ Constraint Satisfaction Problem - Graph Coloring + Zebra puzzles
 ### Demo
 
 ![](https://raw.githubusercontent.com/Ukasz09/CSP-graph-coloring/master/readme/demo-1.png)
+![](https://raw.githubusercontent.com/Ukasz09/CSP-graph-coloring/master/readme/demo-2.png)
 
 ---
 
